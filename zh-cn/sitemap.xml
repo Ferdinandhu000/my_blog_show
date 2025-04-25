@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/zh-cn/</loc>
-    <lastmod>2025-04-25T22:43:06+08:00</lastmod>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,17 +11,38 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://example.com/zh-cn/"
                 />
   </url><url>
+    <loc>https://example.com/zh-cn/categories/</loc>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/categories/"
+                />
+  </url><url>
+    <loc>https://example.com/zh-cn/categories/java/</loc>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/java/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/categories/java/"
+                />
+  </url><url>
     <loc>https://example.com/zh-cn/post/</loc>
-    <lastmod>2025-04-25T22:43:06+08:00</lastmod>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,44 +54,43 @@
                 href="https://example.com/zh-cn/post/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</loc>
+    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/categories/"
+                href="https://example.com/p/event-listener/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/"
+                href="https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/"
+                />
+  </url><url>
+    <loc>https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2025-04-23T16:00:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/p/basic-window-settings/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/"
                 />
   </url><url>
     <loc>https://example.com/zh-cn/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/zh-cn/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/test/"
-                />
-  </url><url>
     <loc>https://example.com/zh-cn/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/zh-cn/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -82,16 +102,24 @@
                 href="https://example.com/zh-cn/page/"
                 />
   </url><url>
+    <loc>https://example.com/zh-cn/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/archives/"
+                />
+  </url><url>
     <loc>https://example.com/zh-cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://example.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -109,6 +137,30 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/"
+                />
+  </url><url>
+    <loc>https://example.com/zh-cn/%E9%93%BE%E6%8E%A5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/%E9%93%BE%E6%8E%A5/"
+                />
+  </url><url>
+    <loc>https://example.com/zh-cn/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/search/"
                 />
   </url>
 </urlset>

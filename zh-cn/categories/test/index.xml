@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Test on 演示站点</title>
-        <link>https://example.com/zh-cn/categories/test/</link>
-        <description>Recent content in Test on 演示站点</description>
+        <title>Test on FerdinandHu</title>
+        <link>http://localhost:1313/zh-cn/categories/test/</link>
+        <description>Recent content in Test on FerdinandHu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Example Person</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/zh-cn/categories/test/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Ferdinand Hu</copyright>
+        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/categories/test/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chinese Test</title>
-        <link>https://example.com/zh-cn/p/test-chinese/</link>
+        <link>http://localhost:1313/zh-cn/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/zh-cn/p/test-chinese/</guid>
-        <description>&lt;img src="https://example.com/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>http://localhost:1313/zh-cn/p/test-chinese/</guid>
+        <description>&lt;img src="http://localhost:1313/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
 &lt;/h2&gt;&lt;blockquote&gt;
@@ -24,7 +24,7 @@
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://example.com/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	
 	
 	
@@ -33,7 +33,7 @@
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
 	
 	
-&gt;  &lt;img src=&#34;https://example.com/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	
 	
 	
@@ -43,7 +43,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.com/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	
 	
 	
@@ -52,7 +52,7 @@
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
 	
 	
-&gt;  &lt;img src=&#34;https://example.com/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	
 	
 	

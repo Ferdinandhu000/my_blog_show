@@ -2,7 +2,7 @@ baseurl: https://example.com/
 languageCode: en-us
 theme: hugo-theme-stack
 title: Example Site
-copyright: Example Person
+copyright: Ferdinand Hu
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -15,26 +15,26 @@ hasCJKLanguage: false
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: FerdinandHu
         weight: 1
         params:
             sidebar:
-                subtitle: Example description
+                subtitle: 
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: FerdinandHu
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            sidebar:
-                subtitle: وصف تجريبي
+                subtitle: 
+    # ar:
+    #     languageName: عربي
+    #     languagedirection: rtl
+    #     title: موقع تجريبي
+    #     weight: 3
+    #     params:
+    #         sidebar:
+    #             subtitle: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
@@ -67,12 +67,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/AvatarHJ.jpg
 
     article:
         math: false
@@ -217,7 +217,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Ferdinandhu000
           params:
               icon: brand-github
 
