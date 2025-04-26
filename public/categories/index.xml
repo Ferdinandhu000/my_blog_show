@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on FerdinandHu</title>
-        <link>https://example.com/categories/</link>
+        <link>https://ferdinandhu.netlify.app/categories/</link>
         <description>Recent content in Categories on FerdinandHu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Interface Development</title>
-        <link>https://example.com/categories/interface-development/</link>
+        <link>https://ferdinandhu.netlify.app/categories/interface-development/</link>
         <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
         
-        <guid>https://example.com/categories/interface-development/</guid>
+        <guid>https://ferdinandhu.netlify.app/categories/interface-development/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
-        <link>https://example.com/categories/java/</link>
+        <link>https://ferdinandhu.netlify.app/categories/java/</link>
         <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
         
-        <guid>https://example.com/categories/java/</guid>
+        <guid>https://ferdinandhu.netlify.app/categories/java/</guid>
         <description></description>
         </item>
         

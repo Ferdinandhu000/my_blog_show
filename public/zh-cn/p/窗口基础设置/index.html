@@ -4,11 +4,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="窗口基础设置 原理 ： 利用java外部库自带的java.awt和javax.swing软件包来实现\n基本步骤： 创建一个新的类（例如LoginUI） 在这个类中定义一个方法（例如showUI(),用于开发界面） 导入java.awt和javax.swing两个界面开发包 在末尾创建一个主函数main，在其中创建LoginUI的对象（例如ui）并调用之前的showUI()方法） 细节步骤 使用import语句导入两个界面开发包，末尾.*代表导入该软件包中的所有类 1 2 import java.awt.*; import javax.swing.*; 在创建定义完方法showUI()之后，即可创建一个窗体类对象jf，利用刚刚导入的javax.swing中的JFrame进行创建 1 JFrame jf = new JFrame(); 设置窗体的属性 1 2 3 4 jf.setTitle(&#34;登录窗口&#34;); //设置窗口标题 jf.setSize(400, 500); //设置窗口大小 jf.setLocation(600, 200); //设置窗口位置 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //点击关闭按钮时，java程序终止 设置窗口内的布局\n首先创建布局器对象（这里使用java.awt包内的FlowLayout类进行创建） 1 FlowLayout fl = new FlowLayout(); 添加图片（需要将图片传到标签Label上呈现） 1 2 ImageIcon img = new ImageIcon(&lt;图片文件地址&gt;); JLabel imgJla = new JLabel(img); 添加标签（文字） 1 2 JLabel nameJla = new JLabel(&#34;账号：&#34;); JLabel pwdJla = new JLabel(&#34;密码：&#34;); 添加单行文本输入框 1 JTextField nameJtf = new JTextField(35); // 输入框可以显示30个字符宽度，每个字符约10像素 添加按钮 1 JButton loginBtn = new JButton(&#34;登录&#34;); 将上面创建的布局组件全部添加到窗体对象jf中\n">
 <title>窗口基础设置</title>
 
-<link rel='canonical' href='https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
+<link rel='canonical' href='https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="窗口基础设置">
 <meta property='og:description' content="窗口基础设置 原理 ： 利用java外部库自带的java.awt和javax.swing软件包来实现\n基本步骤： 创建一个新的类（例如LoginUI） 在这个类中定义一个方法（例如showUI(),用于开发界面） 导入java.awt和javax.swing两个界面开发包 在末尾创建一个主函数main，在其中创建LoginUI的对象（例如ui）并调用之前的showUI()方法） 细节步骤 使用import语句导入两个界面开发包，末尾.*代表导入该软件包中的所有类 1 2 import java.awt.*; import javax.swing.*; 在创建定义完方法showUI()之后，即可创建一个窗体类对象jf，利用刚刚导入的javax.swing中的JFrame进行创建 1 JFrame jf = new JFrame(); 设置窗体的属性 1 2 3 4 jf.setTitle(&#34;登录窗口&#34;); //设置窗口标题 jf.setSize(400, 500); //设置窗口大小 jf.setLocation(600, 200); //设置窗口位置 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //点击关闭按钮时，java程序终止 设置窗口内的布局\n首先创建布局器对象（这里使用java.awt包内的FlowLayout类进行创建） 1 FlowLayout fl = new FlowLayout(); 添加图片（需要将图片传到标签Label上呈现） 1 2 ImageIcon img = new ImageIcon(&lt;图片文件地址&gt;); JLabel imgJla = new JLabel(img); 添加标签（文字） 1 2 JLabel nameJla = new JLabel(&#34;账号：&#34;); JLabel pwdJla = new JLabel(&#34;密码：&#34;); 添加单行文本输入框 1 JTextField nameJtf = new JTextField(35); // 输入框可以显示30个字符宽度，每个字符约10像素 添加按钮 1 JButton loginBtn = new JButton(&#34;登录&#34;); 将上面创建的布局组件全部添加到窗体对象jf中\n">
-<meta property='og:url' content='https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
+<meta property='og:url' content='https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
 <meta property='og:site_name' content='FerdinandHu'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-04-23T16:00:03&#43;08:00'/><meta property='article:modified_time' content='2025-04-23T16:00:03&#43;08:00'/>
 <meta name="twitter:title" content="窗口基础设置">
@@ -229,9 +229,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://example.com/" >English</option>
+                                    <option value="https://ferdinandhu.netlify.app/" >English</option>
                                 
-                                    <option value="https://example.com/zh-cn/" selected>中文</option>
+                                    <option value="https://ferdinandhu.netlify.app/zh-cn/" selected>中文</option>
                                 
                             </select>
                         </li>
@@ -383,7 +383,7 @@
 
             <div>
                 
-                    <a href="https://example.com/p/basic-window-settings/" class="link">English</a>
+                    <a href="https://ferdinandhu.netlify.app/p/basic-window-settings/" class="link">English</a>
                 
             </div>
         </footer>

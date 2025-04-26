@@ -1,7 +1,7 @@
-baseurl: https://example.com/
+baseurl: https://ferdinandhu.netlify.app/
 languageCode: en-us
 theme: hugo-theme-stack
-title: Example Site
+title: HJ's Blog
 copyright: Ferdinand Hu
 
 # Theme i18n support
@@ -121,7 +121,7 @@ params:
         waline:
             serverURL:
             lang:
-            pageview:
+            pageview: true
             emoji:
                 - https://unpkg.com/@waline/emojis@1.0.1/weibo
             requiredMeta:

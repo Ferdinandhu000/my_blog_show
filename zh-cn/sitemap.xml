@@ -2,159 +2,159 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/zh-cn/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://ferdinandhu.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/"
+                href="https://ferdinandhu.netlify.app/zh-cn/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/categories/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/categories/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://ferdinandhu.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/categories/java/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/categories/java/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/java/"
+                href="https://ferdinandhu.netlify.app/categories/java/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/java/"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/post/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/post/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/post/"
+                href="https://ferdinandhu.netlify.app/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/post/"
+                href="https://ferdinandhu.netlify.app/zh-cn/post/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</loc>
     <lastmod>2025-04-24T09:32:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/p/event-listener/"
+                href="https://ferdinandhu.netlify.app/p/event-listener/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2025-04-23T16:00:03+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/p/basic-window-settings/"
+                href="https://ferdinandhu.netlify.app/p/basic-window-settings/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/page/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/"
+                href="https://ferdinandhu.netlify.app/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/page/"
+                href="https://ferdinandhu.netlify.app/zh-cn/page/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/archives/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/archives/"
+                href="https://ferdinandhu.netlify.app/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/archives/"
+                href="https://ferdinandhu.netlify.app/zh-cn/archives/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/tags/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://ferdinandhu.netlify.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/tags/"
+                href="https://ferdinandhu.netlify.app/zh-cn/tags/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/%E5%85%B3%E4%BA%8E/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/about/"
+                href="https://ferdinandhu.netlify.app/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/"
+                href="https://ferdinandhu.netlify.app/zh-cn/%E5%85%B3%E4%BA%8E/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/%E9%93%BE%E6%8E%A5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/links/"
+                href="https://ferdinandhu.netlify.app/links/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/%E9%93%BE%E6%8E%A5/"
+                href="https://ferdinandhu.netlify.app/zh-cn/%E9%93%BE%E6%8E%A5/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/search/</loc>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/search/"
+                href="https://ferdinandhu.netlify.app/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/search/"
+                href="https://ferdinandhu.netlify.app/zh-cn/search/"
                 />
   </url>
 </urlset>

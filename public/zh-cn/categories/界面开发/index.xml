@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>界面开发 on FerdinandHu</title>
-        <link>https://example.com/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</link>
+        <link>https://ferdinandhu.netlify.app/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</link>
         <description>Recent content in 界面开发 on FerdinandHu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Thu, 24 Apr 2025 09:32:40 +0800</lastBuildDate><atom:link href="https://example.com/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Apr 2025 09:32:40 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>事件监听器</title>
-        <link>https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</link>
+        <link>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</link>
         <pubDate>Thu, 24 Apr 2025 09:32:40 +0800</pubDate>
         
-        <guid>https://example.com/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</guid>
+        <guid>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</guid>
         <description>&lt;h2 id=&#34;事件监听器&#34;&gt;事件监听器
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理&#34;&gt;原理
@@ -526,10 +526,10 @@
         </item>
         <item>
         <title>窗口基础设置</title>
-        <link>https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Wed, 23 Apr 2025 16:00:03 +0800</pubDate>
         
-        <guid>https://example.com/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</guid>
+        <guid>https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</guid>
         <description>&lt;h2 id=&#34;窗口基础设置&#34;&gt;窗口基础设置
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理-&#34;&gt;原理 ：

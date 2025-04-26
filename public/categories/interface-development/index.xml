@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Interface Development on FerdinandHu</title>
-        <link>https://example.com/categories/interface-development/</link>
+        <link>https://ferdinandhu.netlify.app/categories/interface-development/</link>
         <description>Recent content in Interface Development on FerdinandHu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="https://example.com/categories/interface-development/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/interface-development/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Event listener</title>
-        <link>https://example.com/p/event-listener/</link>
+        <link>https://ferdinandhu.netlify.app/p/event-listener/</link>
         <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
         
-        <guid>https://example.com/p/event-listener/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/event-listener/</guid>
         <description>&lt;h2 id=&#34;event-listener&#34;&gt;Event Listener
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;principle&#34;&gt;Principle
@@ -526,10 +526,10 @@
         </item>
         <item>
         <title>Basic Window Settings</title>
-        <link>https://example.com/p/basic-window-settings/</link>
+        <link>https://ferdinandhu.netlify.app/p/basic-window-settings/</link>
         <pubDate>Wed, 23 Apr 2025 17:01:42 +0800</pubDate>
         
-        <guid>https://example.com/p/basic-window-settings/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/basic-window-settings/</guid>
         <description>&lt;h2 id=&#34;basic-window-settings&#34;&gt;Basic Window Settings
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;principle&#34;&gt;Principle:
