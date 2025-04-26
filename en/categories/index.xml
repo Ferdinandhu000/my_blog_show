@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on FerdinandHu</title>
+        <link>http://localhost:1313/en/categories/</link>
+        <description>Recent content in Categories on FerdinandHu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ferdinand Hu</copyright>
+        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Interface Development</title>
+        <link>http://localhost:1313/en/categories/interface-development/</link>
+        <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/categories/interface-development/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>http://localhost:1313/en/categories/java/</link>
+        <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/categories/java/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
