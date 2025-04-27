@@ -7,20 +7,36 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Thu, 24 Apr 2025 09:28:48 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Interface Development</title>
-        <link>https://ferdinandhu.netlify.app/categories/interface-development/</link>
-        <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
+        <lastBuildDate>Sun, 27 Apr 2025 17:25:19 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Interface Develpoment</title>
+        <link>https://ferdinandhu.netlify.app/categories/interface-develpoment/</link>
+        <pubDate>Sun, 27 Apr 2025 17:25:19 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/categories/interface-development/</guid>
+        <guid>https://ferdinandhu.netlify.app/categories/interface-develpoment/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
         <link>https://ferdinandhu.netlify.app/categories/java/</link>
-        <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
+        <pubDate>Sun, 27 Apr 2025 17:25:19 +0800</pubDate>
         
         <guid>https://ferdinandhu.netlify.app/categories/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Project</title>
+        <link>https://ferdinandhu.netlify.app/categories/project/</link>
+        <pubDate>Sun, 27 Apr 2025 17:25:19 +0800</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/categories/project/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Interface Development</title>
+        <link>https://ferdinandhu.netlify.app/categories/interface-development/</link>
+        <pubDate>Thu, 24 Apr 2025 09:28:48 +0800</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/categories/interface-development/</guid>
         <description></description>
         </item>
         

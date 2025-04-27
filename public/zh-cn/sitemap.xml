@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/</loc>
-    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
+    <lastmod>2025-04-27T17:20:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,32 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/zh-cn/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/post/</loc>
+    <lastmod>2025-04-27T17:20:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/p/%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/</loc>
+    <lastmod>2025-04-27T17:20:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/p/pratical-project-1--user-authentication-interface/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/categories/</loc>
@@ -39,19 +65,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/zh-cn/post/</loc>
-    <lastmod>2025-04-24T09:32:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/post/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>

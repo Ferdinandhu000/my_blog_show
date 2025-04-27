@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/</loc>
-    <lastmod>2025-04-24T09:28:48+08:00</lastmod>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/</loc>
-    <lastmod>2025-04-24T09:28:48+08:00</lastmod>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -27,6 +27,51 @@
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/categories/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/interface-develpoment/</loc>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/categories/java/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/post/</loc>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/pratical-project-1--user-authentication-interface/</loc>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/p/pratical-project-1--user-authentication-interface/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/project/</loc>
+    <lastmod>2025-04-27T17:25:19+08:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/event-listener/</loc>
     <lastmod>2025-04-24T09:28:48+08:00</lastmod>
@@ -43,32 +88,6 @@
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/interface-development/</loc>
     <lastmod>2025-04-24T09:28:48+08:00</lastmod>
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
-    <lastmod>2025-04-24T09:28:48+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/categories/java/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/post/</loc>
-    <lastmod>2025-04-24T09:28:48+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/post/"
-                />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/basic-window-settings/</loc>
     <lastmod>2025-04-23T17:01:42+08:00</lastmod>
