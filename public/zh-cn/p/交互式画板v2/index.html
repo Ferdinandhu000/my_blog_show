@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。 2. 添加按钮和颜色按钮，并设置监听器\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。\n">
 <title>交互式画板v2</title>
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="交互式画板v2">
-<meta property='og:description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。 2. 添加按钮和颜色按钮，并设置监听器\n">
+<meta property='og:description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
 <meta property='og:site_name' content='FerdinandHu'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-08T20:26:36&#43;08:00'/><meta property='article:modified_time' content='2025-05-08T20:26:36&#43;08:00'/>
 <meta name="twitter:title" content="交互式画板v2">
-<meta name="twitter:description" content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。 2. 添加按钮和颜色按钮，并设置监听器\n">
+<meta name="twitter:description" content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。\n">
     </head>
     <body class="
     article-page
@@ -451,8 +451,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。
-2. 添加按钮和颜色按钮，并设置监听器</p>
+</div><p>通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。</p>
+<ol start="2">
+<li>添加按钮和颜色按钮，并设置监听器</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -525,8 +527,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">jf</span><span class="p">.</span><span class="na">addMouseListener</span><span class="p">(</span><span class="n">dl</span><span class="p">);</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>通过循环创建两类按钮：一类用于选择绘制图形的类型，另一类用于切换画笔颜色。每个按钮均绑定了统一的事件监听器dl（DrawListener对象），实现交互逻辑的集中处理
-3. 在<code>DrawListener</code>类中补全监听器中的方法，并创建一个Graphics对象</p>
+</div><p>通过循环创建两类按钮：一类用于选择绘制图形的类型，另一类用于切换画笔颜色。每个按钮均绑定了统一的事件监听器dl（DrawListener对象），实现交互逻辑的集中处理</p>
+<ol start="3">
+<li>在<code>DrawListener</code>类中补全监听器中的方法，并创建一个Graphics对象</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -608,8 +612,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">dl</span><span class="p">.</span><span class="na">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>为窗口添加鼠标监听器，并将窗口的图形上下文（Graphics对象）传递给DrawListener，以便后续绘制操作。
-5. 在<code>DrawListener</code>类中实现绘图逻辑</p>
+</div><p>为窗口添加鼠标监听器，并将窗口的图形上下文（Graphics对象）传递给DrawListener，以便后续绘制操作。</p>
+<ol start="5">
+<li>在<code>DrawListener</code>类中实现绘图逻辑</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

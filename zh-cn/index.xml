@@ -69,8 +69,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;通过上述代码，我们创建了一个标题为 &amp;ldquo;画板 v2.0&amp;rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。
-2. 添加按钮和颜色按钮，并设置监听器&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;通过上述代码，我们创建了一个标题为 &amp;ldquo;画板 v2.0&amp;rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;添加按钮和颜色按钮，并设置监听器&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -143,8 +145,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;addMouseListener&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;通过循环创建两类按钮：一类用于选择绘制图形的类型，另一类用于切换画笔颜色。每个按钮均绑定了统一的事件监听器dl（DrawListener对象），实现交互逻辑的集中处理
-3. 在&lt;code&gt;DrawListener&lt;/code&gt;类中补全监听器中的方法，并创建一个Graphics对象&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;通过循环创建两类按钮：一类用于选择绘制图形的类型，另一类用于切换画笔颜色。每个按钮均绑定了统一的事件监听器dl（DrawListener对象），实现交互逻辑的集中处理&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在&lt;code&gt;DrawListener&lt;/code&gt;类中补全监听器中的方法，并创建一个Graphics对象&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -226,8 +230,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;为窗口添加鼠标监听器，并将窗口的图形上下文（Graphics对象）传递给DrawListener，以便后续绘制操作。
-5. 在&lt;code&gt;DrawListener&lt;/code&gt;类中实现绘图逻辑&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;为窗口添加鼠标监听器，并将窗口的图形上下文（Graphics对象）传递给DrawListener，以便后续绘制操作。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;在&lt;code&gt;DrawListener&lt;/code&gt;类中实现绘图逻辑&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
