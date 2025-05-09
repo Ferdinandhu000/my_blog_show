@@ -430,8 +430,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;record-the-coordinates-when-the-mouse-is-pressed-and-released-through-the-mousepressed-and-mousereleased-methods-and-combine-the-currently-selected-graphic-type-to-call-the-drawing-method-of-the-graphics-object-to-complete-the-drawing&#34;&gt;Record the coordinates when the mouse is pressed and released through the &lt;code&gt;mousePressed&lt;/code&gt; and &lt;code&gt;mouseReleased&lt;/code&gt; methods, and combine the currently selected graphic type to call the drawing method of the &lt;code&gt;Graphics&lt;/code&gt; object to complete the drawing.
-&lt;/h2&gt;&lt;h3 id=&#34;final-code&#34;&gt;Final Code
+&lt;/div&gt;&lt;p&gt;Record the coordinates when the mouse is pressed and released through the &lt;code&gt;mousePressed&lt;/code&gt; and &lt;code&gt;mouseReleased&lt;/code&gt; methods, and combine the currently selected graphic type to call the drawing method of the &lt;code&gt;Graphics&lt;/code&gt; object to complete the drawing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;final-code&#34;&gt;Final Code
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;DrawPadv2&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
