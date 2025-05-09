@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <copyright>Ferdinand Hu</copyright>
         <lastBuildDate>Thu, 08 May 2025 20:26:36 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>交互式画板v2</title>
-        <link>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/</link>
+        <title>交互式画板 v2.0</title>
+        <link>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</link>
         <pubDate>Thu, 08 May 2025 20:26:36 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/</guid>
+        <guid>https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v20&#34;&gt;交互式画板 v2.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的可交互式画图板&lt;br&gt;

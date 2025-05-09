@@ -16,14 +16,14 @@ languages:
     en:
         languageName: English
         title: FerdinandHu
-        weight: 1
+        weight: 2
         params:
             sidebar:
                 subtitle: 
     zh-cn:
         languageName: 中文
         title: FerdinandHu
-        weight: 2
+        weight: 1
         params:
             sidebar:
                 subtitle: 

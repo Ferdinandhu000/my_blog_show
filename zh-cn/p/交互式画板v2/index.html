@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。\n">
 <title>交互式画板v2</title>
 
-<link rel='canonical' href='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
+<link rel='canonical' href='http://localhost:1313/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="交互式画板v2">
 <meta property='og:description' content="交互式画板 v2.0 用java实现一个简单的可交互式画图板\n在v1.0的基础上，添加了更多的图形绘制功能，并优化了代码结构。\n各个类的功能介绍 DrawPadv2类：窗口的基础设置与可视化，并且添加鼠标监听器和动作监听器 DrawListener类：实现MouseListener和ActionListener接口，用于处理鼠标事件和按钮点击事件 具体操作 设置好窗体的基础属性 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 // 创建一个DrawListener对象 DrawListener dl = new DrawListener(); // 显示UI界面 public void showUI() { // 创建一个JFrame对象 JFrame jf = new JFrame(); // 设置窗口标题 jf.setTitle(&#34;画板v2.0&#34;); // 设置窗口大小 jf.setSize(850, 600); // 设置窗口居中显示 jf.setLocationRelativeTo(null); // 设置窗口关闭时的操作 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置窗口布局为流式布局FlowLayout jf.setLayout(new FlowLayout()); 通过上述代码，我们创建了一个标题为 &ldquo;画板 v2.0&rdquo; 的窗口，设置其大小为 850x600 像素，并使其居中显示。同时，配置关闭窗口时终止程序运行，并采用流式布局（FlowLayout）管理组件排列。\n">
-<meta property='og:url' content='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
+<meta property='og:url' content='http://localhost:1313/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BFv2/'>
 <meta property='og:site_name' content='FerdinandHu'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-08T20:26:36&#43;08:00'/><meta property='article:modified_time' content='2025-05-08T20:26:36&#43;08:00'/>
 <meta name="twitter:title" content="交互式画板v2">
@@ -229,9 +229,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://ferdinandhu.netlify.app/" >English</option>
+                                    <option value="http://localhost:1313/zh-cn/" selected>中文</option>
                                 
-                                    <option value="https://ferdinandhu.netlify.app/zh-cn/" selected>中文</option>
+                                    <option value="http://localhost:1313/" >English</option>
                                 
                             </select>
                         </li>
@@ -383,7 +383,7 @@
 
             <div>
                 
-                    <a href="https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2.0/" class="link">English</a>
+                    <a href="http://localhost:1313/p/interactive-drawing-board-v2.0/" class="link">English</a>
                 
             </div>
         </footer>
@@ -1472,7 +1472,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.054b843d3574a8f5ea2ab0f1f791ade1425cb2c7d061930507c814e6463a7ac0.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
