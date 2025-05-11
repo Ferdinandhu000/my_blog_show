@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="事件监听器">
+<link rel="stylesheet" href="/scss/style.min.1e4f6cd0babea005d0585a5da0a101239d08105d06989b3439b9c78ac21a9760.css"><meta property='og:title' content="事件监听器">
 <meta property='og:description' content="事件监听器 原理 利用java外部库自带的java.awt.event资源包中的ActionListener接口,并利用actionPerformed(ActionEvent e)方法监听按钮的动作事件 前期工作 已创建 LoginUI 库，用于创建登录窗口，其中有用于输入账号和密码单行输入框和登录按钮 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 //登录窗口 import java.awt.*; import javax.swing.*; public class LoginUI { public void showUI() { JFrame jf = new JFrame(); jf.setTitle(&#34;登录窗口&#34;); jf.setSize(270, 280); jf.setLocationRelativeTo(null); jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); FlowLayout fl = new FlowLayout(); jf.setLayout(fl); ImageIcon img = new ImageIcon(&#34;&lt;图片地址&gt;&#34;); JLabel imgJLa = new JLabel(img); JLabel accountJLa = new JLabel(&#34;账号&#34;); JLabel passwordJLa = new JLabel(&#34;密码&#34;); JTextField accountJTF = new JTextField(20); JTextField passwordJTF = new JTextField(20); JButton loginBtn = new JButton(&#34;登录&#34;); JButton registerBtn = new JButton(&#34;注册&#34;); jf.add(imgJLa); jf.add(accountJLa); jf.add(accountJTF); jf.add(passwordJLa); jf.add(passwordJTF); jf.add(loginBtn); jf.add(registerBtn); jf.setVisible(true); } public static void main(String[] args) { LoginUI login_ui = new LoginUI(); login_ui.showUI(); } } ActionListener 接口 动作事件监听器接口 监听鼠标是否点击了按钮这类组件 注意： ActionListener接口是一个模板，并不能当作类进行操作，在创建类名时需要按以下操作 1 public class LoginAction implements ActionListener{ } 并在类中重写监听器中的抽象方法 actionPerformed() 1 public void actionPerformed(ActionEvent e){ } 具体步骤 为方便起见，先创建一个名为InfoStorage的类用于账号密码的存储 1 2 3 4 5 6 7 8 9 10 11 12 import java.util.HashMap; import java.util.Map; public class InfoStorage { Map&lt;String,String&gt; accountMap = new HashMap&lt;&gt;(); // 创建变量accountMap存储键值对 public InfoStorage() { accountMap.put(&#34;user1&#34;,&#34;123&#34;); accountMap.put(&#34;user2&#34;,&#34;abc&#34;); accountMap.put(&#34;hj&#34;,&#34;1130&#34;); } } 创建一个名为LoginAction的类，并导入相应库，实现接口的类创建一个对象与需要监听的按钮绑定 导入库 1 2 3 import javax.swing.*; import java.awt.event.ActionEvent; import java.awt.event.ActionListener; 创建LoginAction类并使用ActionListener模板 1 public class LoginAction implements ActionListener {} 创建actionPerformed方法 1 2 3 4 5 public void actionPerformed(ActionEvent e){ String ac = e.getActionCommand(); //定义字符串类型的变量ac用于接收button中的内容 System.out.println(&#34;Commend: &#34; + ac); String accountText = accountJTF2.getText(); String passwordText = passwordJTF2.getText(); 回到LoginUI类，现在可以创建对于LoginAction类的新对象la用于为两个按钮（loginBtn 和 registerBtn）添加动作监听器（注意：这里添加的是同一个动作监听器） 1 2 3 4 5 6 7 LoginAction la = new LoginAction(); loginBtn.addActionListener(la); registerBtn.addActionListener(la); //由于同一变量名不能在不同类中共用，所以这里声明LoginAction类中的accountJTF2和passwordJTF2就是accountJTF和accountJTF la.accountJTF2 = accountJTF; la.passwordJTF2 = passwordJTF; 再回到LoginAction类中，在开头添加一下代码 1 2 3 4 //定义刚刚的accountJTF2和passwordJTF2为JTextField类型，并设置为空 JTextField accountJTF2 = null; JTextField passwordJTF2 = null; private InfoStorage storage = new InfoStorage(); //对于之前的InfoStorage库，创建一个对象storage 最后设计判断模块，判断输入的账号密码是否符合登录要求 1 2 3 4 5 6 7 8 9 10 11 12 if(storage.accountMap.containsKey(accountText)) { String correctPassword = storage.accountMap.get(accountText); if (passwordText.equals(correctPassword)) { System.out.println(&#34;登录成功！&#34;); } else { System.out.println(&#34;密码错误！登录失败！&#34;); } } else{ System.out.println(&#34;账号不存在！&#34;); } 实现效果 ">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/zh-cn/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/'>
 <meta property='og:site_name' content='FerdinandHu'>
@@ -966,6 +966,19 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/zh-cn/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">交互式画板 v3.0</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="">
