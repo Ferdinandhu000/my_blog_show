@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
 
-<link rel="stylesheet" href="/scss/style.min.1e4f6cd0babea005d0585a5da0a101239d08105d06989b3439b9c78ac21a9760.css"><meta property='og:title' content="窗口基础设置">
+<link rel="stylesheet" href="/scss/style.min.2f3d9b7267f2400dc6d37317b2c94a3e25c32820c879ca8d5fd5ad622407fe84.css"><meta property='og:title' content="窗口基础设置">
 <meta property='og:description' content="窗口基础设置 原理 ： 利用java外部库自带的java.awt和javax.swing软件包来实现\n基本步骤： 创建一个新的类（例如LoginUI） 在这个类中定义一个方法（例如showUI(),用于开发界面） 导入java.awt和javax.swing两个界面开发包 在末尾创建一个主函数main，在其中创建LoginUI的对象（例如ui）并调用之前的showUI()方法） 细节步骤 使用import语句导入两个界面开发包，末尾.*代表导入该软件包中的所有类 1 2 import java.awt.*; import javax.swing.*; 在创建定义完方法showUI()之后，即可创建一个窗体类对象jf，利用刚刚导入的javax.swing中的JFrame进行创建 1 JFrame jf = new JFrame(); 设置窗体的属性 1 2 3 4 jf.setTitle(&#34;登录窗口&#34;); //设置窗口标题 jf.setSize(400, 500); //设置窗口大小 jf.setLocation(600, 200); //设置窗口位置 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //点击关闭按钮时，java程序终止 设置窗口内的布局\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/zh-cn/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/'>
 <meta property='og:site_name' content='FerdinandHu'>

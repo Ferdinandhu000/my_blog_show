@@ -39,6 +39,23 @@
     {{ partialCached "footer/footer" . }}
 
     {{ partialCached "article/components/photoswipe" . }}
+
+    <div class="article-details">
+        <div class="article-title-wrapper">
+            <h2 class="article-title">
+                {{ .Title }}
+            </h2>
+            <div class="article-meta">
+                <span class="article-time">
+                    {{ .Date.Format "2006-01-02" }}
+                </span>
+                <span class="article-reading-time">
+                    <i class="fas fa-eye"></i>
+                    <span id="busuanzi_value_page_pv"></span> 阅读
+                </span>
+            </div>
+        </div>
+    </div>
 {{ end }}
 
 {{ define "right-sidebar" }}
