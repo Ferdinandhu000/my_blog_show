@@ -26,12 +26,6 @@
 {{ define "main" }}
     {{ partial "article/article.html" . }}
 
-    <!-- 阅读量显示 -->
-    <div class="article-views" style="margin-top: 1em; color: #888;">
-        <i class="fas fa-eye"></i>
-        <span id="busuanzi_value_page_pv"></span> 阅读
-    </div>
-
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}
     {{ end }}
@@ -61,6 +55,10 @@
                 </span>
             </div>
         </div>
+    </div>
+
+    <div style="text-align:center; color:#888; margin-top:10px;">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
     </div>
 {{ end }}
 
