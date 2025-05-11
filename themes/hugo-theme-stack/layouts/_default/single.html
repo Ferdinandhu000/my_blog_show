@@ -49,17 +49,14 @@
                 <span class="article-time">
                     {{ .Date.Format "2006-01-02" }}
                 </span>
-                <span class="article-reading-time">
-                    <i class="fas fa-eye"></i>
-                    <span id="busuanzi_value_page_pv"></span> 阅读
-                </span>
             </div>
         </div>
     </div>
 
-    <div style="text-align:center; color:#888; margin-top:10px;">
-        总访问量：<span id="busuanzi_value_site_pv"></span>
-    </div>
+    <span id="busuanzi_container_site_pv" style="display:none">
+      共 <span id="busuanzi_value_site_pv"></span> 次浏览
+    </span>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 {{ end }}
 
 {{ define "right-sidebar" }}
