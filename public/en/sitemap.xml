@@ -241,17 +241,5 @@
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/tags/"
                 />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"
-                />
   </url>
 </urlset>
