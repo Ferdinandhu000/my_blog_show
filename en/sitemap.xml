@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/</loc>
-    <lastmod>2025-05-11T10:33:34+08:00</lastmod>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/</loc>
-    <lastmod>2025-05-11T10:33:34+08:00</lastmod>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -26,6 +26,61 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/categories/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/categories/java/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/java-object-oriented-programming/</loc>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/p/java-object-oriented-programming/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/oop/</loc>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/post/</loc>
+    <lastmod>2025-05-17T14:16:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/interface-of-java/</loc>
+    <lastmod>2025-05-17T14:16:07+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/p/java%E6%8E%A5%E5%8F%A3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/p/interface-of-java/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v3.0/</loc>
@@ -43,32 +98,6 @@
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/interface-development/</loc>
     <lastmod>2025-05-11T10:33:34+08:00</lastmod>
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
-    <lastmod>2025-05-11T10:33:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/categories/java/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/post/</loc>
-    <lastmod>2025-05-11T10:33:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/post/"
-                />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2.0/</loc>
     <lastmod>2025-05-08T20:31:26+08:00</lastmod>
@@ -211,6 +240,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/tags/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"
                 />
   </url>
 </urlset>
