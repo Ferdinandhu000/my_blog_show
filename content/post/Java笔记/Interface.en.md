@@ -133,7 +133,7 @@ Person cannot be cast to java.lang.Comparable
   ```
 
   - 代码简化 v1
-    使用##内部类##，即将原先的单独的临时类放到主函数中
+    使用**内部类**，即将原先的单独的临时类放到主函数中
 
     ```java
     // 简化前
@@ -180,4 +180,5 @@ Person cannot be cast to java.lang.Comparable
     ```
 
     可用一行函数完成  
-    ##注意：##使用Lambda表达式可以看作没有使用任何一个接口，其中的`.compareTo()`方法是String类中自带的方法
+
+    **注意：** 使用Lambda表达式可以看作没有使用任何一个接口，其中的`.compareTo()`方法是String类中自带的方法
