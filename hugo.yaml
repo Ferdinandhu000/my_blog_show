@@ -45,7 +45,7 @@ services:
         id:
 
 pagination:
-    pagerSize: 3
+    pagerSize: 5
 
 permalinks:
     post: /p/:slug/
@@ -59,7 +59,7 @@ params:
     favicon: /images/203506445.ico
 
     footer:
-        since: 2020
+        since: 2025
         customText:
 
     dateFormat:
@@ -75,7 +75,7 @@ params:
             src: img/AvatarHJ.jpg
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:

@@ -7,13 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Sat, 17 May 2025 14:16:37 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 May 2025 21:05:05 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Java</title>
         <link>https://ferdinandhu.netlify.app/categories/java/</link>
-        <pubDate>Sat, 17 May 2025 14:16:37 +0800</pubDate>
+        <pubDate>Mon, 19 May 2025 21:05:05 +0800</pubDate>
         
         <guid>https://ferdinandhu.netlify.app/categories/java/</guid>
         <description>&lt;img src="https://ferdinandhu.netlify.app/images/db3787141d668b1b21ce6510b847fa3b.png" alt="Featured image of post Java" /&gt;</description>
+        </item>
+        <item>
+        <title>Notes</title>
+        <link>https://ferdinandhu.netlify.app/categories/notes/</link>
+        <pubDate>Mon, 19 May 2025 21:05:05 +0800</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/categories/notes/</guid>
+        <description></description>
         </item>
         <item>
         <title>OOP</title>
