@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/</loc>
-    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/categories/</loc>
-    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,35 @@
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/zh-cn/categories/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/categories/notes/</loc>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/categories/notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/categories/notes/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/post/</loc>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/zh-cn/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/zh-cn/p/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/p/interface/</loc>
     <lastmod>2025-05-19T21:05:05+08:00</lastmod>
@@ -54,31 +83,8 @@
                 href="https://ferdinandhu.netlify.app/zh-cn/categories/java/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/zh-cn/categories/notes/</loc>
-    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/categories/notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/categories/notes/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/zh-cn/post/</loc>
-    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/zh-cn/post/"
-                />
+    <loc>https://ferdinandhu.netlify.app/zh-cn/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
+    <lastmod>2025-05-19T15:14:58+08:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/zh-cn/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2025-05-17T14:16:29+08:00</lastmod>

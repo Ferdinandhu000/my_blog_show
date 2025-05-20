@@ -132,7 +132,7 @@ Person cannot be cast to java.lang.Comparable
   ```
 
   - 代码简化 v1
-    使用##内部类##，即将原先的单独的临时类放到主函数中
+    使用**内部类**，即将原先的单独的临时类放到主函数中
 
     ```java
     // 简化前
