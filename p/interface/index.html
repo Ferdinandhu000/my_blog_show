@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="两个重要接口 Comparable Interface Comparator Interface Comparable Interface 对于Arrays.sort()函数，需要待排序的数组有排序标准\n对于下面Java代码\n1 2 3 4 5 6 7 Person[] persons = new Person[3]; persons[0] = new Person(&#34;Han Mei&#34;); persons[1] = new Person(&#34;Li Lei&#34;); persons[2] = new Person(&#34;Tom&#34;); Arrays.sort(persons); for (Person p : persons) System.out.println(p); 会有\n">
 <title>Interface</title>
@@ -42,7 +42,7 @@
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -119,7 +119,7 @@
         
         
         <li >
-            <a href='/' >
+            <a href='/page/home/' >
                 
                 
                 
@@ -133,13 +133,13 @@
 
 
                 
-                <span>Home</span>
+                <span>主页</span>
             </a>
         </li>
         
         
         <li >
-            <a href='/about/' >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -152,7 +152,7 @@
 
 
                 
-                <span>About</span>
+                <span>关于</span>
             </a>
         </li>
         
@@ -172,7 +172,7 @@
 
 
                 
-                <span>Archives</span>
+                <span>归档</span>
             </a>
         </li>
         
@@ -191,13 +191,13 @@
 
 
                 
-                <span>Search</span>
+                <span>搜索</span>
             </a>
         </li>
         
         
         <li >
-            <a href='/links/' >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
                 
                 
                 
@@ -210,7 +210,7 @@
 
 
                 
-                <span>Links</span>
+                <span>链接</span>
             </a>
         </li>
         
@@ -231,9 +231,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://ferdinandhu.netlify.app/zh-cn/" >中文</option>
+                                    <option value="https://ferdinandhu.netlify.app/" selected>中文</option>
                                 
-                                    <option value="https://ferdinandhu.netlify.app/" selected>English</option>
+                                    <option value="https://ferdinandhu.netlify.app/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -258,7 +258,7 @@
 
 
 
-                        <span>Dark Mode</span>
+                        <span>暗色模式</span>
                     </li>
                 
             </ol>
@@ -283,7 +283,7 @@
 
 
         </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
+        <h2 class="widget-title section-title">目录</h2>
         
         <div class="widget--toc">
             <nav id="TableOfContents">
@@ -359,7 +359,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -381,7 +381,7 @@
 
             <div>
                 
-                    <a href="https://ferdinandhu.netlify.app/zh-cn/p/interface/" class="link">中文</a>
+                    <a href="https://ferdinandhu.netlify.app/en/p/interface/" class="link">English</a>
                 
             </div>
         </footer>
@@ -693,8 +693,8 @@ int &gt; 0, if this &gt; other</p>
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Arrays</span><span class="p">.</span><span class="na">sort</span><span class="p">(</span><span class="n">stus</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="na">getMajor</span><span class="p">().</span><span class="na">compareTo</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="na">getMajor</span><span class="p">()));</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>可用一行函数完成</p>
-<p><strong>注意：</strong> 使用Lambda表达式可以看作没有使用任何一个接口，其中的<code>.compareTo()</code>方法是String类中自带的方法</p>
+</div><p>可用一行函数完成<br>
+<strong>注意：</strong> 使用Lambda表达式可以看作没有使用任何一个接口，其中的<code>.compareTo()</code>方法是String类中自带的方法</p>
 </li>
 </ul>
 </li>
@@ -755,18 +755,18 @@ int &gt; 0, if this &gt; other</p>
     
 
 <aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
+    <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
             
                 
 <article class="">
-    <a href="/p/java-object-oriented-programming/">
+    <a href="/p/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Java Object-Oriented Programming</h2>
+            <h2 class="article-title">线性结构</h2>
         </div>
     </a>
 </article>
@@ -774,12 +774,12 @@ int &gt; 0, if this &gt; other</p>
             
                 
 <article class="">
-    <a href="/p/interface-of-java/">
+    <a href="/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Interface of Java</h2>
+            <h2 class="article-title">数据结构基本概念</h2>
         </div>
     </a>
 </article>
@@ -787,12 +787,12 @@ int &gt; 0, if this &gt; other</p>
             
                 
 <article class="">
-    <a href="/p/interactive-drawing-board-v3.0/">
+    <a href="/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Interactive Drawing Board v3.0</h2>
+            <h2 class="article-title">Java面向对象编程</h2>
         </div>
     </a>
 </article>
@@ -800,12 +800,12 @@ int &gt; 0, if this &gt; other</p>
             
                 
 <article class="">
-    <a href="/p/interactive-drawing-board-v2.0/">
+    <a href="/p/java%E6%8E%A5%E5%8F%A3/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Interactive Drawing Board v2.0</h2>
+            <h2 class="article-title">Java接口</h2>
         </div>
     </a>
 </article>
@@ -813,12 +813,12 @@ int &gt; 0, if this &gt; other</p>
             
                 
 <article class="">
-    <a href="/p/interactive-drawing-board-v1.0/">
+    <a href="/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Interactive Drawing Board v1.0</h2>
+            <h2 class="article-title">交互式画板 v3.0</h2>
         </div>
     </a>
 </article>
@@ -883,8 +883,8 @@ int &gt; 0, if this &gt; other</p>
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
