@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ferdinandhu.netlify.app/categories/</loc>
-    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/categories/"
-                />
-  </url><url>
     <loc>https://ferdinandhu.netlify.app/</loc>
     <lastmod>2025-05-20T10:19:05+08:00</lastmod>
     <xhtml:link
@@ -26,6 +13,19 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/</loc>
+    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/categories/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/notes/</loc>
@@ -223,18 +223,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/archives/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/home_page/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/home_page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/home_page/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/tags/</loc>

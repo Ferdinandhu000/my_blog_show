@@ -15,19 +15,6 @@
                 href="https://ferdinandhu.netlify.app/en/categories/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/en/</loc>
-    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/"
-                />
-  </url><url>
     <loc>https://ferdinandhu.netlify.app/en/p/interface/</loc>
     <lastmod>2025-05-19T21:05:05+08:00</lastmod>
     <xhtml:link
@@ -206,17 +193,17 @@
                 href="https://ferdinandhu.netlify.app/en/archives/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/en/home_page/</loc>
+    <loc>https://ferdinandhu.netlify.app/en/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/home_page/"
+                href="https://ferdinandhu.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/home_page/"
+                href="https://ferdinandhu.netlify.app/en/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/page/</loc>
