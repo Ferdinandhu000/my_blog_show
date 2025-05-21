@@ -225,16 +225,16 @@
                 href="https://ferdinandhu.netlify.app/archives/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/page/home/</loc>
+    <loc>https://ferdinandhu.netlify.app/page/home_page/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/page/home/"
+                href="https://ferdinandhu.netlify.app/en/page/home_page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/page/home/"
+                href="https://ferdinandhu.netlify.app/page/home_page/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/tags/</loc>
@@ -284,5 +284,7 @@
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/search/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/test/</loc>
   </url>
 </urlset>
