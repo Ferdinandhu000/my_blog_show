@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/</loc>
-    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,11 @@
                 href="https://ferdinandhu.netlify.app/"
                 />
   </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/21%E5%91%A8-%E5%91%A8%E8%AE%B0/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/</loc>
-    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +30,22 @@
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/categories/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/post/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/categories/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/notes/</loc>
     <lastmod>2025-05-20T10:19:05+08:00</lastmod>
@@ -39,19 +58,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/categories/notes/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/post/</loc>
-    <lastmod>2025-05-20T10:19:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/post/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/</loc>

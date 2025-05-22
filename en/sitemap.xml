@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ferdinandhu.netlify.app/en/</loc>
+    <lastmod>2025-05-19T21:05:05+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/"
+                />
+  </url><url>
     <loc>https://ferdinandhu.netlify.app/en/categories/</loc>
     <lastmod>2025-05-19T21:05:05+08:00</lastmod>
     <xhtml:link
@@ -193,19 +206,6 @@
                 href="https://ferdinandhu.netlify.app/en/archives/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/en/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/"
-                />
-  </url><url>
     <loc>https://ferdinandhu.netlify.app/en/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -255,6 +255,8 @@
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/en/search/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/categories/personal_summaries/</loc>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/tags/</loc>
     <xhtml:link

@@ -47,6 +47,14 @@
         <guid>https://ferdinandhu.netlify.app/en/categories/project/</guid>
         <description></description>
         </item>
+        <item>
+        <title>Summary</title>
+        <link>https://ferdinandhu.netlify.app/en/categories/personal_summaries/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/categories/personal_summaries/</guid>
+        <description></description>
+        </item>
         
     </channel>
 </rss>

@@ -1,10 +1,7 @@
 ---
-title: "Home"
-date: 2019-05-28
-layout: "home"
-slug: "home"
 menu:
     main:
+        name: Home
         weight: -100
         params:
             icon: home
