@@ -11,10 +11,14 @@
             "id": "efcb4aec838dbce4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "archetypes/PostTemplate.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "PostTemplate"
             }
           }
         ]
@@ -176,6 +180,8 @@
   },
   "active": "efcb4aec838dbce4",
   "lastOpenFiles": [
+    "archetypes/default.md",
+    "archetypes/PostTemplate.md",
     "content/post/总结与复盘/21周 周记1.zh-cn.md",
     "content/post/总结与复盘/21周 周记.zh-cn.md",
     "public/p/21周-周记1/index.html",
@@ -211,7 +217,6 @@
     "_index.zh-cn.md",
     "_index.en.md",
     "content/categories/_index.zh-cn.md",
-    "content/categories/_index.en.md",
     "public/img/AvatarHJ_hu_bf1781acc8411511.jpg",
     "public/images/Snipaste_2025-05-11_11-02-49.png",
     "public/images/db3787141d668b1b21ce6510b847fa3b.png",
