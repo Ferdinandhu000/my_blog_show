@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Encoding Types 1. Base64 Definition: A representation method that uses 64 printable characters to represent binary data Features: Converts binary data into ASCII strings Commonly used to transmit binary data in HTTP protocols The encoded data increases by approximately 33% compared to the original data Application Scenarios: Email transmission Image transcoding Simple data encryption Examples: 1 2 3 4 5 Original text: Hello World Base64 encoding: SGVsbG8gV29ybGQ= Original text: 你好，世界 Base64 encoding: 5L2g5aW977yM5LiW55WM 2. URL Encoding Definition: Converts special characters in URLs into the form of % plus the hexadecimal of the ASCII code Features: Ensures that only ASCII characters are included in the URL Reversible encoding method Application Scenarios: URL parameter passing Web form submission Example: 1 2 Original URL: https://example.com/path with spaces/file.txt URL encoding: https%3A%2F%2Fexample.com%2Fpath%20with%20spaces%2Ffile.txt 3. Code49 Definition: A high-density barcode encoding method that can encode all 128 ASCII characters Features: Supports multi-line encoding Up to 8 characters per line Includes a checksum Supports bidirectional scanning Application Scenarios: Logistics management Inventory control Industrial automation Medical device identification 4. Code39 Definition: An alphanumeric barcode encoding method that can encode 43 characters (0-9, A-Z, -, ., $, /, +, %, SPACE) Features: Self-checking capability Bidirectional readability Supports letters and numbers Must start and end with an asterisk (*) Application Scenarios: Industrial applications Logistics management Inventory control Document management Encoding Rules: Each character consists of 9 elements (5 bars and 4 spaces) 3 elements are wide, and 6 elements are narrow Inter-character spacing is required Must start and end with an asterisk (*) Encryption Algorithms 1. Symmetric Encryption 1.1 AES (Advanced Encryption Standard) Features: Key lengths: 128/192/256 bits High encryption strength Fast calculation speed Application Scenarios: File encryption Communication encryption Database encryption 1.2 DES (Data Encryption Standard) Features: Key length: 56 bits Block length: 64 bits Has been replaced by AES Application Scenarios: Compatibility with legacy systems Scenarios with low security requirements 2. Asymmetric Encryption 2.1 RSA Features: Based on the difficulty of factoring large numbers Public key encryption, private key decryption Relatively slow calculation speed Application Scenarios: Digital signatures Key exchange Certificate encryption 2.2 ECC (Elliptic Curve Cryptography) Features: Short key length High security Fast calculation speed Application Scenarios: Mobile device encryption Internet of Things (IoT) devices Digital certificates 3. Hashing Algorithms 3.1 MD5 Features: Outputs a 128-bit hash value Has been proven insecure Fast calculation speed Application Scenarios: File integrity checking Password storage (not recommended) 3.2 SHA Series Features: SHA-1: 160-bit output SHA-256: 256-bit output SHA-512: 512-bit output Application Scenarios: Digital signatures Password storage File verification Implementing Base64 Encoding and Decoding in Java Import Java&rsquo;s built-in Base64 class 1 2 import java.nio.charset.StandardCharsets; import java.util.Base64; Encoding 1 2 3 4 5 6 7 8 9 10 11 // Encoding public static String encode2(String str) { // Only encode non-null strings if (str != null &amp;&amp; str.length() &gt; 0) { // Convert String to byte[] byte[] bytes = str.getBytes(StandardCharsets.UTF_8); // Encode (Base64 string) return Base64.getEncoder().encodeToString(bytes); } return &#34;&#34;; } Decoding 1 2 3 4 5 6 7 8 9 10 11 // Decoding public static String decode2(String base64Str) { // Only decode non-null strings if (base64Str != null &amp;&amp; base64Str.length() &gt; 0) { // Decode byte[] base64Bytes = Base64.getDecoder().decode(base64Str); // Convert byte[] to String (decoded string) return new String(base64Bytes, StandardCharsets.UTF_8); } return &#34;&#34;; } Test code 1 2 3 4 5 6 7 8 9 10 11 12 public static void main(String[] args) { // Define a string String s = &#34;FerdinandHu&#34;; // Use method two to perform Base64 encoding on the string String base64Str = encode2(s); // Output the original string System.out.println(&#34;Original text: &#34; + s); // Output the Base64-encoded string System.out.println(&#34;Base64 encoded: &#34; + base64Str); // Use method two to decode the Base64-encoded string System.out.println(&#34;Base64 decoded: &#34; + decode2(base64Str)); } Output 1 2 3 Original text: FerdinandHu Base64 encoded: RmVyZGluYW5kSHU= Base64 decoded: FerdinandHu ">
+<title>Common Encryption Algorithms and Encoding Types</title>
+
+<link rel='canonical' href='https://ferdinandhu.netlify.app/en/p/common-encryption-algorithms-and-encoding-types/'>
+
+<link rel="stylesheet" href="/scss/style.min.2f3d9b7267f2400dc6d37317b2c94a3e25c32820c879ca8d5fd5ad622407fe84.css"><meta property='og:title' content="Common Encryption Algorithms and Encoding Types">
+<meta property='og:description' content="Encoding Types 1. Base64 Definition: A representation method that uses 64 printable characters to represent binary data Features: Converts binary data into ASCII strings Commonly used to transmit binary data in HTTP protocols The encoded data increases by approximately 33% compared to the original data Application Scenarios: Email transmission Image transcoding Simple data encryption Examples: 1 2 3 4 5 Original text: Hello World Base64 encoding: SGVsbG8gV29ybGQ= Original text: 你好，世界 Base64 encoding: 5L2g5aW977yM5LiW55WM 2. URL Encoding Definition: Converts special characters in URLs into the form of % plus the hexadecimal of the ASCII code Features: Ensures that only ASCII characters are included in the URL Reversible encoding method Application Scenarios: URL parameter passing Web form submission Example: 1 2 Original URL: https://example.com/path with spaces/file.txt URL encoding: https%3A%2F%2Fexample.com%2Fpath%20with%20spaces%2Ffile.txt 3. Code49 Definition: A high-density barcode encoding method that can encode all 128 ASCII characters Features: Supports multi-line encoding Up to 8 characters per line Includes a checksum Supports bidirectional scanning Application Scenarios: Logistics management Inventory control Industrial automation Medical device identification 4. Code39 Definition: An alphanumeric barcode encoding method that can encode 43 characters (0-9, A-Z, -, ., $, /, +, %, SPACE) Features: Self-checking capability Bidirectional readability Supports letters and numbers Must start and end with an asterisk (*) Application Scenarios: Industrial applications Logistics management Inventory control Document management Encoding Rules: Each character consists of 9 elements (5 bars and 4 spaces) 3 elements are wide, and 6 elements are narrow Inter-character spacing is required Must start and end with an asterisk (*) Encryption Algorithms 1. Symmetric Encryption 1.1 AES (Advanced Encryption Standard) Features: Key lengths: 128/192/256 bits High encryption strength Fast calculation speed Application Scenarios: File encryption Communication encryption Database encryption 1.2 DES (Data Encryption Standard) Features: Key length: 56 bits Block length: 64 bits Has been replaced by AES Application Scenarios: Compatibility with legacy systems Scenarios with low security requirements 2. Asymmetric Encryption 2.1 RSA Features: Based on the difficulty of factoring large numbers Public key encryption, private key decryption Relatively slow calculation speed Application Scenarios: Digital signatures Key exchange Certificate encryption 2.2 ECC (Elliptic Curve Cryptography) Features: Short key length High security Fast calculation speed Application Scenarios: Mobile device encryption Internet of Things (IoT) devices Digital certificates 3. Hashing Algorithms 3.1 MD5 Features: Outputs a 128-bit hash value Has been proven insecure Fast calculation speed Application Scenarios: File integrity checking Password storage (not recommended) 3.2 SHA Series Features: SHA-1: 160-bit output SHA-256: 256-bit output SHA-512: 512-bit output Application Scenarios: Digital signatures Password storage File verification Implementing Base64 Encoding and Decoding in Java Import Java&rsquo;s built-in Base64 class 1 2 import java.nio.charset.StandardCharsets; import java.util.Base64; Encoding 1 2 3 4 5 6 7 8 9 10 11 // Encoding public static String encode2(String str) { // Only encode non-null strings if (str != null &amp;&amp; str.length() &gt; 0) { // Convert String to byte[] byte[] bytes = str.getBytes(StandardCharsets.UTF_8); // Encode (Base64 string) return Base64.getEncoder().encodeToString(bytes); } return &#34;&#34;; } Decoding 1 2 3 4 5 6 7 8 9 10 11 // Decoding public static String decode2(String base64Str) { // Only decode non-null strings if (base64Str != null &amp;&amp; base64Str.length() &gt; 0) { // Decode byte[] base64Bytes = Base64.getDecoder().decode(base64Str); // Convert byte[] to String (decoded string) return new String(base64Bytes, StandardCharsets.UTF_8); } return &#34;&#34;; } Test code 1 2 3 4 5 6 7 8 9 10 11 12 public static void main(String[] args) { // Define a string String s = &#34;FerdinandHu&#34;; // Use method two to perform Base64 encoding on the string String base64Str = encode2(s); // Output the original string System.out.println(&#34;Original text: &#34; + s); // Output the Base64-encoded string System.out.println(&#34;Base64 encoded: &#34; + base64Str); // Use method two to decode the Base64-encoded string System.out.println(&#34;Base64 decoded: &#34; + decode2(base64Str)); } Output 1 2 3 Original text: FerdinandHu Base64 encoded: RmVyZGluYW5kSHU= Base64 decoded: FerdinandHu ">
+<meta property='og:url' content='https://ferdinandhu.netlify.app/en/p/common-encryption-algorithms-and-encoding-types/'>
+<meta property='og:site_name' content='FerdinandHu'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-30T11:29:16&#43;08:00'/><meta property='article:modified_time' content='2025-05-30T11:29:16&#43;08:00'/>
+<meta name="twitter:title" content="Common Encryption Algorithms and Encoding Types">
+<meta name="twitter:description" content="Encoding Types 1. Base64 Definition: A representation method that uses 64 printable characters to represent binary data Features: Converts binary data into ASCII strings Commonly used to transmit binary data in HTTP protocols The encoded data increases by approximately 33% compared to the original data Application Scenarios: Email transmission Image transcoding Simple data encryption Examples: 1 2 3 4 5 Original text: Hello World Base64 encoding: SGVsbG8gV29ybGQ= Original text: 你好，世界 Base64 encoding: 5L2g5aW977yM5LiW55WM 2. URL Encoding Definition: Converts special characters in URLs into the form of % plus the hexadecimal of the ASCII code Features: Ensures that only ASCII characters are included in the URL Reversible encoding method Application Scenarios: URL parameter passing Web form submission Example: 1 2 Original URL: https://example.com/path with spaces/file.txt URL encoding: https%3A%2F%2Fexample.com%2Fpath%20with%20spaces%2Ffile.txt 3. Code49 Definition: A high-density barcode encoding method that can encode all 128 ASCII characters Features: Supports multi-line encoding Up to 8 characters per line Includes a checksum Supports bidirectional scanning Application Scenarios: Logistics management Inventory control Industrial automation Medical device identification 4. Code39 Definition: An alphanumeric barcode encoding method that can encode 43 characters (0-9, A-Z, -, ., $, /, +, %, SPACE) Features: Self-checking capability Bidirectional readability Supports letters and numbers Must start and end with an asterisk (*) Application Scenarios: Industrial applications Logistics management Inventory control Document management Encoding Rules: Each character consists of 9 elements (5 bars and 4 spaces) 3 elements are wide, and 6 elements are narrow Inter-character spacing is required Must start and end with an asterisk (*) Encryption Algorithms 1. Symmetric Encryption 1.1 AES (Advanced Encryption Standard) Features: Key lengths: 128/192/256 bits High encryption strength Fast calculation speed Application Scenarios: File encryption Communication encryption Database encryption 1.2 DES (Data Encryption Standard) Features: Key length: 56 bits Block length: 64 bits Has been replaced by AES Application Scenarios: Compatibility with legacy systems Scenarios with low security requirements 2. Asymmetric Encryption 2.1 RSA Features: Based on the difficulty of factoring large numbers Public key encryption, private key decryption Relatively slow calculation speed Application Scenarios: Digital signatures Key exchange Certificate encryption 2.2 ECC (Elliptic Curve Cryptography) Features: Short key length High security Fast calculation speed Application Scenarios: Mobile device encryption Internet of Things (IoT) devices Digital certificates 3. Hashing Algorithms 3.1 MD5 Features: Outputs a 128-bit hash value Has been proven insecure Fast calculation speed Application Scenarios: File integrity checking Password storage (not recommended) 3.2 SHA Series Features: SHA-1: 160-bit output SHA-256: 256-bit output SHA-512: 512-bit output Application Scenarios: Digital signatures Password storage File verification Implementing Base64 Encoding and Decoding in Java Import Java&rsquo;s built-in Base64 class 1 2 import java.nio.charset.StandardCharsets; import java.util.Base64; Encoding 1 2 3 4 5 6 7 8 9 10 11 // Encoding public static String encode2(String str) { // Only encode non-null strings if (str != null &amp;&amp; str.length() &gt; 0) { // Convert String to byte[] byte[] bytes = str.getBytes(StandardCharsets.UTF_8); // Encode (Base64 string) return Base64.getEncoder().encodeToString(bytes); } return &#34;&#34;; } Decoding 1 2 3 4 5 6 7 8 9 10 11 // Decoding public static String decode2(String base64Str) { // Only decode non-null strings if (base64Str != null &amp;&amp; base64Str.length() &gt; 0) { // Decode byte[] base64Bytes = Base64.getDecoder().decode(base64Str); // Convert byte[] to String (decoded string) return new String(base64Bytes, StandardCharsets.UTF_8); } return &#34;&#34;; } Test code 1 2 3 4 5 6 7 8 9 10 11 12 public static void main(String[] args) { // Define a string String s = &#34;FerdinandHu&#34;; // Use method two to perform Base64 encoding on the string String base64Str = encode2(s); // Output the original string System.out.println(&#34;Original text: &#34; + s); // Output the Base64-encoded string System.out.println(&#34;Base64 encoded: &#34; + base64Str); // Use method two to decode the Base64-encoded string System.out.println(&#34;Base64 decoded: &#34; + decode2(base64Str)); } Output 1 2 3 Original text: FerdinandHu Base64 encoded: RmVyZGluYW5kSHU= Base64 decoded: FerdinandHu ">
+    <link rel="shortcut icon" href="/images/203506445.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/en/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/AvatarHJ_hu_bf1781acc8411511.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/en">FerdinandHu</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Ferdinandhu000'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/en/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://ferdinandhu.netlify.app/" >中文</option>
+                                
+                                    <option value="https://ferdinandhu.netlify.app/en/" selected>English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#encoding-types">Encoding Types</a>
+      <ol>
+        <li><a href="#1-base64">1. Base64</a></li>
+        <li><a href="#2-url-encoding">2. URL Encoding</a></li>
+        <li><a href="#3-code49">3. Code49</a></li>
+        <li><a href="#4-code39">4. Code39</a></li>
+      </ol>
+    </li>
+    <li><a href="#encryption-algorithms">Encryption Algorithms</a>
+      <ol>
+        <li><a href="#1-symmetric-encryption">1. Symmetric Encryption</a>
+          <ol>
+            <li><a href="#11-aes-advanced-encryption-standard">1.1 AES (Advanced Encryption Standard)</a></li>
+            <li><a href="#12-des-data-encryption-standard">1.2 DES (Data Encryption Standard)</a></li>
+          </ol>
+        </li>
+        <li><a href="#2-asymmetric-encryption">2. Asymmetric Encryption</a>
+          <ol>
+            <li><a href="#21-rsa">2.1 RSA</a></li>
+            <li><a href="#22-ecc-elliptic-curve-cryptography">2.2 ECC (Elliptic Curve Cryptography)</a></li>
+          </ol>
+        </li>
+        <li><a href="#3-hashing-algorithms">3. Hashing Algorithms</a>
+          <ol>
+            <li><a href="#31-md5">3.1 MD5</a></li>
+            <li><a href="#32-sha-series">3.2 SHA Series</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#implementing-base64-encoding-and-decoding-in-java">Implementing Base64 Encoding and Decoding in Java</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/en/p/common-encryption-algorithms-and-encoding-types/">Common Encryption Algorithms and Encoding Types</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 30, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="https://ferdinandhu.netlify.app/p/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B/" class="link">中文</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="encoding-types">Encoding Types
+</h2><h3 id="1-base64">1. Base64
+</h3><ul>
+<li><strong>Definition</strong>: A representation method that uses 64 printable characters to represent binary data</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Converts binary data into ASCII strings</li>
+<li>Commonly used to transmit binary data in HTTP protocols</li>
+<li>The encoded data increases by approximately 33% compared to the original data</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Email transmission</li>
+<li>Image transcoding</li>
+<li>Simple data encryption</li>
+</ul>
+</li>
+<li><strong>Examples</strong>:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Original text: Hello World
+</span></span><span class="line"><span class="cl">Base64 encoding: SGVsbG8gV29ybGQ=
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Original text: 你好，世界
+</span></span><span class="line"><span class="cl">Base64 encoding: 5L2g5aW977yM5LiW55WM
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="2-url-encoding">2. URL Encoding
+</h3><ul>
+<li><strong>Definition</strong>: Converts special characters in URLs into the form of % plus the hexadecimal of the ASCII code</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Ensures that only ASCII characters are included in the URL</li>
+<li>Reversible encoding method</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>URL parameter passing</li>
+<li>Web form submission</li>
+</ul>
+</li>
+<li><strong>Example</strong>:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Original URL: https://example.com/path with spaces/file.txt
+</span></span><span class="line"><span class="cl">URL encoding: https%3A%2F%2Fexample.com%2Fpath%20with%20spaces%2Ffile.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="3-code49">3. Code49
+</h3><ul>
+<li><strong>Definition</strong>: A high-density barcode encoding method that can encode all 128 ASCII characters</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Supports multi-line encoding</li>
+<li>Up to 8 characters per line</li>
+<li>Includes a checksum</li>
+<li>Supports bidirectional scanning</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Logistics management</li>
+<li>Inventory control</li>
+<li>Industrial automation</li>
+<li>Medical device identification</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-code39">4. Code39
+</h3><ul>
+<li><strong>Definition</strong>: An alphanumeric barcode encoding method that can encode 43 characters (0-9, A-Z, -, ., $, /, +, %, SPACE)</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Self-checking capability</li>
+<li>Bidirectional readability</li>
+<li>Supports letters and numbers</li>
+<li>Must start and end with an asterisk (*)</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Industrial applications</li>
+<li>Logistics management</li>
+<li>Inventory control</li>
+<li>Document management</li>
+</ul>
+</li>
+<li><strong>Encoding Rules</strong>:
+<ul>
+<li>Each character consists of 9 elements (5 bars and 4 spaces)</li>
+<li>3 elements are wide, and 6 elements are narrow</li>
+<li>Inter-character spacing is required</li>
+<li>Must start and end with an asterisk (*)
+<img src="https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20250530104849.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></li>
+</ul>
+</li>
+</ul>
+<h2 id="encryption-algorithms">Encryption Algorithms
+</h2><h3 id="1-symmetric-encryption">1. Symmetric Encryption
+</h3><h4 id="11-aes-advanced-encryption-standard">1.1 AES (Advanced Encryption Standard)
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>Key lengths: 128/192/256 bits</li>
+<li>High encryption strength</li>
+<li>Fast calculation speed</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>File encryption</li>
+<li>Communication encryption</li>
+<li>Database encryption</li>
+</ul>
+</li>
+</ul>
+<h4 id="12-des-data-encryption-standard">1.2 DES (Data Encryption Standard)
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>Key length: 56 bits</li>
+<li>Block length: 64 bits</li>
+<li>Has been replaced by AES</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Compatibility with legacy systems</li>
+<li>Scenarios with low security requirements</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-asymmetric-encryption">2. Asymmetric Encryption
+</h3><h4 id="21-rsa">2.1 RSA
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>Based on the difficulty of factoring large numbers</li>
+<li>Public key encryption, private key decryption</li>
+<li>Relatively slow calculation speed</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Digital signatures</li>
+<li>Key exchange</li>
+<li>Certificate encryption</li>
+</ul>
+</li>
+</ul>
+<h4 id="22-ecc-elliptic-curve-cryptography">2.2 ECC (Elliptic Curve Cryptography)
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>Short key length</li>
+<li>High security</li>
+<li>Fast calculation speed</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Mobile device encryption</li>
+<li>Internet of Things (IoT) devices</li>
+<li>Digital certificates</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-hashing-algorithms">3. Hashing Algorithms
+</h3><h4 id="31-md5">3.1 MD5
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>Outputs a 128-bit hash value</li>
+<li>Has been proven insecure</li>
+<li>Fast calculation speed</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>File integrity checking</li>
+<li>Password storage (not recommended)</li>
+</ul>
+</li>
+</ul>
+<h4 id="32-sha-series">3.2 SHA Series
+</h4><ul>
+<li><strong>Features</strong>:
+<ul>
+<li>SHA-1: 160-bit output</li>
+<li>SHA-256: 256-bit output</li>
+<li>SHA-512: 512-bit output</li>
+</ul>
+</li>
+<li><strong>Application Scenarios</strong>:
+<ul>
+<li>Digital signatures</li>
+<li>Password storage</li>
+<li>File verification</li>
+</ul>
+</li>
+</ul>
+<h2 id="implementing-base64-encoding-and-decoding-in-java">Implementing Base64 Encoding and Decoding in Java
+</h2><ol>
+<li>Import Java&rsquo;s built-in Base64 class</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.nio.charset.StandardCharsets</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Base64</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>Encoding</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Encoding</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">encode2</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Only encode non-null strings</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Convert String to byte[]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="na">getBytes</span><span class="p">(</span><span class="n">StandardCharsets</span><span class="p">.</span><span class="na">UTF_8</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Encode (Base64 string)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Base64</span><span class="p">.</span><span class="na">getEncoder</span><span class="p">().</span><span class="na">encodeToString</span><span class="p">(</span><span class="n">bytes</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&#34;&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>Decoding</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Decoding</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">decode2</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">base64Str</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Only decode non-null strings</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">base64Str</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">base64Str</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Decode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">base64Bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Base64</span><span class="p">.</span><span class="na">getDecoder</span><span class="p">().</span><span class="na">decode</span><span class="p">(</span><span class="n">base64Str</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Convert byte[] to String (decoded string)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="n">base64Bytes</span><span class="p">,</span><span class="w"> </span><span class="n">StandardCharsets</span><span class="p">.</span><span class="na">UTF_8</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&#34;&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>Test code</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Define a string</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;FerdinandHu&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Use method two to perform Base64 encoding on the string</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">base64Str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encode2</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Output the original string</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Original text: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">s</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Output the Base64-encoded string</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Base64 encoded: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">base64Str</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Use method two to decode the Base64-encoded string</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Base64 decoded: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">decode2</span><span class="p">(</span><span class="n">base64Str</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>Output</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Original text: FerdinandHu
+</span></span><span class="line"><span class="cl">Base64 encoded: RmVyZGluYW5kSHU=
+</span></span><span class="line"><span class="cl">Base64 decoded: FerdinandHu
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Ferdinand Hu
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

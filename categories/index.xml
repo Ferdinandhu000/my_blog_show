@@ -7,15 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Thu, 29 May 2025 10:51:44 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Java</title>
-        <link>https://ferdinandhu.netlify.app/categories/java/</link>
-        <pubDate>Thu, 29 May 2025 10:51:44 +0800</pubDate>
-        
-        <guid>https://ferdinandhu.netlify.app/categories/java/</guid>
-        <description>&lt;img src="https://ferdinandhu.netlify.app/images/db3787141d668b1b21ce6510b847fa3b.png" alt="Featured image of post Java" /&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Summary</title>
         <link>https://ferdinandhu.netlify.app/categories/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</link>
         <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
@@ -30,6 +22,14 @@
         
         <guid>https://ferdinandhu.netlify.app/categories/notes/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://ferdinandhu.netlify.app/categories/java/</link>
+        <pubDate>Mon, 19 May 2025 21:05:05 +0800</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/categories/java/</guid>
+        <description>&lt;img src="https://ferdinandhu.netlify.app/images/db3787141d668b1b21ce6510b847fa3b.png" alt="Featured image of post Java" /&gt;</description>
         </item>
         <item>
         <title>面向对象</title>
