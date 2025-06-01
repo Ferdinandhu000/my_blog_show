@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archetypes/PostTemplate.md",
+                "file": "content/post/总结与复盘/22周 周记.zh-cn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PostTemplate"
+              "title": "22周 周记.zh-cn"
             }
           }
         ]
@@ -180,10 +180,13 @@
   },
   "active": "efcb4aec838dbce4",
   "lastOpenFiles": [
-    "archetypes/default.md",
-    "archetypes/PostTemplate.md",
-    "content/post/总结与复盘/21周 周记1.zh-cn.md",
+    "public/p/22周-周记/index.html",
+    "public/p/22周-周记",
     "content/post/总结与复盘/21周 周记.zh-cn.md",
+    "content/post/总结与复盘/22周 周记.zh-cn.md",
+    "archetypes/PostTemplate.md",
+    "archetypes/default.md",
+    "content/post/总结与复盘/21周 周记1.zh-cn.md",
     "public/p/21周-周记1/index.html",
     "public/p/21周-周记1",
     "content/post/总结与复盘/21周周记.zh-cn.md",
@@ -201,7 +204,6 @@
     "public/en/categories/personal_summaries/index.html",
     "public/en/categories/personal_summaries",
     "public/categories/个人总结/page/1/index.html",
-    "public/categories/个人总结/page/1",
     "content/categories/总结与思考/_index.zh-cn.md",
     "content/categories/Summary&Thoughts/_index.en.md",
     "content/categories/Summary&Thoughts/_index.zh-cn.md",
@@ -215,8 +217,6 @@
     "content/_index.en.md",
     "content/_index.zh-cn.md",
     "_index.zh-cn.md",
-    "_index.en.md",
-    "content/categories/_index.zh-cn.md",
     "public/img/AvatarHJ_hu_bf1781acc8411511.jpg",
     "public/images/Snipaste_2025-05-11_11-02-49.png",
     "public/images/db3787141d668b1b21ce6510b847fa3b.png",
