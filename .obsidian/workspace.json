@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/总结与复盘/22周 周记.zh-cn.md",
-                "mode": "source",
+                "file": "content/post/总结与复盘/23周 周记.zh-cn.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "22周 周记.zh-cn"
+              "title": "23周 周记.zh-cn"
             }
           }
         ]
@@ -180,10 +180,15 @@
   },
   "active": "efcb4aec838dbce4",
   "lastOpenFiles": [
+    "public/post/page/4/index.html",
+    "public/post/page/4",
+    "public/p/23周-周记/index.html",
+    "public/p/23周-周记",
+    "content/post/总结与复盘/22周 周记.zh-cn.md",
+    "content/post/总结与复盘/23周 周记.zh-cn.md",
     "public/p/22周-周记/index.html",
     "public/p/22周-周记",
     "content/post/总结与复盘/21周 周记.zh-cn.md",
-    "content/post/总结与复盘/22周 周记.zh-cn.md",
     "archetypes/PostTemplate.md",
     "archetypes/default.md",
     "content/post/总结与复盘/21周 周记1.zh-cn.md",
@@ -200,10 +205,6 @@
     "public/en/categories/personal_summaries/page/1/index.html",
     "public/en/categories/personal_summaries/page/1",
     "public/en/categories/personal_summaries/page",
-    "public/en/categories/personal_summaries/index.xml",
-    "public/en/categories/personal_summaries/index.html",
-    "public/en/categories/personal_summaries",
-    "public/categories/个人总结/page/1/index.html",
     "content/categories/总结与思考/_index.zh-cn.md",
     "content/categories/Summary&Thoughts/_index.en.md",
     "content/categories/Summary&Thoughts/_index.zh-cn.md",
@@ -216,7 +217,6 @@
     "未命名.canvas",
     "content/_index.en.md",
     "content/_index.zh-cn.md",
-    "_index.zh-cn.md",
     "public/img/AvatarHJ_hu_bf1781acc8411511.jpg",
     "public/images/Snipaste_2025-05-11_11-02-49.png",
     "public/images/db3787141d668b1b21ce6510b847fa3b.png",
