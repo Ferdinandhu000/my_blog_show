@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 冒泡排序和选择排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 # 冒泡排序 def bubble_sort(s): for i in range(len(s) - 1): # 注意要-1 for j in range(len(s) - i - 1): if s[j] &gt; s[j + 1]: s[j], s[j + 1] = s[j + 1], s[j] return s a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(bubble_sort(a)) # 选择排序 def selection_sort(a): for i in range(len(a) - 1): min_index = i for j in range(i + 1, len(a)): if a[j] &lt; a[min_index]: min_index = j if min_index != i: a[i], a[min_index] = a[min_index], a[i] return a a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(selection_sort(a)) ord() 和 chr() ord: str -&gt; ASCII 1 ord(&#39;a&#39;) == 97 chr: ASCII -&gt; str 1 chr(ord(&#39;a&#39;) + 1) == &#39;b&#39; 凯撒密码： 1 new_char = chr((ord(char) - ord(&#39;A&#39;) + shift) % 26 + ord(&#39;A&#39;)) # 大写字母 sort()方法 1 s.sort() # 而非sort(s)！！！ 斐波那契数列 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 # 1 1 2 3 5 8 ... # 第一轮输出 a b # 第二轮输出 a b # 对应第一轮中参数 b a+b # 迭代算法 def fibo(n): ls = [] a,b = 0,1 for i in range(n): a,b = b,a+b ls.append(a) return ls print(fibo(10)) # 递归算法 def Fibo(n): if n==0: return 0 elif n==1: return 1 else: return Fibo(n-1)+Fibo(n-2) for i in range(1,11): print(Fibo(i)) 输入 将输入的字符串分隔存入数组中（&lsquo;abcde&rsquo; -&gt; [&lsquo;a&rsquo;,&lsquo;b&rsquo;,&lsquo;c&rsquo;,&rsquo;d&rsquo;,&rsquo;e&rsquo;]） 1 2 3 a = input() ls = list(a) print(ls) 将输入的一段文本按空格分隔存入数组（&ldquo;Hello world, how are you?&rdquo; -&gt; [&lsquo;Hello&rsquo;,&lsquo;world&rsquo;,&ldquo;how&rsquo;,&lsquo;are&rsquo;,&lsquo;you&rsquo;]） 1 2 text = input() print(text.split()) # split()方法默认按空格分隔，传入参数&#39;,&#39;也可指定按逗号分隔 输入一组数字用逗号相隔，存入数组且数组中的数字时int类型而不是str 1 2 3 a = input().split(&#39;,&#39;) a = [int(num) for num in a] print(a) 输出 左对齐右对齐居中 1 2 3 print(&#39;{:&gt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:&lt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:^10}&#39;.format(&#39;hello&#39;)) # hello 填充 1 2 print(&#39;{:*&gt;10}&#39;.format(&#39;hello&#39;)) # *****hello print(&#39;{:*^10}&#39;.format(&#39;hello&#39;)) # **hello*** 数字处理 1 2 print(&#34;{:,}&#34;.format(1234567)) # 1,234,567 print(&#34;{:.2f}&#34;.format(3.1415926)) # 3.14 函数递归（汉诺塔） 1 2 3 4 5 6 7 8 9 10 def Hanoi(n,A,B,C): if n==1: print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) else: Hanoi(n-1,A,C,B) print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) Hanoi(n-1,B,A,C) n = int(input(&#39;Please enter n here: &#39;)) Hanoi(n,&#39;A&#39;,&#39;B&#39;,&#39;C&#39;) Java版块 格式化输出 printf输出 1 2 double num = 1.000; System.out.printf(&#34;A number %.2f&#34;, a); String.format输出 1 2 double num = 1.000; System.out.println(String.format(&#34;A number %.2f&#34;, a)); formatted输出 1 2 double num = 1.000; System.out.println(&#34;A number %.2f&#34;.formatted(a)); 注：时间的格式化输出String.format(&quot;%02d:%02d:%02d&quot;,hour,minute,second)\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
 <title>程序设计与算法语言期末复习3</title>
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/'>
 
 <link rel="stylesheet" href="/scss/style.min.2f3d9b7267f2400dc6d37317b2c94a3e25c32820c879ca8d5fd5ad622407fe84.css"><meta property='og:title' content="程序设计与算法语言期末复习3">
-<meta property='og:description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 冒泡排序和选择排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 # 冒泡排序 def bubble_sort(s): for i in range(len(s) - 1): # 注意要-1 for j in range(len(s) - i - 1): if s[j] &gt; s[j + 1]: s[j], s[j + 1] = s[j + 1], s[j] return s a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(bubble_sort(a)) # 选择排序 def selection_sort(a): for i in range(len(a) - 1): min_index = i for j in range(i + 1, len(a)): if a[j] &lt; a[min_index]: min_index = j if min_index != i: a[i], a[min_index] = a[min_index], a[i] return a a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(selection_sort(a)) ord() 和 chr() ord: str -&gt; ASCII 1 ord(&#39;a&#39;) == 97 chr: ASCII -&gt; str 1 chr(ord(&#39;a&#39;) + 1) == &#39;b&#39; 凯撒密码： 1 new_char = chr((ord(char) - ord(&#39;A&#39;) + shift) % 26 + ord(&#39;A&#39;)) # 大写字母 sort()方法 1 s.sort() # 而非sort(s)！！！ 斐波那契数列 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 # 1 1 2 3 5 8 ... # 第一轮输出 a b # 第二轮输出 a b # 对应第一轮中参数 b a+b # 迭代算法 def fibo(n): ls = [] a,b = 0,1 for i in range(n): a,b = b,a+b ls.append(a) return ls print(fibo(10)) # 递归算法 def Fibo(n): if n==0: return 0 elif n==1: return 1 else: return Fibo(n-1)+Fibo(n-2) for i in range(1,11): print(Fibo(i)) 输入 将输入的字符串分隔存入数组中（&lsquo;abcde&rsquo; -&gt; [&lsquo;a&rsquo;,&lsquo;b&rsquo;,&lsquo;c&rsquo;,&rsquo;d&rsquo;,&rsquo;e&rsquo;]） 1 2 3 a = input() ls = list(a) print(ls) 将输入的一段文本按空格分隔存入数组（&ldquo;Hello world, how are you?&rdquo; -&gt; [&lsquo;Hello&rsquo;,&lsquo;world&rsquo;,&ldquo;how&rsquo;,&lsquo;are&rsquo;,&lsquo;you&rsquo;]） 1 2 text = input() print(text.split()) # split()方法默认按空格分隔，传入参数&#39;,&#39;也可指定按逗号分隔 输入一组数字用逗号相隔，存入数组且数组中的数字时int类型而不是str 1 2 3 a = input().split(&#39;,&#39;) a = [int(num) for num in a] print(a) 输出 左对齐右对齐居中 1 2 3 print(&#39;{:&gt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:&lt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:^10}&#39;.format(&#39;hello&#39;)) # hello 填充 1 2 print(&#39;{:*&gt;10}&#39;.format(&#39;hello&#39;)) # *****hello print(&#39;{:*^10}&#39;.format(&#39;hello&#39;)) # **hello*** 数字处理 1 2 print(&#34;{:,}&#34;.format(1234567)) # 1,234,567 print(&#34;{:.2f}&#34;.format(3.1415926)) # 3.14 函数递归（汉诺塔） 1 2 3 4 5 6 7 8 9 10 def Hanoi(n,A,B,C): if n==1: print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) else: Hanoi(n-1,A,C,B) print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) Hanoi(n-1,B,A,C) n = int(input(&#39;Please enter n here: &#39;)) Hanoi(n,&#39;A&#39;,&#39;B&#39;,&#39;C&#39;) Java版块 格式化输出 printf输出 1 2 double num = 1.000; System.out.printf(&#34;A number %.2f&#34;, a); String.format输出 1 2 double num = 1.000; System.out.println(String.format(&#34;A number %.2f&#34;, a)); formatted输出 1 2 double num = 1.000; System.out.println(&#34;A number %.2f&#34;.formatted(a)); 注：时间的格式化输出String.format(&quot;%02d:%02d:%02d&quot;,hour,minute,second)\n">
+<meta property='og:description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/'>
 <meta property='og:site_name' content='FerdinandHu'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-12T11:10:39&#43;08:00'/><meta property='article:modified_time' content='2025-06-12T11:10:39&#43;08:00'/>
 <meta name="twitter:title" content="程序设计与算法语言期末复习3">
-<meta name="twitter:description" content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 冒泡排序和选择排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 # 冒泡排序 def bubble_sort(s): for i in range(len(s) - 1): # 注意要-1 for j in range(len(s) - i - 1): if s[j] &gt; s[j + 1]: s[j], s[j + 1] = s[j + 1], s[j] return s a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(bubble_sort(a)) # 选择排序 def selection_sort(a): for i in range(len(a) - 1): min_index = i for j in range(i + 1, len(a)): if a[j] &lt; a[min_index]: min_index = j if min_index != i: a[i], a[min_index] = a[min_index], a[i] return a a = [0, 4, 12, 10, 7, 3, 9, 1, 5, 6] print(selection_sort(a)) ord() 和 chr() ord: str -&gt; ASCII 1 ord(&#39;a&#39;) == 97 chr: ASCII -&gt; str 1 chr(ord(&#39;a&#39;) + 1) == &#39;b&#39; 凯撒密码： 1 new_char = chr((ord(char) - ord(&#39;A&#39;) + shift) % 26 + ord(&#39;A&#39;)) # 大写字母 sort()方法 1 s.sort() # 而非sort(s)！！！ 斐波那契数列 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 # 1 1 2 3 5 8 ... # 第一轮输出 a b # 第二轮输出 a b # 对应第一轮中参数 b a+b # 迭代算法 def fibo(n): ls = [] a,b = 0,1 for i in range(n): a,b = b,a+b ls.append(a) return ls print(fibo(10)) # 递归算法 def Fibo(n): if n==0: return 0 elif n==1: return 1 else: return Fibo(n-1)+Fibo(n-2) for i in range(1,11): print(Fibo(i)) 输入 将输入的字符串分隔存入数组中（&lsquo;abcde&rsquo; -&gt; [&lsquo;a&rsquo;,&lsquo;b&rsquo;,&lsquo;c&rsquo;,&rsquo;d&rsquo;,&rsquo;e&rsquo;]） 1 2 3 a = input() ls = list(a) print(ls) 将输入的一段文本按空格分隔存入数组（&ldquo;Hello world, how are you?&rdquo; -&gt; [&lsquo;Hello&rsquo;,&lsquo;world&rsquo;,&ldquo;how&rsquo;,&lsquo;are&rsquo;,&lsquo;you&rsquo;]） 1 2 text = input() print(text.split()) # split()方法默认按空格分隔，传入参数&#39;,&#39;也可指定按逗号分隔 输入一组数字用逗号相隔，存入数组且数组中的数字时int类型而不是str 1 2 3 a = input().split(&#39;,&#39;) a = [int(num) for num in a] print(a) 输出 左对齐右对齐居中 1 2 3 print(&#39;{:&gt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:&lt;10}&#39;.format(&#39;hello&#39;)) # hello print(&#39;{:^10}&#39;.format(&#39;hello&#39;)) # hello 填充 1 2 print(&#39;{:*&gt;10}&#39;.format(&#39;hello&#39;)) # *****hello print(&#39;{:*^10}&#39;.format(&#39;hello&#39;)) # **hello*** 数字处理 1 2 print(&#34;{:,}&#34;.format(1234567)) # 1,234,567 print(&#34;{:.2f}&#34;.format(3.1415926)) # 3.14 函数递归（汉诺塔） 1 2 3 4 5 6 7 8 9 10 def Hanoi(n,A,B,C): if n==1: print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) else: Hanoi(n-1,A,C,B) print(&#39;Move {} from {} to {}&#39;.format(n,A,C)) Hanoi(n-1,B,A,C) n = int(input(&#39;Please enter n here: &#39;)) Hanoi(n,&#39;A&#39;,&#39;B&#39;,&#39;C&#39;) Java版块 格式化输出 printf输出 1 2 double num = 1.000; System.out.printf(&#34;A number %.2f&#34;, a); String.format输出 1 2 double num = 1.000; System.out.println(String.format(&#34;A number %.2f&#34;, a)); formatted输出 1 2 double num = 1.000; System.out.println(&#34;A number %.2f&#34;.formatted(a)); 注：时间的格式化输出String.format(&quot;%02d:%02d:%02d&quot;,hour,minute,second)\n">
+<meta name="twitter:description" content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
     <link rel="shortcut icon" href="/images/203506445.ico" />
 
     </head>
@@ -358,7 +358,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 4 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -427,9 +427,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol start="4">
-<li>冒泡排序和选择排序</li>
-</ol>
+</div><p>或</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -456,9 +454,21 @@
 </span><span class="lnt">22
 </span><span class="lnt">23
 </span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 冒泡排序</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">n</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">4.</span> <span class="n">冒泡排序和选择排序</span>
+</span></span><span class="line"><span class="cl"><span class="err">```</span><span class="n">python</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 冒泡排序</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>  <span class="c1"># 注意要-1</span>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
@@ -691,22 +701,92 @@
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Move </span><span class="si">{}</span><span class="s1"> from </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">))</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 当只有一个盘子时，直接将盘子从A移动到C</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Move </span><span class="si">{}</span><span class="s1"> from </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Move </span><span class="si">{}</span><span class="s1"> from </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 步骤1：将上面的n-1个盘子从A借助C移动到B</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 步骤2：将第n个盘子从A移动到C</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Move </span><span class="si">{}</span><span class="s1"> from </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 步骤3：将n-1个盘子从B借助A移动到C</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取用户输入的盘子数量</span>
 </span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter n here: &#39;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 调用函数解决汉诺塔问题</span>
+</span></span><span class="line"><span class="cl"><span class="n">Hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+<li>join()函数
+join() 是字符串对象的一个方法，用于将可迭代对象（如列表、元组、集合等）中的元素连接成一个<strong>字符串</strong></li>
 </ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Hello&#34;</span><span class="p">,</span> <span class="s2">&#34;World&#34;</span><span class="p">,</span> <span class="s2">&#34;!&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="s2">&#34; &#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>  <span class="c1"># 使用空格作为分隔符</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># 输出：Hello World !</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="12">
+<li>大小写转换</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">swapLowerUpper</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;a&#39;</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">swapUpperLower</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;A&#39;</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">swapLowerUpper</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">swapUpperLower</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>*注意：*python中字符串支持形如s[0]的索引，但是无法进行复制（如s[0] = &lsquo;a&rsquo;），因此要先把字符串转换成列表形式进行操作。另外一种方法是创建一个<code>result = []</code> 的列表用于存储结果，然后<code>for char in s</code>依次对s中每个字符进行操作并用<code>result.append(char)</code>进行存储，最后也需要<code>return ''.join(result)</code>将列表转换成字符串返回</p>
 <h3 id="java版块">Java版块
 </h3><ol>
 <li>格式化输出</li>
@@ -973,8 +1053,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">POSITIVE_INFINITY</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">NEGATIVE_INFINITY</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">POSITIVE_INFINITY</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">NEGATIVE_INFINITY</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><em>本部分内容（除特别声明外）采用 <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"  target="_blank" rel="noopener"

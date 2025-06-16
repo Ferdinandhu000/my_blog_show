@@ -303,6 +303,7 @@
             <li><a href="#9-集合-set">9. 集合 Set</a></li>
             <li><a href="#10-字典">10. 字典</a></li>
             <li><a href="#11-文件处理">11. 文件处理</a></li>
+            <li><a href="#12-try-except语句">12. try-except语句</a></li>
           </ol>
         </li>
       </ol>
@@ -866,6 +867,40 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+</ul>
+<h4 id="12-try-except语句">12. try-except语句
+</h4><ul>
+<li>基本语法
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># 可能会抛出异常的代码块</span>
+</span></span><span class="line"><span class="cl">  <span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>  <span class="c1"># 例如：除零错误</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># 当捕获到特定异常时执行的代码</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;错误：不能除以零！&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>报错类型：
+<ul>
+<li>SyntaxError：语法错误时触发</li>
+<li>ZeroDivisionError：除数为零时触发</li>
+<li>TypeError：操作或函数应用于不兼容类型的对象时触发</li>
+<li>ValueError：操作或函数接收到类型正确但值无效的参数时触发</li>
+<li>IndexError：使用超出序列范围的索引时触发</li>
+<li>KeyError：尝试访问字典中不存在的键时触发</li>
+<li>NameError：尝试访问未定义的变量时触发</li>
+</ul>
+</li>
 </ul>
 <p><em>本部分内容（除特别声明外）采用 <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"  target="_blank" rel="noopener"
     >署名 - 非商业性使用 - 保持一致 4.0 国际 (CC BY-NC-SA 4.0)</a> 许可协议进行许可。</em></p>
