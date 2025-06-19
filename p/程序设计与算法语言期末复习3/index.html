@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = float(&#39;Inf&#39;) b = float(&#39;-Inf&#39;) 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
 <title>程序设计与算法语言期末复习3</title>
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/'>
 
 <link rel="stylesheet" href="/scss/style.min.2f3d9b7267f2400dc6d37317b2c94a3e25c32820c879ca8d5fd5ad622407fe84.css"><meta property='og:title' content="程序设计与算法语言期末复习3">
-<meta property='og:description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
+<meta property='og:description' content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = float(&#39;Inf&#39;) b = float(&#39;-Inf&#39;) 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/'>
 <meta property='og:site_name' content='FerdinandHu'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-12T11:10:39&#43;08:00'/><meta property='article:modified_time' content='2025-06-12T11:10:39&#43;08:00'/>
 <meta name="twitter:title" content="程序设计与算法语言期末复习3">
-<meta name="twitter:description" content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = &#39;Inf&#39; b = &#39;-Inf&#39; 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
+<meta name="twitter:description" content="易错 Python版块 不要在if判断语句中用 / 判断两数是否相等\nPython中的无穷大量和无穷小量：\n1 2 a = float(&#39;Inf&#39;) b = float(&#39;-Inf&#39;) 初始化一个二维数组（矩阵） 1 2 ls = [[0]*3 for i in range(3)] print(ls) 或\n1 2 3 4 5 6 7 ls = [] for i in range(3): row = [] for j in range(3): row.append(0) ls.append(row) print(ls) 或\n">
     <link rel="shortcut icon" href="/images/203506445.ico" />
 
     </head>
@@ -389,8 +389,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;Inf&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;-Inf&#39;</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;Inf&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-Inf&#39;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
