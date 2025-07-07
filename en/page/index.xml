@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on FerdinandHu</title>
+        <link>https://ferdinandhu.netlify.app/en/page/</link>
+        <description>Recent content in Pages on FerdinandHu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ferdinand Hu</copyright>
+        <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archives</title>
+        <link>https://ferdinandhu.netlify.app/en/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://ferdinandhu.netlify.app/en/about/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/about/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://ferdinandhu.netlify.app/en/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://ferdinandhu.netlify.app/en/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
