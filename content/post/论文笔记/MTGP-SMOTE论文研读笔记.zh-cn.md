@@ -1,7 +1,7 @@
 ---
 date: 2025-09-13T19:15:55+08:00
 draft : false
-title : 'MTGP-SMOPE论文研读笔记'
+title : 'MTGP-SMOTE论文研读笔记'
 categories : 
 
 ---

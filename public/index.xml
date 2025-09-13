@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <copyright>Ferdinand Hu</copyright>
         <lastBuildDate>Sat, 13 Sep 2025 19:15:55 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>MTGP-SMOPE论文研读笔记</title>
-        <link>https://ferdinandhu.netlify.app/p/mtgp-smope%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+        <title>MTGP-SMOTE论文研读笔记</title>
+        <link>https://ferdinandhu.netlify.app/p/mtgp-smote%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sat, 13 Sep 2025 19:15:55 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/mtgp-smope%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/mtgp-smote%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;问题背景&#34;&gt;问题背景
 &lt;/h2&gt;&lt;p&gt;解决分类问题是机器学习的其中重要一个分支。要实现分类首先需要获得相应数据进行学习，而现实生活中我们得到的数据通常是不平衡的（例如银行需要对异常交易和正常交易数据进行分类，而学习的数据中大部分是正常的交易数据，异常交易数据毕竟占少数），这就会使分类的结果产生影响。为此，本论文所提出的MTGP-SMOTE方法在数据层面运用合成少数过采样技术（SMOTE）方法对原始数据进行过采样（oversampling），而后借助遗传编程中的多树遗传编程（Multitree Genetic Programming）策略，将单个树的运行结果作为一个独立的填补数据，从而实现多树对总体数据的填补。&lt;/p&gt;
 &lt;h2 id=&#34;概念理解&#34;&gt;概念理解
