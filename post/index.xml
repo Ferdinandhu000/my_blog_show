@@ -7,7 +7,86 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Sun, 20 Jul 2025 18:44:52 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 13 Sep 2025 19:15:55 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MTGP-SMOPE论文研读笔记</title>
+        <link>https://ferdinandhu.netlify.app/p/mtgp-smope%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Sat, 13 Sep 2025 19:15:55 +0800</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/p/mtgp-smope%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;h2 id=&#34;问题背景&#34;&gt;问题背景
+&lt;/h2&gt;&lt;p&gt;解决分类问题是机器学习的其中重要一个分支。要实现分类首先需要获得相应数据进行学习，而现实生活中我们得到的数据通常是不平衡的（例如银行需要对异常交易和正常交易数据进行分类，而学习的数据中大部分是正常的交易数据，异常交易数据毕竟占少数），这就会使分类的结果产生影响。为此，本论文所提出的MTGP-SMOTE方法在数据层面运用合成少数过采样技术（SMOTE）方法对原始数据进行过采样（oversampling），而后借助遗传编程中的多树遗传编程（Multitree Genetic Programming）策略，将单个树的运行结果作为一个独立的填补数据，从而实现多树对总体数据的填补。&lt;/p&gt;
+&lt;h2 id=&#34;概念理解&#34;&gt;概念理解
+&lt;/h2&gt;&lt;h3 id=&#34;majority-classmaj&#34;&gt;Majority class（$Maj$）
+&lt;/h3&gt;&lt;p&gt;原始数据集中样本数量较多的类别（例如银行交易数据中的正常交易数据）&lt;/p&gt;
+&lt;h3 id=&#34;minority-classmin&#34;&gt;Minority class（$Min$）
+&lt;/h3&gt;&lt;p&gt;原始数据集中样本数量较少的类别（如异常银行交易）&lt;/p&gt;
+&lt;h3 id=&#34;smote算法&#34;&gt;SMOTE算法
+&lt;/h3&gt;&lt;p&gt;SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术。&lt;/p&gt;
+&lt;h4 id=&#34;算法流程&#34;&gt;算法流程
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;确定临近数量&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;选择近邻样本&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;合成新样本&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;遗传编程gp&#34;&gt;遗传编程（GP）
+&lt;/h3&gt;&lt;p&gt;遗传编程是一种模拟自然界进化过程的算法，包含以下组件：&lt;/p&gt;
+&lt;h4 id=&#34;1-初始化initialization&#34;&gt;1. 初始化（Initialization）
+&lt;/h4&gt;&lt;p&gt;常用的初始化方法包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grow&lt;/li&gt;
+&lt;li&gt;Full&lt;/li&gt;
+&lt;li&gt;Ramped half-and-half&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文使用&amp;quot;Ramped half-and-half&amp;quot;方法进行初始化&lt;/p&gt;
+&lt;h4 id=&#34;2-选择selection&#34;&gt;2. 选择（Selection）
+&lt;/h4&gt;&lt;p&gt;从当前代中选择某些个体作为下一代的父代的过程。本文使用的选择方法是&amp;quot;精英策略&amp;quot;（elite strategy）。&lt;/p&gt;
+&lt;h4 id=&#34;3-适应度fitness&#34;&gt;3. 适应度（Fitness）
+&lt;/h4&gt;&lt;p&gt;衡量遗传过程质量的指标，对后续的交叉和变异操作起决定性作用。&lt;/p&gt;
+&lt;h4 id=&#34;4-交叉crossover&#34;&gt;4. 交叉（Crossover）
+&lt;/h4&gt;&lt;p&gt;从两个随机选取的父代个体中产生两个子代个体进行互换。&lt;/p&gt;
+&lt;h4 id=&#34;5-变异mutation&#34;&gt;5. 变异（Mutation）
+&lt;/h4&gt;&lt;p&gt;类似于生成新基因的过程，有助于形成种群多样性，使算法有可能跳出局部最优。&lt;/p&gt;
+&lt;h4 id=&#34;6-复制replication&#34;&gt;6. 复制（Replication）
+&lt;/h4&gt;&lt;p&gt;父代个体在未经任何变化的条件下从当前代复制到新一代。（本文使用的算子没有包括复制操作）&lt;/p&gt;
+&lt;p&gt;以上操作是否发生完全取决于该个体的适应度，即个体的适应度越大，被选中的概率越大。&lt;/p&gt;
+&lt;h2 id=&#34;mtgp-smote的具体流程&#34;&gt;MTGP-SMOTE的具体流程
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;确定需要填补的少数类的个体数量&lt;/strong&gt;（即为树的数量）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;确定Terminal set和Function set&lt;/strong&gt;，定义树中运算的基本结构&lt;/li&gt;
+&lt;li&gt;**获得目标评估对（Mait, Mint）**用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适应度评估&lt;/strong&gt;：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/6b0c7285a1c9921f22464f2b4fc3e118.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;一些问题&#34;&gt;一些问题
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;论文所用到了变异算子和交叉算子，为什么不使用复制算子，复制算子的使用对整个系统会有什么影响？&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;该方法可以实现多元分类还是只能处理二元分类？&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在处理实际问题时，树中存储的数据是什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>Java多线程学习笔记</title>
         <link>https://ferdinandhu.netlify.app/p/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sun, 20 Jul 2025 18:44:52 +0800</pubDate>

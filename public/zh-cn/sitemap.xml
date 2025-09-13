@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/</loc>
-    <lastmod>2025-07-20T18:44:52+08:00</lastmod>
+    <lastmod>2025-09-13T19:15:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,22 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/mtgp-smope%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-09-13T19:15:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/post/</loc>
+    <lastmod>2025-09-13T19:15:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ferdinandhu.netlify.app/post/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/</loc>
@@ -55,19 +71,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ferdinandhu.netlify.app/categories/notes/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/post/</loc>
-    <lastmod>2025-07-20T18:44:52+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ferdinandhu.netlify.app/post/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>
