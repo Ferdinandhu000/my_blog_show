@@ -72,9 +72,14 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png)
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/6b0c7285a1c9921f22464f2b4fc3e118.png)
 
+## 与STGP的区别
+1. STGP生成的一棵树只能作为一个样本，而MTGP同时生成多棵树作为一组样本，相比之下效率更高
+2. 在进行适应度评估中，STGP只是对每个样本进行独立评估，无法保证全局最优，而MTGP是将每个样本的适应度汇总成整体的适应度进行评估，分布上来看，生成样本的多样性更佳
+3. 在遗传操作上，MTGP相比STGP对优质样本个体进行保护，使生成的样本质量更佳
+
 ## 一些问题
 
-1. **论文所用到了变异算子和交叉算子，为什么不使用复制算子，复制算子的使用对整个系统会有什么影响？**
+1. **论文使用到了变异算子和交叉算子，为什么不考虑使用复制算子，复制算子的使用对整个系统会有什么影响？**
 
 2. **该方法可以实现多元分类还是只能处理二元分类？**
 

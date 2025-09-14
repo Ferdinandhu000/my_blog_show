@@ -72,10 +72,16 @@
 	
 &gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;与stgp的区别&#34;&gt;与STGP的区别
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;STGP生成的一棵树只能作为一个样本，而MTGP同时生成多棵树作为一组样本，相比之下效率更高&lt;/li&gt;
+&lt;li&gt;在进行适应度评估中，STGP只是对每个样本进行独立评估，无法保证全局最优，而MTGP是将每个样本的适应度汇总成整体的适应度进行评估，分布上来看，生成样本的多样性更佳&lt;/li&gt;
+&lt;li&gt;在遗传操作上，MTGP相比STGP对优质样本个体进行保护，使生成的样本质量更佳&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;一些问题&#34;&gt;一些问题
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;论文所用到了变异算子和交叉算子，为什么不使用复制算子，复制算子的使用对整个系统会有什么影响？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;论文使用到了变异算子和交叉算子，为什么不考虑使用复制算子，复制算子的使用对整个系统会有什么影响？&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;该方法可以实现多元分类还是只能处理二元分类？&lt;/strong&gt;&lt;/p&gt;
