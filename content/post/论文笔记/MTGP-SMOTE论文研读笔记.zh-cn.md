@@ -39,11 +39,11 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 - Full  
 - Ramped half-and-half
 
-本文使用"Ramped half-and-half"方法进行初始化
+本论文使用"Ramped half-and-half"方法进行初始化
 
 #### 2. 选择（Selection）
 
-从当前代中选择某些个体作为下一代的父代的过程。本文使用的选择方法是"精英策略"（elite strategy）。
+从当前代中选择某些个体作为下一代的父代的过程。本论文使用的选择方法是"精英策略"（elite strategy）。
 
 #### 3. 适应度（Fitness）
 
@@ -59,7 +59,7 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 
 #### 6. 复制（Replication）
 
-父代个体在未经任何变化的条件下从当前代复制到新一代。（本文使用的算子没有包括复制操作）
+父代个体在未经任何变化的条件下从当前代复制到新一代。（本论文使用的算子没有包括复制操作）
 
 以上操作是否发生完全取决于该个体的适应度，即个体的适应度越大，被选中的概率越大。
 
@@ -68,7 +68,8 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 1. **确定需要填补的少数类的个体数量**（即为树的数量）
 2. **确定Terminal set和Function set**，定义树中运算的基本结构
 3. **获得目标评估对（Mait, Mint）**用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准
-4. **适应度评估**：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作
+4. **适应度评估**：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作  
+
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png)
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/6b0c7285a1c9921f22464f2b4fc3e118.png)
 

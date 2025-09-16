@@ -37,9 +37,9 @@
 &lt;li&gt;Full&lt;/li&gt;
 &lt;li&gt;Ramped half-and-half&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;本文使用&amp;quot;Ramped half-and-half&amp;quot;方法进行初始化&lt;/p&gt;
+&lt;p&gt;本论文使用&amp;quot;Ramped half-and-half&amp;quot;方法进行初始化&lt;/p&gt;
 &lt;h4 id=&#34;2-选择selection&#34;&gt;2. 选择（Selection）
-&lt;/h4&gt;&lt;p&gt;从当前代中选择某些个体作为下一代的父代的过程。本文使用的选择方法是&amp;quot;精英策略&amp;quot;（elite strategy）。&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;从当前代中选择某些个体作为下一代的父代的过程。本论文使用的选择方法是&amp;quot;精英策略&amp;quot;（elite strategy）。&lt;/p&gt;
 &lt;h4 id=&#34;3-适应度fitness&#34;&gt;3. 适应度（Fitness）
 &lt;/h4&gt;&lt;p&gt;衡量遗传过程质量的指标，对后续的交叉和变异操作起决定性作用。&lt;/p&gt;
 &lt;h4 id=&#34;4-交叉crossover&#34;&gt;4. 交叉（Crossover）
@@ -47,15 +47,16 @@
 &lt;h4 id=&#34;5-变异mutation&#34;&gt;5. 变异（Mutation）
 &lt;/h4&gt;&lt;p&gt;类似于生成新基因的过程，有助于形成种群多样性，使算法有可能跳出局部最优。&lt;/p&gt;
 &lt;h4 id=&#34;6-复制replication&#34;&gt;6. 复制（Replication）
-&lt;/h4&gt;&lt;p&gt;父代个体在未经任何变化的条件下从当前代复制到新一代。（本文使用的算子没有包括复制操作）&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;父代个体在未经任何变化的条件下从当前代复制到新一代。（本论文使用的算子没有包括复制操作）&lt;/p&gt;
 &lt;p&gt;以上操作是否发生完全取决于该个体的适应度，即个体的适应度越大，被选中的概率越大。&lt;/p&gt;
 &lt;h2 id=&#34;mtgp-smote的具体流程&#34;&gt;MTGP-SMOTE的具体流程
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;确定需要填补的少数类的个体数量&lt;/strong&gt;（即为树的数量）&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;确定Terminal set和Function set&lt;/strong&gt;，定义树中运算的基本结构&lt;/li&gt;
 &lt;li&gt;**获得目标评估对（Mait, Mint）**用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;适应度评估&lt;/strong&gt;：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作
-&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png&#34;
+&lt;li&gt;&lt;strong&gt;适应度评估&lt;/strong&gt;：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png&#34;
 	
 	
 	
@@ -70,8 +71,7 @@
 	loading=&#34;lazy&#34;
 	
 	
-&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;与stgp的区别&#34;&gt;与STGP的区别
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;STGP生成的一棵树只能作为一个样本，而MTGP同时生成多棵树作为一组样本，相比之下效率更高&lt;/li&gt;
