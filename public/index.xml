@@ -24,9 +24,9 @@
 &lt;/h3&gt;&lt;p&gt;SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术。&lt;/p&gt;
 &lt;h4 id=&#34;算法流程&#34;&gt;算法流程
 &lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;确定临近数量&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;选择近邻样本&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;合成新样本&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;确定临近数量&lt;/li&gt;
+&lt;li&gt;选择近邻样本&lt;/li&gt;
+&lt;li&gt;合成新样本&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;遗传编程gp&#34;&gt;遗传编程（GP）
 &lt;/h3&gt;&lt;p&gt;遗传编程是一种模拟自然界进化过程的算法，包含以下组件：&lt;/p&gt;
@@ -53,7 +53,7 @@
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;确定需要填补的少数类的个体数量&lt;/strong&gt;（即为树的数量）&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;确定Terminal set和Function set&lt;/strong&gt;，定义树中运算的基本结构&lt;/li&gt;
-&lt;li&gt;**获得目标评估对（Mait, Mint）**用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;获得目标评估对（Mait, Mint）&lt;/strong&gt; 用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;适应度评估&lt;/strong&gt;：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png&#34;

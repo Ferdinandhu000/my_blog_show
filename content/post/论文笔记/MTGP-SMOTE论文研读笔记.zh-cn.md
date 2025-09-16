@@ -24,9 +24,9 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 
 #### 算法流程
 
-1. **确定临近数量**
-2. **选择近邻样本**
-3. **合成新样本**
+1. 确定临近数量
+2. 选择近邻样本
+3. 合成新样本
 
 ### 遗传编程（GP）
 
@@ -67,7 +67,7 @@ SMOTE（Synthetic Minority Over-sampling Technique）合成少数过采样技术
 
 1. **确定需要填补的少数类的个体数量**（即为树的数量）
 2. **确定Terminal set和Function set**，定义树中运算的基本结构
-3. **获得目标评估对（Mait, Mint）**用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准
+3. **获得目标评估对（Mait, Mint）** 用于指导个体的生成。不同的树要分配不同的（Mait, Mint）作为后续评估目标生成的标准
 4. **适应度评估**：利用距离测量和角度测量两种方法进行评估，评价个体的生成情况，决定后续是否进行交叉或变异操作  
 
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/626225f8ad3de7a02010c0a0b910b100.png)
