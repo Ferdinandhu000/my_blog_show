@@ -172,7 +172,8 @@ Includes: attributes and methods&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: A class can have multiple constructors (overloading)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: A class can have multiple constructors (overloading)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;simplest-form-of-class-definition-in-java&#34;&gt;Simplest Form of Class Definition in Java
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/notes/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/post/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,8 +67,14 @@
                 href="https://ferdinandhu.netlify.app/post/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-09-30T18:02:58+08:00</lastmod>
+    <loc>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/</loc>
+    <lastmod>2025-12-17T16:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B02%E6%A0%88%E9%98%9F%E5%88%97%E4%B8%8E%E9%93%BE%E8%A1%A8/</loc>
+    <lastmod>2025-12-17T16:26:22+08:00</lastmod>
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B01%E5%90%84%E7%B1%BB%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2025-12-17T16:25:58+08:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/p/mtgp-smote%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-09-13T19:15:55+08:00</lastmod>
