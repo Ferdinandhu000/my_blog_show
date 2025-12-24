@@ -2,8 +2,8 @@
 title: Links
 links:
   - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
+    description: My GitHub Profile
+    website: https://github.com/Ferdinandhu000
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
     
 menu:
@@ -14,3 +14,9 @@ menu:
 
 comments: false
 ---
+
+<style>
+    .article-header, .article-footer, .article-content {
+        display: none;
+    }
+</style>
