@@ -2,6 +2,7 @@
 date : '2025-05-17T14:16:29+08:00'
 draft : false
 title : 'Java面向对象编程'
+title_en: 'Java Object-Oriented Programming'
 categories : 
   - Java
   - 面向对象

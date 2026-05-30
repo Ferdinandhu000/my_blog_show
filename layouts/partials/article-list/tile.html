@@ -1,3 +1,8 @@
+{{- $title := .context.Title -}}
+{{- $lang := .lang | default site.Language.Lang -}}
+{{- if and (eq $lang "en") .context.Params.title_en -}}
+    {{- $title = .context.Params.title_en -}}
+{{- end -}}
 {{ $image := partialCached "helper/image" (dict "Context" .context "Type" .Type) .context.RelPermalink .Type }}
 <article class="{{ if $image.exists }}has-image{{ end }}">
     <a href="{{ .context.RelPermalink }}">
@@ -21,7 +26,7 @@
                         width="{{ $Width }}" 
                         height="{{ $Height }}" 
                         loading="lazy"
-                        alt="Featured image of post {{ .context.Title }}"
+                        alt="Featured image of post {{ $title }}"
                         {{ with .context.Slug }}data-key="{{ . }}" {{ end }}
                         data-hash="{{ $imageRaw.Data.Integrity }}">
                 {{ else }}
@@ -32,7 +37,7 @@
 
         <div class="article-details">
             <h2 class="article-title">
-                {{- .context.Title -}}
+                {{- $title -}}
             </h2>
         </div>
     </a>

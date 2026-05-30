@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/23%E5%91%A8-%E5%91%A8%E8%AE%B0/'>
 
-<link rel="stylesheet" href="/scss/style.min.b4fd29089352292a8bcf6d141729056ebfd7ef10e9a913dbb024616f2feffc63.css"><meta property='og:title' content="23周 周记">
+<link rel="stylesheet" href="/scss/style.min.896523b128c9db78211390850f1434c94ee682fd61220a25e8000b3faaa536f6.css"><meta property='og:title' content="23周 周记">
 <meta property='og:description' content="ToDoList 6.14 CET-6 准备近代史和军事理论期末考 留意交流项目申请通知 特别感谢学长提供的通识课题库 TAT，不然古建筑机考绝对寄。\n没有一点时间准备人工智能概论考试。需要复习的体量和课程本身的学分完全不匹配（1学分）。其实也很不理解学校为什么要开设这种完全考察学生记忆力的通识课，感觉有点本末倒置了。。。\n抽空了解一下学校通识课选课的相关信息。\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/23%E5%91%A8-%E5%91%A8%E8%AE%B0/'>
 <meta property='og:site_name' content='FerdinandHu'>
@@ -36,6 +36,11 @@
 })();
 </script>
 
+
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
     </head>
     <body class="
     article-page
@@ -44,7 +49,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -326,6 +331,18 @@
                 </time>
             </div>
         
+
+        
+        
+        <div class="article-view-count" id="busuanzi_container_page_pv">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span id="busuanzi_value_page_pv">–</span>
+        </div>
+        
     </footer>
     
 
@@ -454,47 +471,55 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Ferdinandhu000/my_blog_source"
+    data-repo-id="R_kgDOOfo-fA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOOfo-fM4C-JqD"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
 <script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
         }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
     }
-</style>
 
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('gruvbox_dark');
+            }
         }
-    })
+    })();
 </script>
 
     

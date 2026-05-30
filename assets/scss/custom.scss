@@ -560,3 +560,152 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+/* ----------------------------------------------------------
+   21. 归档页重新设计
+   ---------------------------------------------------------- */
+.archives-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.archives-year-group {
+    /* no card background — keep it flush/clean */
+}
+
+/* 年份标题行 */
+.archives-year-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--base-font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--card-text-color-main);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--card-separator-color);
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover { color: var(--accent-color); }
+    }
+}
+
+/* 文章数量徽章 */
+.archives-year-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    color: var(--accent-color-text);
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    padding: 0 7px;
+    letter-spacing: 0;
+}
+
+/* 年份下文章列表 */
+.archives-year-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* 单条文章行 */
+.archives-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 9px 12px;
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: var(--card-background-selected);
+    }
+}
+
+/* 日期（月-日） */
+.archives-item-date {
+    flex-shrink: 0;
+    font-family: var(--code-font-family);
+    font-size: 1.3rem;
+    color: var(--card-text-color-tertiary);
+    letter-spacing: 0.02em;
+    min-width: 3.6em;
+}
+
+/* 文章标题链接 */
+.archives-item-title {
+    font-family: var(--base-font-family);
+    font-size: 1.5rem;
+    color: var(--card-text-color-main);
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: color 0.15s ease;
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+[data-scheme="dark"] .archives-year-count {
+    background-color: rgba(123, 167, 212, 0.15);
+    color: #7ba7d4;
+    border: 1px solid rgba(123, 167, 212, 0.3);
+}
+
+/* ----------------------------------------------------------
+   22. 暗色模式分页修复 — 选中页高对比度
+   ---------------------------------------------------------- */
+
+/* 未选中按钮在暗色下的基础样式 */
+[data-scheme="dark"] .pagination .page-link {
+    background-color: #2a2a2a;
+    color: rgba(255, 255, 255, 0.65);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 选中页：用亮蓝强调色 + 深色文字，确保高对比度 */
+[data-scheme="dark"] .pagination .page-link.current {
+    background-color: #7ba7d4 !important;
+    color: #0a0f18 !important;
+    border-color: #7ba7d4 !important;
+    font-weight: 700;
+    box-shadow: 0 0 0 2px rgba(123, 167, 212, 0.4);
+}
+
+/* hover 态 */
+[data-scheme="dark"] .pagination .page-link:hover:not(.current) {
+    background-color: rgba(123, 167, 212, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(123, 167, 212, 0.4);
+}
+
+/* ----------------------------------------------------------
+   23. 阅读量徽章样式（Busuanzi）
+   ---------------------------------------------------------- */
+.article-view-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.3rem;
+    color: var(--card-text-color-tertiary);
+
+    svg {
+        width: 16px;
+        height: 16px;
+        stroke-width: 1.5;
+    }
+
+    #busuanzi_value_page_pv {
+        font-variant-numeric: tabular-nums;
+    }
+}

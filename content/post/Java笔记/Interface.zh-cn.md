@@ -2,6 +2,7 @@
 date : '2025-05-19T21:05:05+08:00'
 draft : false
 title : 'Interface'
+title_en: 'Interface'
 categories : 
   - Java
   - Notes

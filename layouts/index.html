@@ -130,7 +130,7 @@
 <div id="terminal">
   <div id="output"></div>
   <div id="input-wrap" class="hidden">
-    <span class="prompt-str">visitor@hj-blog:~$&nbsp;</span>
+    <span class="prompt-str">~$&nbsp;</span>
     <div id="display-row">
       <span id="buf-text"></span><span id="tab-ghost"></span><span id="caret"></span>
     </div>
@@ -185,7 +185,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function boot() {
   locked = true;
   await sleep(120);
-  ln('Starting <span class="ln-ok">hj-blog</span>...', 'boot');
+  ln('Starting...', 'boot');
   await sleep(180);
   ln('[  <span class="ln-ok">OK</span>  ] Loaded kernel modules.', 'boot');
   await sleep(140);
@@ -211,7 +211,7 @@ async function boot() {
 
   lnBlank();
   await sleep(80);
-  ln(`  <span class="ln-amber" style="font-weight:700">${esc(S.title)}</span>  <span class="ln-dim">—</span>  <span class="ln-info">${esc(S.author)}'s Personal Space</span>`);
+  ln(`  <span class="ln-amber" style="font-weight:700">${esc(S.title)}</span>`);
   ln('  <span class="ln-dim">────────────────────────────────────────────────────────</span>');
   await sleep(60);
   ln(`  Type <span class="ln-amber">/help</span> or <span class="ln-amber">/?</span> for available commands.`, 'info');
@@ -225,7 +225,7 @@ async function boot() {
 
 /* ── Commands ── */
 function echoPrompt(raw) {
-  ln(`<span class="prompt-str">visitor@hj-blog:~$&nbsp;</span><span class="ln-ok" style="font-weight:700">${esc(raw)}</span>`);
+  ln(`<span class="prompt-str">~$&nbsp;</span><span class="ln-ok" style="font-weight:700">${esc(raw)}</span>`);
 }
 
 function cmdHelp() {
@@ -241,7 +241,6 @@ function cmdHelp() {
     ['/github  ', 'Open GitHub profile (new tab)'],
     ['/ls      ', 'List available sections'],
     ['/whoami  ', 'Show author info'],
-    ['/neofetch', 'Display system info'],
     ['/date    ', 'Show current date & time'],
     ['/echo    ', 'Print text  (e.g.  /echo hello world)'],
     ['/clear   ', 'Clear the terminal  (Ctrl+L)'],
@@ -325,29 +324,7 @@ function cmdEcho(args) {
 
 function cmdClear() { clearScreen(); }
 
-function cmdNeofetch() {
-  const d   = new Date();
-  const pic = ['        .--------.',"       /  _______ \\",
-               '      / /  _   _  \\|',"      \\ | | | | | |",
-               "       \\ \\___/ ___/","        '--------'", ''];
-  const info= [
-    `<span class="ln-amber">${esc(S.author)}@hj-blog</span>`,
-    '<span class="ln-dim">─────────────────────</span>',
-    `<span class="ln-amber">OS     </span> Hugo v0.146 extended`,
-    `<span class="ln-amber">Theme  </span> hugo-theme-stack`,
-    `<span class="ln-amber">Shell  </span> hj-terminal v1.0`,
-    `<span class="ln-amber">Date   </span> ${d.toLocaleDateString('zh-CN')}`,
-    `<span class="ln-amber">Blog   </span> ${esc(S.title)}`,
-    `<span class="ln-amber">Colors </span> <span style="color:#33ff66">███</span><span style="color:#f5a623">███</span><span style="color:#58c4dc">███</span><span style="color:#ff5f56">███</span>`,
-  ];
-  lnBlank();
-  for (let i = 0; i < Math.max(pic.length, info.length); i++) {
-    const a = pic[i]  != null ? `<span class="ln-ok">${esc(pic[i])}</span>` : '                   ';
-    const b = info[i] != null ? info[i] : '';
-    ln(`  ${a}   ${b}`);
-  }
-  lnBlank();
-}
+
 
 /* ── Dispatch (all commands require / prefix) ── */
 const DISPATCH = {
@@ -360,7 +337,6 @@ const DISPATCH = {
   '/ls':cmdLs,         '/dir':cmdLs,
   '/whoami':cmdWhoami,
   '/date':cmdDate,
-  '/neofetch':cmdNeofetch,
   '/echo':cmdEcho,
   '/clear':cmdClear,   '/cls':cmdClear,
 };
@@ -368,7 +344,7 @@ const DISPATCH = {
 /* Completion list — shown keys only (deduplicated, sorted) */
 const CMD_LIST = [...new Set(
   ['/help','/?','/blog','/about','/archive','/search',
-   '/github','/ls','/whoami','/date','/neofetch','/echo','/clear']
+   '/github','/ls','/whoami','/date','/echo','/clear']
 )].sort();
 
 /* ── Execute ── */

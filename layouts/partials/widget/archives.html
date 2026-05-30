@@ -12,6 +12,14 @@
         {{ $pages := where $context.Site.RegularPages "Type" "in" $context.Site.Params.mainSections }}
         {{ $notHidden := where $context.Site.RegularPages "Params.hidden" "!=" true }}
         {{ $filtered := ($pages | intersect $notHidden) }}
+        
+        {{ if and (eq (len $filtered) 0) (eq $context.Lang "en") }}
+            {{ $defaultSite := site.Sites.Default }}
+            {{ $pages = where $defaultSite.RegularPages "Type" "in" $context.Site.Params.mainSections }}
+            {{ $notHidden = where $defaultSite.RegularPages "Params.hidden" "!=" true }}
+            {{ $filtered = ($pages | intersect $notHidden) }}
+        {{ end }}
+        
         {{ $archives := $filtered.GroupByDate "2006" }}
         
         <div class="widget-archive--list">

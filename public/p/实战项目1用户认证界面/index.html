@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/'>
 
-<link rel="stylesheet" href="/scss/style.min.b4fd29089352292a8bcf6d141729056ebfd7ef10e9a913dbb024616f2feffc63.css"><meta property='og:title' content="实战项目1——用户认证界面">
+<link rel="stylesheet" href="/scss/style.min.896523b128c9db78211390850f1434c94ee682fd61220a25e8000b3faaa536f6.css"><meta property='og:title' content="实战项目1——用户认证界面">
 <meta property='og:description' content="用户身份验证界面 用java实现一个简单的用户身份验证界面，包含用户注册、登录、登出和注销功能，并且通过图形用户界面（GUI）生成一个窗口供用户进行交互\n各个类的功能介绍 User类\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/'>
 <meta property='og:site_name' content='FerdinandHu'>
@@ -36,6 +36,11 @@
 })();
 </script>
 
+
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
     </head>
     <body class="
     article-page
@@ -44,7 +49,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -374,28 +379,21 @@
                 </time>
             </div>
         
+
+        
+        
+        <div class="article-view-count" id="busuanzi_container_page_pv">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span id="busuanzi_value_page_pv">–</span>
+        </div>
+        
     </footer>
     
 
-    
-        <footer class="article-translations">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-            <div>
-                
-                    <a href="https://ferdinandhu.netlify.app/en/p/pratical-project-1--user-authentication-interface/" class="link">English</a>
-                
-            </div>
-        </footer>
     
 </div>
 
@@ -1253,47 +1251,55 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Ferdinandhu000/my_blog_source"
+    data-repo-id="R_kgDOOfo-fA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOOfo-fM4C-JqD"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
 <script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
         }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
     }
-</style>
 
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('gruvbox_dark');
+            }
         }
-    })
+    })();
 </script>
 
     

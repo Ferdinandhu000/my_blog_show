@@ -1,3 +1,7 @@
+{{- $title := .Title -}}
+{{- if and (eq site.Language.Lang "en") .Params.title_en -}}
+    {{- $title = .Params.title_en -}}
+{{- end -}}
 <div class="article-details">
     {{ if .Params.categories }}
     <header class="article-category">
@@ -12,7 +16,7 @@
     <div class="article-title-wrapper">
         <h2 class="article-title">
             <a href="{{ .RelPermalink }}">
-                {{- .Title -}}
+                {{- $title -}}
             </a>
         </h2>
     
@@ -44,6 +48,18 @@
                     {{ T "article.readingTime" .ReadingTime }}
                 </time>
             </div>
+        {{ end }}
+
+        {{/* 不蒜子阅读量 — 仅在文章页显示 */}}
+        {{ if .IsPage }}
+        <div class="article-view-count" id="busuanzi_container_page_pv">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span id="busuanzi_value_page_pv">–</span>
+        </div>
         {{ end }}
     </footer>
     {{ end }}

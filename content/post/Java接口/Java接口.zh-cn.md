@@ -2,6 +2,7 @@
 date : '2025-05-17T14:15:40+08:00'
 draft : false
 title : 'Java接口'
+title_en: 'Interface of Java'
 categories : 
   - Java
 ---

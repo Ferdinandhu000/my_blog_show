@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B/'>
 
-<link rel="stylesheet" href="/scss/style.min.b4fd29089352292a8bcf6d141729056ebfd7ef10e9a913dbb024616f2feffc63.css"><meta property='og:title' content="常用加密算法与编码类型">
+<link rel="stylesheet" href="/scss/style.min.896523b128c9db78211390850f1434c94ee682fd61220a25e8000b3faaa536f6.css"><meta property='og:title' content="常用加密算法与编码类型">
 <meta property='og:description' content="编码类型 1. Base64 定义：一种基于64个可打印字符来表示二进制数据的表示方法 特点： 将二进制数据转换为ASCII字符串 常用于在HTTP协议中传输二进制数据 编码后的数据比原始数据大约增加33% 应用场景： 邮件传输 图片转码 简单的数据加密 示例： 1 2 3 4 5 原始文本：Hello World Base64编码：SGVsbG8gV29ybGQ= 原始文本：你好，世界 Base64编码：5L2g5aW977yM5LiW55WM 2. URL编码 定义：将URL中的特殊字符转换为%加上ASCII码的十六进制形式 特点： 保证URL中只包含ASCII字符 可逆的编码方式 应用场景： URL参数传递 网页表单提交 示例： 1 2 原始URL：https://example.com/path with spaces/file.txt URL编码：https%3A%2F%2Fexample.com%2Fpath%20with%20spaces%2Ffile.txt 3. Code49 定义：一种高密度条形码编码方式，可以编码全部128个ASCII字符 特点： 支持多行编码 每行最多8个字符 包含校验和 支持双向扫描 应用场景： 物流管理 库存控制 工业自动化 医疗设备标识 4. Code39 定义：一种字母数字条形码编码方式，可以编码43个字符（0-9, A-Z, -, ., $, /, +, %, SPACE） 特点： 自校验能力 双向可读 支持字母和数字 起始和结束必须有星号(*) 应用场景： 工业应用 物流管理 库存控制 文档管理 编码规则： 每个字符由9个元素组成（5个条和4个空） 3个元素是宽的，6个元素是窄的 字符间需要间隔 起始和结束必须有星号(*) 加密算法 1. 对称加密 1.1 AES (Advanced Encryption Standard) 特点： 密钥长度：128/192/256位 加密强度高 计算速度快 应用场景： 文件加密 通信加密 数据库加密 1.2 DES (Data Encryption Standard) 特点： 密钥长度：56位 分组长度：64位 已被AES替代 应用场景： 传统系统兼容 低安全性要求的场景 2. 非对称加密 2.1 RSA 特点： 基于大数分解难题 公钥加密，私钥解密 计算速度较慢 应用场景： 数字签名 密钥交换 证书加密 2.2 ECC (椭圆曲线加密) 特点： 密钥长度短 安全性高 计算速度快 应用场景： 移动设备加密 物联网设备 数字证书 3. 哈希算法 3.1 MD5 特点： 输出128位哈希值 已被证明不安全 计算速度快 应用场景： 文件完整性校验 密码存储（不推荐） 3.2 SHA系列 特点： SHA-1：160位输出 SHA-256：256位输出 SHA-512：512位输出 应用场景： 数字签名 密码存储 文件校验 使用Java实现Base64编码与解码 导入java自带的Base64类 1 2 import java.nio.charset.StandardCharsets; import java.util.Base64; 编码 1 2 3 4 5 6 7 8 9 10 11 // 编码 public static String encode(String str) { // 非空字符串才进行编码 if (str != null &amp;&amp; str.length() &gt; 0) { // String 转 byte[] byte[] bytes = str.getBytes(StandardCharsets.UTF_8); // 编码（base64字符串） return Base64.getEncoder().encodeToString(bytes); } return &#34;&#34;; } 解码 1 2 3 4 5 6 7 8 9 10 11 //解码 public static String decode(String base64Str) { // 非空字符串才进行解码 if (base64Str != null &amp;&amp; base64Str.length() &gt; 0) { // 编码 byte[] base64Bytes = Base64.getDecoder().decode(base64Str); // byte[] 转 String（解码后的字符串） return new String(base64Bytes, StandardCharsets.UTF_8); } return &#34;&#34;; } 测试代码 1 2 3 4 5 6 7 8 9 10 11 12 public static void main(String[] args) { // 定义一个字符串 String s = &#34;FerdinandHu&#34;; // 使用方法二将字符串进行base64编码 String base64Str = encode(s); // 输出原始字符串 System.out.println(&#34;原文：&#34; + s); // 输出base64编码后的字符串 System.out.println(&#34;base64编码后：&#34; + base64Str); // 使用方法二将base64编码后的字符串进行解码 System.out.println(&#34;base64解码后：&#34; + decode(base64Str)); } 输出内容 1 2 3 原文：FerdinandHu base64编码后：RmVyZGluYW5kSHU= base64解码后：FerdinandHu ">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B/'>
 <meta property='og:site_name' content='FerdinandHu'>
@@ -36,6 +36,11 @@
 })();
 </script>
 
+
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
     </head>
     <body class="
     article-page
@@ -44,7 +49,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -379,28 +384,21 @@
                 </time>
             </div>
         
+
+        
+        
+        <div class="article-view-count" id="busuanzi_container_page_pv">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span id="busuanzi_value_page_pv">–</span>
+        </div>
+        
     </footer>
     
 
-    
-        <footer class="article-translations">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-            <div>
-                
-                    <a href="https://ferdinandhu.netlify.app/en/p/common-encryption-algorithms-and-encoding-types/" class="link">English</a>
-                
-            </div>
-        </footer>
     
 </div>
 
@@ -816,47 +814,55 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Ferdinandhu000/my_blog_source"
+    data-repo-id="R_kgDOOfo-fA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOOfo-fM4C-JqD"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
 <script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
         }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
     }
-</style>
 
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('gruvbox_dark');
+            }
         }
-    })
+    })();
 </script>
 
     
