@@ -1,0 +1,562 @@
+/* ==========================================================
+   Clean, readable, content-first aesthetic
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1. Google Fonts & Base Typography
+   ---------------------------------------------------------- */
+
+/* 全局字体 */
+:root {
+    --base-font-family: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --article-font-family: "Georgia", "Noto Serif SC", "Source Han Serif SC", serif;
+    --code-font-family: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, monospace;
+    --article-font-size: 1.6rem;
+    --article-line-height: 1.9;
+}
+
+/* ----------------------------------------------------------
+   2. 亮色主题 —— 干净的学术白
+   ---------------------------------------------------------- */
+:root {
+    /* 背景：纯净白，减少蓝色调 */
+    --body-background: #f9f9f7;
+
+    /* 主强调色：深邃藏青蓝，学术感 */
+    --accent-color: #2d5a8e;
+    --accent-color-darker: #1e3f63;
+    --accent-color-text: #fff;
+
+    /* 正文：深灰，阅读友好 */
+    --body-text-color: #3a3a3a;
+
+    /* 卡片：纯白 */
+    --card-background: #ffffff;
+    --card-background-selected: #f0f4f8;
+    --card-text-color-main: #1a1a1a;
+    --card-text-color-secondary: #555555;
+    --card-text-color-tertiary: #888888;
+    --card-separator-color: rgba(0, 0, 0, 0.08);
+    --card-border-radius: 6px;
+
+    /* 引用块 */
+    --blockquote-background-color: #f5f7fa;
+    --blockquote-border-size: 3px;
+
+    /* 链接 */
+    --link-background-color: 45, 90, 142;
+    --link-background-opacity: 0.12;
+    --link-background-opacity-hover: 0.22;
+
+    /* 更小的圆角，更学术 */
+    --tag-border-radius: 3px;
+
+    /* 阴影：极其克制 */
+    --shadow-l1: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-l2: 0 3px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-l3: 0 6px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+    --shadow-l4: 0 10px 24px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.06);
+
+    /* 滚动条 */
+    --scrollbar-thumb: #c8c8c8;
+    --scrollbar-track: var(--body-background);
+}
+
+/* ----------------------------------------------------------
+   3. 暗色主题 —— 深邃学术深灰
+   ---------------------------------------------------------- */
+[data-scheme="dark"] {
+    --body-background: #1a1a1a;
+    --accent-color: #7ba7d4;
+    --accent-color-darker: #5a8abf;
+    --accent-color-text: #0d1117;
+    --body-text-color: rgba(255, 255, 255, 0.82);
+
+    --card-background: #242424;
+    --card-background-selected: rgba(255, 255, 255, 0.08);
+    --card-text-color-main: rgba(255, 255, 255, 0.92);
+    --card-text-color-secondary: rgba(255, 255, 255, 0.65);
+    --card-text-color-tertiary: rgba(255, 255, 255, 0.42);
+    --card-separator-color: rgba(255, 255, 255, 0.08);
+
+    --blockquote-background-color: rgba(255, 255, 255, 0.04);
+    --scrollbar-thumb: #404040;
+}
+
+/* ----------------------------------------------------------
+   4. Body & 全局基础
+   ---------------------------------------------------------- */
+body {
+    font-family: var(--base-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+}
+
+/* 页面淡入 */
+body {
+    animation: pageIn 0.4s ease-out;
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------------------------
+   5. 滚动条美化
+   ---------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ----------------------------------------------------------
+   6. 侧边栏
+   ---------------------------------------------------------- */
+
+/* 头像：加细边框，简约感 */
+.sidebar header .site-avatar .site-logo {
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar header .site-avatar .site-logo:hover {
+    border-color: var(--accent-color);
+    transform: scale(1.03);
+}
+
+[data-scheme="dark"] .sidebar header .site-avatar .site-logo {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 站名：更学术的字重 */
+.sidebar header .site-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--card-text-color-main);
+}
+
+/* 副标题 */
+.sidebar header .site-description {
+    font-size: 1.3rem;
+    color: var(--card-text-color-secondary);
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   7. 文章列表卡片
+   ---------------------------------------------------------- */
+.article-list article {
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius);
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.article-list article:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-l2);
+    border-color: rgba(45, 90, 142, 0.18);
+}
+
+[data-scheme="dark"] .article-list article:hover {
+    border-color: rgba(123, 167, 212, 0.2);
+}
+
+/* 文章标题：简洁有力 */
+.article-title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+}
+
+.article-title a {
+    color: var(--card-text-color-main);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article-title a:hover {
+    color: var(--accent-color);
+}
+
+/* 文章副标题 */
+.article-subtitle {
+    font-size: 1.5rem;
+    color: var(--card-text-color-secondary);
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   8. 文章正文页
+   ---------------------------------------------------------- */
+
+/* 正文字体：衬线，阅读感强 */
+.article-content {
+    font-family: var(--article-font-family);
+    font-size: 1.65rem;
+    line-height: 1.9;
+    color: var(--card-text-color-main);
+}
+
+/* 标题层级：清晰的学术结构 */
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+    font-family: var(--base-font-family);
+    font-weight: 600;
+    color: var(--card-text-color-main);
+    letter-spacing: -0.02em;
+    margin-top: 2.4em;
+    margin-bottom: 0.8em;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    padding-bottom: 0.4em;
+    border-bottom: 1.5px solid var(--card-separator-color);
+}
+
+.article-content h3 {
+    font-size: 1.75rem;
+}
+
+/* 链接：学术感下划线 */
+.article-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(45, 90, 142, 0.3);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.article-content a:hover {
+    border-bottom-color: var(--accent-color);
+}
+
+[data-scheme="dark"] .article-content a {
+    color: var(--accent-color);
+    border-bottom-color: rgba(123, 167, 212, 0.35);
+}
+
+/* 引用块：左边竖线，学术论文感 */
+.article-content blockquote {
+    margin: 2em 0;
+    padding: 0.8em 1.2em;
+    border-left: 3px solid var(--accent-color);
+    background-color: var(--blockquote-background-color);
+    border-radius: 0 4px 4px 0;
+    color: var(--card-text-color-secondary);
+    font-style: italic;
+}
+
+.article-content blockquote p {
+    margin: 0;
+}
+
+/* 代码：清晰等宽，无花哨 */
+.article-content code {
+    font-family: var(--code-font-family);
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    color: #c0392b;
+}
+
+[data-scheme="dark"] .article-content code {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #e07b75;
+}
+
+/* 代码块 */
+.article-content pre {
+    font-family: var(--code-font-family);
+    font-size: 1.4rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    line-height: 1.6;
+}
+
+/* 表格：学术论文表格样式 */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    margin: 1.5em 0;
+}
+
+.article-content th {
+    background-color: var(--card-background-selected);
+    font-weight: 600;
+    font-family: var(--base-font-family);
+    text-align: left;
+    padding: 0.6em 1em;
+    border-bottom: 2px solid var(--card-separator-color);
+}
+
+.article-content td {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid var(--card-separator-color);
+}
+
+.article-content tr:last-child td {
+    border-bottom: none;
+}
+
+/* 图片：居中，带细边框 */
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 4px;
+    border: 1px solid var(--card-separator-color);
+}
+
+/* ----------------------------------------------------------
+   9. 标签 & 分类
+   ---------------------------------------------------------- */
+.article-tags a,
+.article-category a {
+    font-size: 1.2rem;
+    font-family: var(--base-font-family);
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* 标签云 widget */
+.tagCloud-tags a {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 3px;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    background-color: var(--card-background-selected);
+    color: var(--card-text-color-secondary);
+    border: 1px solid var(--card-separator-color);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+}
+
+.tagCloud-tags a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+/* ----------------------------------------------------------
+   10. Widget 侧边栏组件
+   ---------------------------------------------------------- */
+.widget {
+    border-radius: 6px;
+}
+
+.widget .widget-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--card-text-color-tertiary);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--card-separator-color);
+}
+
+/* 档案列表 */
+.widget--archives .archives-date {
+    font-size: 1.4rem;
+    color: var(--card-text-color-secondary);
+}
+
+/* ----------------------------------------------------------
+   11. 分页
+   ---------------------------------------------------------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: var(--base-font-family);
+    color: var(--card-text-color-secondary);
+    background-color: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+}
+
+.pagination .page-link:hover,
+.pagination .page-link.current {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+/* ----------------------------------------------------------
+   12. 文章 Header（封面图下标题区）
+   ---------------------------------------------------------- */
+.article-header {
+    background: var(--card-background);
+    border-bottom: 1px solid var(--card-separator-color);
+}
+
+/* ----------------------------------------------------------
+   13. 导航菜单
+   ---------------------------------------------------------- */
+.menu {
+    font-family: var(--base-font-family);
+}
+
+.menu .menu-item a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--card-text-color-secondary);
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+}
+
+.menu .menu-item a:hover {
+    color: var(--accent-color);
+}
+
+.menu .menu-item.current a {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------
+   14. Footer
+   ---------------------------------------------------------- */
+.site-footer {
+    font-family: var(--base-font-family);
+    font-size: 1.3rem;
+    color: var(--card-text-color-tertiary);
+    border-top: 1px solid var(--card-separator-color);
+    padding-top: 20px;
+}
+
+/* ----------------------------------------------------------
+   15. 搜索框
+   ---------------------------------------------------------- */
+#search-form input {
+    font-family: var(--base-font-family);
+    font-size: 1.5rem;
+    border: 1px solid var(--card-separator-color);
+    border-radius: 4px;
+    padding: 8px 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--card-background);
+    color: var(--card-text-color-main);
+}
+
+#search-form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(45, 90, 142, 0.1);
+}
+
+[data-scheme="dark"] #search-form input:focus {
+    box-shadow: 0 0 0 3px rgba(123, 167, 212, 0.12);
+}
+
+/* ----------------------------------------------------------
+   16. TOC 目录
+   ---------------------------------------------------------- */
+#TableOfContents {
+    font-family: var(--base-font-family);
+    font-size: 1.4rem;
+}
+
+#TableOfContents a {
+    color: var(--card-text-color-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border-bottom: none;
+}
+
+#TableOfContents a:hover {
+    color: var(--accent-color);
+}
+
+/* ----------------------------------------------------------
+   17. 阅读进度条（顶部细线）
+   ---------------------------------------------------------- */
+#reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: var(--accent-color);
+    z-index: 9999;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* ----------------------------------------------------------
+   18. 选中文本颜色
+   ---------------------------------------------------------- */
+::selection {
+    background-color: rgba(45, 90, 142, 0.18);
+    color: var(--card-text-color-main);
+}
+
+[data-scheme="dark"] ::selection {
+    background-color: rgba(123, 167, 212, 0.25);
+}
+
+/* ----------------------------------------------------------
+   19. 图片说明文字 (figcaption)
+   ---------------------------------------------------------- */
+.article-content figcaption {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--card-text-color-tertiary);
+    font-family: var(--base-font-family);
+    margin-top: -0.8em;
+    margin-bottom: 1.5em;
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------
+   20. 紧凑列表（最近文章 widget）
+   ---------------------------------------------------------- */
+.article-list--compact article > a {
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+}
+
+.article-list--compact article > a:hover {
+    background-color: var(--card-background-selected);
+}
+
+.article-list--compact .article-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}

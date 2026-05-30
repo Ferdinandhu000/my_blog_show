@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="二叉树 遍历二叉树 pre-order 口诀：中左右\n顺序：[F, B, A, D, C, E, G, I, H]\n代码 1 2 3 4 5 6 public static void preOrder(Node root) { if(root == null) return; System.out.println(root.val); // 中 preOrder_v1(root.left); // 左 preOrder_v1(root.right); // 右 } in-order 口诀：左中右\n顺序：[A, B, C, D, E, F, G, H, I]\n">
 <title>算法笔记3——二叉树、二叉搜索树、BFS与DFS</title>
 
 <link rel='canonical' href='https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/'>
 
-<link rel="stylesheet" href="/scss/style.min.2f3d9b7267f2400dc6d37317b2c94a3e25c32820c879ca8d5fd5ad622407fe84.css"><meta property='og:title' content="算法笔记3——二叉树、二叉搜索树、BFS与DFS">
+<link rel="stylesheet" href="/scss/style.min.b4fd29089352292a8bcf6d141729056ebfd7ef10e9a913dbb024616f2feffc63.css"><meta property='og:title' content="算法笔记3——二叉树、二叉搜索树、BFS与DFS">
 <meta property='og:description' content="二叉树 遍历二叉树 pre-order 口诀：中左右\n顺序：[F, B, A, D, C, E, G, I, H]\n代码 1 2 3 4 5 6 public static void preOrder(Node root) { if(root == null) return; System.out.println(root.val); // 中 preOrder_v1(root.left); // 左 preOrder_v1(root.right); // 右 } in-order 口诀：左中右\n顺序：[A, B, C, D, E, F, G, H, I]\n">
 <meta property='og:url' content='https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/'>
 <meta property='og:site_name' content='FerdinandHu'>
@@ -14,6 +14,27 @@
 <meta name="twitter:title" content="算法笔记3——二叉树、二叉搜索树、BFS与DFS">
 <meta name="twitter:description" content="二叉树 遍历二叉树 pre-order 口诀：中左右\n顺序：[F, B, A, D, C, E, G, I, H]\n代码 1 2 3 4 5 6 public static void preOrder(Node root) { if(root == null) return; System.out.println(root.val); // 中 preOrder_v1(root.left); // 左 preOrder_v1(root.right); // 右 } in-order 口诀：左中右\n顺序：[A, B, C, D, E, F, G, H, I]\n">
     <link rel="shortcut icon" href="/images/203506445.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<div id="reading-progress-bar"></div>
+<script>
+(function() {
+    var bar = document.getElementById('reading-progress-bar');
+    if (!bar) return;
+    function updateProgress() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+})();
+</script>
 
     </head>
     <body class="
@@ -72,49 +93,7 @@
             <h1 class="site-name"><a href="/">FerdinandHu</a></h1>
             <h2 class="site-description"></h2>
         </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/Ferdinandhu000'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://twitter.com'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
+    </header><ol class="menu" id="main-menu">
         
         
         
@@ -139,7 +118,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -153,6 +132,27 @@
 
                 
                 <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>博客</span>
             </a>
         </li>
         
@@ -1092,8 +1092,9 @@
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 </div>
 
 <style>
@@ -1121,7 +1122,9 @@
     <section class="copyright">
         &copy; 
         
-        2025 Ferdinand Hu
+            2025 - 
+        
+        2026 Ferdinand Hu
     </section>
     
     <section class="powerby">

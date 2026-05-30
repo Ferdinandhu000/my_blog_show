@@ -1,19 +1,486 @@
-{{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
-    {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
+<!DOCTYPE html>
+{{- $blogURL    := "/post/"    | relLangURL -}}
+{{- $aboutURL   := "/about/"  -}}
+{{- $archiveURL := "/archives/" -}}
+{{- $searchURL  := "/search/" | relLangURL -}}
+{{- $githubURL  := "https://github.com/Ferdinandhu000" -}}
+{{- with .Site.GetPage "/page/about"    }}{{ $aboutURL   = .RelPermalink }}{{ end -}}
+{{- with .Site.GetPage "/page/archives" }}{{ $archiveURL = .RelPermalink }}{{ end -}}
+{{- with .Site.GetPage "/page/search"   }}{{ $searchURL  = .RelPermalink }}{{ end -}}
+{{- range .Site.Menus.social }}{{ if eq .Identifier "github" }}{{ $githubURL = .URL }}{{ end }}{{ end -}}
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Title }} — Interactive Terminal">
+  <link rel="icon" href="/images/203506445.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:     #33ff66;
+      --green-dim: #1a6632;
+      --green-glo: rgba(51,255,102,.4);
+      --amber:     #f5a623;
+      --red:       #ff5f56;
+      --blue:      #58c4dc;
+      --white:     #dde8e0;
+      --comment:   #4a7a5a;
+      --bg:        #050f08;
+    }
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--bg);
+      color: var(--green);
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 14px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    /* CRT scanlines */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(
+        0deg, transparent 0, transparent 2px,
+        rgba(0,0,0,.055) 2px, rgba(0,0,0,.055) 4px
+      );
+      pointer-events: none; z-index: 9998;
+    }
+    /* Ambient glow */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(0,80,20,.09) 0%, transparent 70%);
+      pointer-events: none; z-index: 9997;
+    }
 
-    <section class="article-list">
-        {{ range $index, $element := $pag.Pages }}
-            {{ partial "article-list/default" . }}
-        {{ end }}
-    </section>
+    #terminal { min-height: 100vh; padding: 28px 36px 80px; max-width: 860px; margin: 0 auto; }
 
-    {{- partial "pagination.html" . -}}
-    {{- partial "footer/footer" . -}}
-{{ end }}
+    /* Output */
+    .ln {
+      display: block; white-space: pre-wrap; word-break: break-word;
+      animation: fi .07s ease-out both;
+    }
+    @keyframes fi { from{opacity:0;transform:translateY(2px)} to{opacity:1;transform:none} }
+    .ln-boot    { color: var(--comment); }
+    .ln-ok      { color: var(--green);   }
+    .ln-info    { color: var(--white);   }
+    .ln-dim     { color: var(--comment); }
+    .ln-amber   { color: var(--amber);   }
+    .ln-err     { color: var(--red);     }
+    .ln-blue    { color: var(--blue);    }
 
-{{ define "right-sidebar" }}
-    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
-{{ end }}
+    .ascii-art {
+      display: block; white-space: pre; line-height: 1.15;
+      color: var(--green); font-weight: 700;
+      text-shadow: 0 0 14px var(--green-glo);
+      animation: fi .07s ease-out both;
+    }
+
+    /* Links inside terminal output */
+    a.tl {
+      color: var(--blue);
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: color .15s, text-shadow .15s;
+    }
+    a.tl:hover { color: var(--green); text-shadow: 0 0 8px var(--green-glo); }
+
+    /* Input row */
+    #input-wrap { display: flex; align-items: center; margin-top: 4px; flex-wrap: nowrap; }
+    #input-wrap.hidden { display: none; }
+
+    .prompt-str {
+      color: var(--green);
+      text-shadow: 0 0 6px var(--green-glo);
+      white-space: nowrap; flex-shrink: 0; user-select: none;
+    }
+    #display-row { display: flex; align-items: center; flex: 1; min-width: 0; }
+    #buf-text   { color: var(--green); white-space: pre; }
+    #tab-ghost  { color: var(--green-dim); white-space: pre; }
+    #caret {
+      display: inline-block; width: .55em; height: 1.1em;
+      background: var(--green); vertical-align: text-bottom; flex-shrink: 0;
+      box-shadow: 0 0 10px var(--green-glo);
+      animation: blink 1.1s step-end infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* Hidden real input */
+    #ri { position: fixed; opacity: 0; pointer-events: none; width: 1px; height: 1px; top: 0; left: 0; }
+
+    /* Mobile */
+    #tap-hint { display: none; color: var(--comment); font-size: 12px; margin-top: 14px; }
+    @media (pointer: coarse) { #tap-hint { display: block; } }
+    @media (max-width: 600px) {
+      #terminal { padding: 14px 16px 60px; font-size: 13px; }
+      .ascii-art { font-size: 8.5px; }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--green-dim); border-radius: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</head>
+<body>
+<div id="terminal">
+  <div id="output"></div>
+  <div id="input-wrap" class="hidden">
+    <span class="prompt-str">visitor@hj-blog:~$&nbsp;</span>
+    <div id="display-row">
+      <span id="buf-text"></span><span id="tab-ghost"></span><span id="caret"></span>
+    </div>
+  </div>
+  <p id="tap-hint">[点击屏幕以激活输入 / Tap to focus]</p>
+</div>
+<input id="ri" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="terminal input">
+
+<script>
+/* ── Site data (injected by Hugo; html/template handles JS escaping automatically) ── */
+const S = {
+  title:      {{ .Site.Title }},
+  author:     {{ or .Site.Copyright "Ferdinand Hu" }},
+  blogURL:    {{ $blogURL }},
+  aboutURL:   {{ $aboutURL }},
+  archiveURL: {{ $archiveURL }},
+  searchURL:  {{ $searchURL }},
+  githubURL:  {{ $githubURL }},
+};
+
+/* ── DOM ── */
+const $out   = document.getElementById('output');
+const $wrap  = document.getElementById('input-wrap');
+const $buf   = document.getElementById('buf-text');
+const $ghost = document.getElementById('tab-ghost');
+const $ri    = document.getElementById('ri');
+
+/* ── State ── */
+let buf    = '';
+let hist   = [];
+let hIdx   = -1;
+let tabSt  = null;
+let locked = false;
+
+/* ── Output helpers ── */
+function ln(html, cls) {
+  const s = document.createElement('span');
+  s.className = 'ln' + (cls ? ' ln-' + cls : '');
+  s.innerHTML = html;
+  $out.appendChild(s);
+  scrollEnd();
+}
+const lnBlank = () => ln('');
+const scrollEnd = () => window.scrollTo(0, document.body.scrollHeight);
+const clearScreen = () => { $out.innerHTML = ''; };
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+/* ── Typewriter ── */
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/* ── Boot sequence ── */
+async function boot() {
+  locked = true;
+  await sleep(120);
+  ln('Starting <span class="ln-ok">hj-blog</span>...', 'boot');
+  await sleep(180);
+  ln('[  <span class="ln-ok">OK</span>  ] Loaded kernel modules.', 'boot');
+  await sleep(140);
+  ln('[  <span class="ln-ok">OK</span>  ] Mounted content filesystem.', 'boot');
+  await sleep(160);
+  ln('[  <span class="ln-ok">OK</span>  ] Blog engine initialized.', 'boot');
+  await sleep(220);
+  ln('[  <span class="ln-ok">OK</span>  ] Terminal ready.', 'boot');
+  await sleep(280);
+  lnBlank();
+
+  const artEl = document.createElement('span');
+  artEl.className = 'ascii-art';
+  artEl.textContent =
+`  ██╗  ██╗     ██╗
+  ██║  ██║     ██║
+  ███████║     ██║
+  ██╔══██║██   ██║
+  ██║  ██║╚█████╔╝
+  ╚═╝  ╚═╝ ╚════╝ `;
+  $out.appendChild(artEl);
+  await sleep(60); scrollEnd();
+
+  lnBlank();
+  await sleep(80);
+  ln(`  <span class="ln-amber" style="font-weight:700">${esc(S.title)}</span>  <span class="ln-dim">—</span>  <span class="ln-info">${esc(S.author)}'s Personal Space</span>`);
+  ln('  <span class="ln-dim">────────────────────────────────────────────────────────</span>');
+  await sleep(60);
+  ln(`  Type <span class="ln-amber">/help</span> or <span class="ln-amber">/?</span> for available commands.`, 'info');
+  ln(`  <span class="ln-amber">Tab</span> to autocomplete  ·  <span class="ln-amber">↑↓</span> to navigate history  ·  <span class="ln-amber">Ctrl+L</span> to clear`, 'dim');
+  lnBlank();
+
+  locked = false;
+  $wrap.classList.remove('hidden');
+  $ri.focus();
+}
+
+/* ── Commands ── */
+function echoPrompt(raw) {
+  ln(`<span class="prompt-str">visitor@hj-blog:~$&nbsp;</span><span class="ln-ok" style="font-weight:700">${esc(raw)}</span>`);
+}
+
+function cmdHelp() {
+  ln('┌──────────────────────────────────────────────────────────┐', 'dim');
+  ln('│               <span class="ln-amber">Available Commands</span>                          │', 'dim');
+  ln('└──────────────────────────────────────────────────────────┘', 'dim');
+  lnBlank();
+  [
+    ['/blog    ', 'Show link to the blog post list'],
+    ['/about   ', 'Show link to the About Me page'],
+    ['/archive ', 'Show link to the post archive'],
+    ['/search  ', 'Show link to the search page'],
+    ['/github  ', 'Open GitHub profile (new tab)'],
+    ['/ls      ', 'List available sections'],
+    ['/whoami  ', 'Show author info'],
+    ['/neofetch', 'Display system info'],
+    ['/date    ', 'Show current date & time'],
+    ['/echo    ', 'Print text  (e.g.  /echo hello world)'],
+    ['/clear   ', 'Clear the terminal  (Ctrl+L)'],
+    ['/help    ', 'Show this help  (alias: /?)'],
+  ].forEach(([cmd, desc]) => {
+    ln(`  <span class="ln-amber">${cmd}</span>  <span class="ln-info">${desc}</span>`);
+  });
+  lnBlank();
+}
+
+function cmdBlog() {
+  ln('Blog post list:', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.blogURL}">→  ${esc(S.blogURL)}</a>  <span class="ln-dim"># All articles</span>`);
+  lnBlank();
+}
+
+function cmdAbout() {
+  ln('About page:', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.aboutURL}">→  ${esc(S.aboutURL)}</a>  <span class="ln-dim"># Who am I?</span>`);
+  lnBlank();
+}
+
+function cmdArchive() {
+  ln('Post archive:', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.archiveURL}">→  ${esc(S.archiveURL)}</a>  <span class="ln-dim"># Posts by date</span>`);
+  lnBlank();
+}
+
+function cmdSearch() {
+  ln('Search:', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.searchURL}">→  ${esc(S.searchURL)}</a>  <span class="ln-dim"># Find posts</span>`);
+  lnBlank();
+}
+
+function cmdGithub() {
+  ln('Opening GitHub in a new tab...', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.githubURL}" target="_blank" rel="noopener">→  ${esc(S.githubURL)}</a>`);
+  lnBlank();
+  window.open(S.githubURL, '_blank', 'noopener');
+}
+
+function cmdLs() {
+  lnBlank();
+  [
+    ['blog/',    S.blogURL,    'Post list'],
+    ['about/',   S.aboutURL,   'About me'],
+    ['archive/', S.archiveURL, 'Archives'],
+    ['search/',  S.searchURL,  'Search'],
+    ['github/',  S.githubURL,  'GitHub (external)'],
+  ].forEach(([name, url, desc]) => {
+    ln(`  <span class="ln-blue">drwxr-xr-x</span>  <a class="tl" href="${url}">${name}</a>  <span class="ln-dim"># ${desc}</span>`);
+  });
+  lnBlank();
+}
+
+function cmdWhoami() {
+  lnBlank();
+  ln(`  <span class="ln-amber">User   </span>  ${esc(S.author)}`, 'info');
+  ln(`  <span class="ln-amber">Blog   </span>  ${esc(S.title)}`, 'info');
+  ln(`  <span class="ln-amber">GitHub </span>  <a class="tl" href="${S.githubURL}">${esc(S.githubURL)}</a>`, 'info');
+  ln(`  <span class="ln-amber">Topics </span>  Java · Algorithms · CS · Notes`, 'info');
+  lnBlank();
+}
+
+function cmdDate() {
+  ln(new Date().toLocaleString('zh-CN', {
+    weekday:'long', year:'numeric', month:'long', day:'numeric',
+    hour:'2-digit', minute:'2-digit', second:'2-digit', timeZoneName:'short'
+  }), 'ok');
+}
+
+function cmdEcho(args) {
+  if (!args.length) { ln('Usage: /echo &lt;text&gt;', 'dim'); return; }
+  ln(esc(args.join(' ')), 'info');
+}
+
+function cmdClear() { clearScreen(); }
+
+function cmdNeofetch() {
+  const d   = new Date();
+  const pic = ['        .--------.',"       /  _______ \\",
+               '      / /  _   _  \\|',"      \\ | | | | | |",
+               "       \\ \\___/ ___/","        '--------'", ''];
+  const info= [
+    `<span class="ln-amber">${esc(S.author)}@hj-blog</span>`,
+    '<span class="ln-dim">─────────────────────</span>',
+    `<span class="ln-amber">OS     </span> Hugo v0.146 extended`,
+    `<span class="ln-amber">Theme  </span> hugo-theme-stack`,
+    `<span class="ln-amber">Shell  </span> hj-terminal v1.0`,
+    `<span class="ln-amber">Date   </span> ${d.toLocaleDateString('zh-CN')}`,
+    `<span class="ln-amber">Blog   </span> ${esc(S.title)}`,
+    `<span class="ln-amber">Colors </span> <span style="color:#33ff66">███</span><span style="color:#f5a623">███</span><span style="color:#58c4dc">███</span><span style="color:#ff5f56">███</span>`,
+  ];
+  lnBlank();
+  for (let i = 0; i < Math.max(pic.length, info.length); i++) {
+    const a = pic[i]  != null ? `<span class="ln-ok">${esc(pic[i])}</span>` : '                   ';
+    const b = info[i] != null ? info[i] : '';
+    ln(`  ${a}   ${b}`);
+  }
+  lnBlank();
+}
+
+/* ── Dispatch (all commands require / prefix) ── */
+const DISPATCH = {
+  '/help':cmdHelp,     '/?':cmdHelp,
+  '/blog':cmdBlog,
+  '/about':cmdAbout,
+  '/archive':cmdArchive, '/archives':cmdArchive,
+  '/search':cmdSearch,
+  '/github':cmdGithub,
+  '/ls':cmdLs,         '/dir':cmdLs,
+  '/whoami':cmdWhoami,
+  '/date':cmdDate,
+  '/neofetch':cmdNeofetch,
+  '/echo':cmdEcho,
+  '/clear':cmdClear,   '/cls':cmdClear,
+};
+
+/* Completion list — shown keys only (deduplicated, sorted) */
+const CMD_LIST = [...new Set(
+  ['/help','/?','/blog','/about','/archive','/search',
+   '/github','/ls','/whoami','/date','/neofetch','/echo','/clear']
+)].sort();
+
+/* ── Execute ── */
+function run(raw) {
+  const s = raw.trim();
+  if (!s) { lnBlank(); return; }
+  if (hist[hist.length - 1] !== s) hist.push(s);
+  hIdx = -1;
+
+  echoPrompt(s);
+  lnBlank();
+
+  const parts = s.split(/\s+/);
+  const cmd   = parts[0].toLowerCase();
+  const args  = parts.slice(1);
+
+  if (cmd in DISPATCH) {
+    DISPATCH[cmd](args);
+  } else if (!cmd.startsWith('/')) {
+    ln(`  Commands must start with <span class="ln-amber">/</span>  — try <span class="ln-amber">/${esc(cmd)}</span>`, 'err');
+    ln(`  Type <span class="ln-amber">/help</span> to list commands.`, 'dim');
+  } else {
+    ln(`  bash: command not found: <span class="ln-err">${esc(cmd)}</span>`, 'err');
+    ln(`  Type <span class="ln-amber">/help</span> to list commands.`, 'dim');
+  }
+  lnBlank();
+}
+
+/* ── Tab completion ── */
+function handleTab() {
+  const matches = CMD_LIST.filter(c => c.startsWith(buf.toLowerCase()));
+  if (!matches.length) return;
+
+  if (matches.length === 1) {
+    buf = matches[0]; $ghost.textContent = ''; tabSt = null;
+    updateDisplay(); return;
+  }
+  if (tabSt && tabSt.prefix === buf) {
+    tabSt.idx = (tabSt.idx + 1) % tabSt.matches.length;
+  } else {
+    tabSt = { prefix: buf, matches, idx: 0 };
+    lnBlank();
+    ln('  ' + matches.join('  '), 'dim');
+  }
+  $ghost.textContent = tabSt.matches[tabSt.idx].slice(buf.length);
+  updateDisplay();
+}
+
+/* ── Display ── */
+function updateDisplay() { $buf.textContent = buf; }
+
+/* ── Key handling ── */
+document.addEventListener('keydown', e => {
+  if (locked) return;
+  $ri.focus();
+  switch (e.key) {
+    case 'Enter': {
+      e.preventDefault();
+      $ghost.textContent = ''; tabSt = null;
+      const toRun = buf; buf = ''; updateDisplay();
+      run(toRun); break;
+    }
+    case 'Tab': {
+      e.preventDefault();
+      handleTab(); break;
+    }
+    case 'Backspace': {
+      e.preventDefault();
+      if (buf.length) { buf = buf.slice(0,-1); $ghost.textContent = ''; tabSt = null; updateDisplay(); }
+      break;
+    }
+    case 'ArrowUp': {
+      e.preventDefault();
+      if (!hist.length) break;
+      if (hIdx === -1) hIdx = hist.length - 1; else if (hIdx > 0) hIdx--;
+      buf = hist[hIdx]; $ghost.textContent = ''; tabSt = null; updateDisplay(); break;
+    }
+    case 'ArrowDown': {
+      e.preventDefault();
+      if (hIdx === -1) break;
+      hIdx++;
+      buf = hIdx >= hist.length ? (hIdx = -1, '') : hist[hIdx];
+      $ghost.textContent = ''; tabSt = null; updateDisplay(); break;
+    }
+    case 'l': if (e.ctrlKey) { e.preventDefault(); cmdClear(); } break;
+    case 'c': {
+      if (e.ctrlKey) {
+        e.preventDefault();
+        echoPrompt(buf + '^C');
+        buf = ''; $ghost.textContent = ''; tabSt = null; updateDisplay(); lnBlank();
+      }
+      break;
+    }
+    case 'u': {
+      if (e.ctrlKey) {
+        e.preventDefault();
+        buf = ''; $ghost.textContent = ''; tabSt = null; updateDisplay();
+      }
+      break;
+    }
+  }
+});
+
+$ri.addEventListener('input', () => {
+  if (!$ri.value) return;
+  buf += $ri.value; $ri.value = '';
+  $ghost.textContent = ''; tabSt = null; updateDisplay();
+});
+
+document.addEventListener('click', () => $ri.focus());
+
+boot();
+</script>
+</body>
+</html>

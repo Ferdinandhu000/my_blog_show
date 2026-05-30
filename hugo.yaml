@@ -20,6 +20,14 @@ languages:
         params:
             sidebar:
                 subtitle: 
+        menu:
+            main:
+                - identifier: blog
+                  name: Blog
+                  url: /en/post/
+                  weight: -80
+                  params:
+                      icon: hash
     zh-cn:
         languageName: 中文
         title: FerdinandHu
@@ -27,6 +35,14 @@ languages:
         params:
             sidebar:
                 subtitle: 
+        menu:
+            main:
+                - identifier: blog
+                  name: 博客
+                  url: /post/
+                  weight: -80
+                  params:
+                      icon: hash
     # ar:
     #     languageName: عربي
     #     languagedirection: rtl
