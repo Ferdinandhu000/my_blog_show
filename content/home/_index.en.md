@@ -1,7 +1,5 @@
 ---
-title: "首页"
-slug: "home"
-layout: "home"
+title: "Home"
 menu:
     main:
         weight: -100

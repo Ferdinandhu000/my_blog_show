@@ -5,7 +5,7 @@
 {{- $archiveURL := "/archives/" -}}
 {{- $searchURL  := "/search/" | relLangURL -}}
 {{- $githubURL  := "https://github.com/Ferdinandhu000" -}}
-{{- with .Site.GetPage "/page/home"    }}{{ $homeURL    = .RelPermalink }}{{ end -}}
+{{- with .Site.GetPage "/home"    }}{{ $homeURL    = .RelPermalink }}{{ end -}}
 {{- with .Site.GetPage "/page/about"    }}{{ $aboutURL   = .RelPermalink }}{{ end -}}
 {{- with .Site.GetPage "/page/archives" }}{{ $archiveURL = .RelPermalink }}{{ end -}}
 {{- with .Site.GetPage "/page/search"   }}{{ $searchURL  = .RelPermalink }}{{ end -}}
