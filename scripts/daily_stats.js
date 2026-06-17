@@ -253,8 +253,33 @@ async function main() {
                 const commentDate = new Date(comment.createdAt);
                 // 24 hours = 24 * 60 * 60 * 1000 = 86400000 ms
                 if (now - commentDate < 24 * 60 * 60 * 1000) {
+                    let articleTitle = disc.title;
+                    try {
+                        articleTitle = decodeURIComponent(articleTitle);
+                    } catch (e) {
+                        console.warn('Failed to decode discussion title:', disc.title);
+                    }
+
+                    // Extract actual article title from the built HTML index.html
+                    const cleanPath = articleTitle.replace(/^\/+|\/+$/g, '');
+                    if (cleanPath.startsWith('p/')) {
+                        const slug = cleanPath.substring(2);
+                        const indexPath = path.join(__dirname, '../public/p', slug, 'index.html');
+                        if (fs.existsSync(indexPath)) {
+                            try {
+                                const html = fs.readFileSync(indexPath, 'utf-8');
+                                const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i);
+                                if (titleMatch) {
+                                    articleTitle = titleMatch[1].split('|')[0].trim();
+                                }
+                            } catch (err) {
+                                console.warn(`Failed to read HTML title for slug: ${slug}`, err);
+                            }
+                        }
+                    }
+
                     recentComments.push({
-                        articleTitle: disc.title,
+                        articleTitle: articleTitle,
                         articleUrl: disc.url,
                         author: comment.author ? comment.author.login : 'anonymous',
                         body: comment.bodyText,

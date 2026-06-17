@@ -9,10 +9,10 @@
         <copyright>Ferdinand Hu</copyright>
         <lastBuildDate>Wed, 17 Dec 2025 16:28:22 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>算法笔记3——二叉树、二叉搜索树、BFS与DFS</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-iii-graph-and-tree-traversal-binary-search-trees-bfs-and-dfs/</link>
         <pubDate>Wed, 17 Dec 2025 16:28:22 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-iii-graph-and-tree-traversal-binary-search-trees-bfs-and-dfs/</guid>
         <description>&lt;h2 id=&#34;二叉树&#34;&gt;二叉树
 &lt;/h2&gt;&lt;h3 id=&#34;遍历二叉树&#34;&gt;遍历二叉树
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20251210141033.png&#34;
@@ -518,10 +518,10 @@
         </item>
         <item>
         <title>算法笔记2——栈、队列与链表</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B02%E6%A0%88%E9%98%9F%E5%88%97%E4%B8%8E%E9%93%BE%E8%A1%A8/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-ii-fundamental-data-structures-stacks-queues-and-linked-lists/</link>
         <pubDate>Wed, 17 Dec 2025 16:26:22 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B02%E6%A0%88%E9%98%9F%E5%88%97%E4%B8%8E%E9%93%BE%E8%A1%A8/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-ii-fundamental-data-structures-stacks-queues-and-linked-lists/</guid>
         <description>&lt;h2 id=&#34;栈-stack&#34;&gt;栈 (Stack)
 &lt;/h2&gt;&lt;h3 id=&#34;数组模拟栈&#34;&gt;数组模拟栈
 &lt;/h3&gt;&lt;ul&gt;
@@ -1555,10 +1555,10 @@
         </item>
         <item>
         <title>算法笔记1——各类排序算法</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B01%E5%90%84%E7%B1%BB%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-i-comparative-analysis-of-core-sorting-algorithms/</link>
         <pubDate>Wed, 17 Dec 2025 16:25:58 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B01%E5%90%84%E7%B1%BB%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-i-comparative-analysis-of-core-sorting-algorithms/</guid>
         <description>&lt;h2 id=&#34;各类排序算法&#34;&gt;各类排序算法
 &lt;/h2&gt;&lt;h3 id=&#34;冒泡排序-bubble-sort&#34;&gt;冒泡排序 (Bubble Sort)
 &lt;/h3&gt;&lt;h4 id=&#34;思路&#34;&gt;思路
@@ -2144,10 +2144,10 @@
         </item>
         <item>
         <title>MTGP-SMOTE论文研读笔记</title>
-        <link>https://ferdinandhu.netlify.app/p/mtgp-smote%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/a-critical-reading-of-mtgp-smote-concepts-analysis-and-observations/</link>
         <pubDate>Sat, 13 Sep 2025 19:15:55 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/mtgp-smote%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/a-critical-reading-of-mtgp-smote-concepts-analysis-and-observations/</guid>
         <description>&lt;h2 id=&#34;问题背景&#34;&gt;问题背景
 &lt;/h2&gt;&lt;p&gt;解决分类问题是机器学习的其中重要的一个分支。要实现分类首先需要获得相应数据进行学习，而现实生活中我们得到的数据通常是不平衡的（例如银行需要对异常交易和正常交易数据进行分类，而学习的数据中大部分是正常的交易数据，异常交易数据毕竟占少数），这就会使分类的结果产生影响。为此，本论文所提出的MTGP-SMOTE方法在数据层面运用合成少数过采样技术（SMOTE）方法对原始数据进行过采样（oversampling），而后借助遗传编程中的多树遗传编程（Multitree Genetic Programming）策略，将单个树的运行结果作为一个独立的填补数据，从而实现多树对总体数据的填补。&lt;/p&gt;
 &lt;h2 id=&#34;概念理解&#34;&gt;概念理解
@@ -2229,10 +2229,10 @@
         </item>
         <item>
         <title>Java多线程学习笔记</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/comprehensive-notes-on-multi-threaded-programming-in-java/</link>
         <pubDate>Sun, 20 Jul 2025 18:44:52 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/comprehensive-notes-on-multi-threaded-programming-in-java/</guid>
         <description>&lt;h1 id=&#34;java多线程基础&#34;&gt;Java多线程基础
 &lt;/h1&gt;&lt;h2 id=&#34;1-基本概念&#34;&gt;1. 基本概念
 &lt;/h2&gt;&lt;hr&gt;
@@ -3013,10 +3013,10 @@
         </item>
         <item>
         <title>文件资源管理器界面 v2.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v2.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v2-0/</link>
         <pubDate>Wed, 16 Jul 2025 14:33:35 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v2.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v2-0/</guid>
         <description>&lt;h2 id=&#34;文件资源管理器界面-v20&#34;&gt;文件资源管理器界面 v2.0
 &lt;/h2&gt;&lt;h2 id=&#34;项目介绍&#34;&gt;项目介绍
 &lt;/h2&gt;&lt;p&gt;本项目是基于Java Swing开发的文件资源管理器,在v1.0版本的基础上进行了多项功能增强和优化。新版本增加了文件属性显示、文件搜索、右键菜单等功能,并优化了界面布局和用户交互体验。&lt;/p&gt;
@@ -4923,10 +4923,10 @@
         </item>
         <item>
         <title>文件资源管理器界面 v1.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v1.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v1-0/</link>
         <pubDate>Sat, 12 Jul 2025 22:22:14 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v1.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v1-0/</guid>
         <description>&lt;h2 id=&#34;文件资源管理器界面-v10&#34;&gt;文件资源管理器界面 v1.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h2 id=&#34;项目介绍&#34;&gt;项目介绍
@@ -6049,10 +6049,10 @@
         </item>
         <item>
         <title>第一章基础算法（二）</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%BA%8C/</link>
+        <link>https://ferdinandhu.netlify.app/p/foundational-algorithms-principles-and-analysis-part-ii/</link>
         <pubDate>Tue, 01 Jul 2025 10:15:02 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%BA%8C/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/foundational-algorithms-principles-and-analysis-part-ii/</guid>
         <description>&lt;h2 id=&#34;前缀和&#34;&gt;前缀和
 &lt;/h2&gt;&lt;h3 id=&#34;什么是前缀和&#34;&gt;什么是前缀和？
 &lt;/h3&gt;&lt;p&gt;对于原数组a[n]&lt;br&gt;
@@ -6599,10 +6599,10 @@ $-1000 \leq$ 矩阵内元素的值 $\leq 1000$&lt;/p&gt;
         </item>
         <item>
         <title>第一章基础算法（一）</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%B8%80/</link>
+        <link>https://ferdinandhu.netlify.app/p/foundational-algorithms-principles-and-analysis-part-i/</link>
         <pubDate>Sun, 29 Jun 2025 15:13:16 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%B8%80/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/foundational-algorithms-principles-and-analysis-part-i/</guid>
         <description>&lt;h2 id=&#34;快速排序&#34;&gt;快速排序
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;确定分界点&lt;/li&gt;
@@ -6843,10 +6843,10 @@ $-1000 \leq$ 矩阵内元素的值 $\leq 1000$&lt;/p&gt;
         </item>
         <item>
         <title>程序设计与算法语言期末复习4</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A04/</link>
+        <link>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-iv/</link>
         <pubDate>Thu, 19 Jun 2025 20:35:04 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A04/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-iv/</guid>
         <description>&lt;h2 id=&#34;gui押题&#34;&gt;GUI押题
 &lt;/h2&gt;&lt;h3 id=&#34;direction&#34;&gt;Direction:
 &lt;/h3&gt;&lt;p&gt;Creat a GUI as shown in following figure.
@@ -7146,10 +7146,10 @@ $-1000 \leq$ 矩阵内元素的值 $\leq 1000$&lt;/p&gt;
         </item>
         <item>
         <title>程序设计与算法语言期末复习3</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/</link>
+        <link>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-iii/</link>
         <pubDate>Thu, 12 Jun 2025 11:10:39 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A03/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-iii/</guid>
         <description>&lt;h2 id=&#34;易错&#34;&gt;易错
 &lt;/h2&gt;&lt;h3 id=&#34;python版块&#34;&gt;Python版块
 &lt;/h3&gt;&lt;ol&gt;
@@ -7843,10 +7843,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>程序设计与算法语言期末复习2</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A02/</link>
+        <link>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-ii/</link>
         <pubDate>Thu, 12 Jun 2025 08:10:39 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A02/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-ii/</guid>
         <description>&lt;h2 id=&#34;面向对象oop&#34;&gt;面向对象（OOP）
 &lt;/h2&gt;&lt;h3 id=&#34;python面向对象&#34;&gt;Python面向对象
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -9087,10 +9087,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>程序设计与算法语言期末复习1</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A01/</link>
+        <link>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-i/</link>
         <pubDate>Wed, 11 Jun 2025 15:10:39 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%AD%E8%A8%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A01/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/programming-and-algorithmic-language-comprehensive-review-part-i/</guid>
         <description>&lt;h2 id=&#34;python版块&#34;&gt;Python版块
 &lt;/h2&gt;&lt;h3 id=&#34;重点语法&#34;&gt;重点语法
 &lt;/h3&gt;&lt;h4 id=&#34;1-变量&#34;&gt;1. 变量
@@ -9612,10 +9612,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>23周 周记</title>
-        <link>https://ferdinandhu.netlify.app/p/23%E5%91%A8-%E5%91%A8%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-23/</link>
         <pubDate>Sun, 08 Jun 2025 18:31:42 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/23%E5%91%A8-%E5%91%A8%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-23/</guid>
         <description>&lt;h2 id=&#34;todolist&#34;&gt;ToDoList
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 6.14 CET-6&lt;/li&gt;
@@ -9644,10 +9644,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>22周 周记</title>
-        <link>https://ferdinandhu.netlify.app/p/22%E5%91%A8-%E5%91%A8%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-22/</link>
         <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/22%E5%91%A8-%E5%91%A8%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-22/</guid>
         <description>&lt;h2 id=&#34;todolist&#34;&gt;ToDoList
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 准备6.7三门水课考试&lt;/li&gt;
@@ -9663,10 +9663,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>常用加密算法与编码类型</title>
-        <link>https://ferdinandhu.netlify.app/p/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B/</link>
+        <link>https://ferdinandhu.netlify.app/p/common-encryption-algorithms-and-encoding-types/</link>
         <pubDate>Fri, 30 May 2025 11:28:52 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E5%B8%B8%E7%94%A8%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/common-encryption-algorithms-and-encoding-types/</guid>
         <description>&lt;h2 id=&#34;编码类型&#34;&gt;编码类型
 &lt;/h2&gt;&lt;h3 id=&#34;1-base64&#34;&gt;1. Base64
 &lt;/h3&gt;&lt;ul&gt;
@@ -10020,10 +10020,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>Java-File类文件操作与管理</title>
-        <link>https://ferdinandhu.netlify.app/p/java-file%E7%B1%BB%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E4%B8%8E%E7%AE%A1%E7%90%86/</link>
+        <link>https://ferdinandhu.netlify.app/p/file-i-o-operations-and-resource-management-using-java-file-class/</link>
         <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java-file%E7%B1%BB%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E4%B8%8E%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/file-i-o-operations-and-resource-management-using-java-file-class/</guid>
         <description>&lt;h2 id=&#34;java-file-类&#34;&gt;Java &lt;code&gt;File&lt;/code&gt; 类：
 &lt;/h2&gt;&lt;h3 id=&#34;基础操作&#34;&gt;基础操作：
 &lt;/h3&gt;&lt;ul&gt;
@@ -10237,10 +10237,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>21周 周记</title>
-        <link>https://ferdinandhu.netlify.app/p/21%E5%91%A8-%E5%91%A8%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-21/</link>
         <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/21%E5%91%A8-%E5%91%A8%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/weekly-progress-report-and-academic-log-week-21/</guid>
         <description>&lt;p&gt;作为本人第一篇周记，主要来分享一下从大一前的暑假到目前为止的个人总结&lt;/p&gt;
 &lt;h2 id=&#34;学习进展&#34;&gt;学习进展
 &lt;/h2&gt;&lt;h3 id=&#34;数学&#34;&gt;数学
@@ -10303,10 +10303,10 @@ join() 是字符串对象的一个方法，用于将可迭代对象（如列表�
         </item>
         <item>
         <title>线性结构</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/</link>
+        <link>https://ferdinandhu.netlify.app/p/theoretical-and-practical-exploration-of-linear-structures/</link>
         <pubDate>Tue, 20 May 2025 10:19:05 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/theoretical-and-practical-exploration-of-linear-structures/</guid>
         <description>&lt;h2 id=&#34;线性表&#34;&gt;线性表
 &lt;/h2&gt;&lt;p&gt;[例] 多项式表示&lt;/p&gt;
 &lt;ul&gt;
@@ -10708,10 +10708,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>数据结构基本概念</title>
-        <link>https://ferdinandhu.netlify.app/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</link>
+        <link>https://ferdinandhu.netlify.app/p/introduction-to-fundamental-concepts-in-data-structures/</link>
         <pubDate>Mon, 19 May 2025 15:14:58 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/introduction-to-fundamental-concepts-in-data-structures/</guid>
         <description>&lt;h2 id=&#34;二算法基础&#34;&gt;二、算法基础
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -10878,10 +10878,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>Java面向对象编程</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</link>
+        <link>https://ferdinandhu.netlify.app/p/java-object-oriented-programming/</link>
         <pubDate>Sat, 17 May 2025 14:16:29 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/java-object-oriented-programming/</guid>
         <description>&lt;h1 id=&#34;java-面向对象编程-oop&#34;&gt;Java 面向对象编程 (OOP)
 &lt;/h1&gt;&lt;h2 id=&#34;目录&#34;&gt;目录
 &lt;/h2&gt;&lt;ul&gt;
@@ -11404,10 +11404,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>Java接口</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E6%8E%A5%E5%8F%A3/</link>
+        <link>https://ferdinandhu.netlify.app/p/interface-of-java/</link>
         <pubDate>Sat, 17 May 2025 14:15:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E6%8E%A5%E5%8F%A3/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interface-of-java/</guid>
         <description>&lt;h2 id=&#34;接口-interface&#34;&gt;接口 Interface
 &lt;/h2&gt;&lt;h3 id=&#34;概念&#34;&gt;概念：
 &lt;/h3&gt;&lt;ul&gt;
@@ -11515,10 +11515,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v3.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v3-0/</link>
         <pubDate>Sun, 11 May 2025 10:31:36 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v3-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v30&#34;&gt;交互式画板 v3.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用Java实现一个功能丰富的交互式画图板&lt;br&gt;
@@ -12778,10 +12778,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v2.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2-0/</link>
         <pubDate>Thu, 08 May 2025 20:26:36 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v20&#34;&gt;交互式画板 v2.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的可交互式画图板&lt;br&gt;
@@ -13626,10 +13626,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v1.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v1.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v1-0/</link>
         <pubDate>Sat, 03 May 2025 19:51:27 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v1.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v1-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v10&#34;&gt;交互式画板 v1.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的可交互式画图板&lt;/p&gt;
@@ -14344,10 +14344,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>实战项目1——用户认证界面</title>
-        <link>https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/</link>
+        <link>https://ferdinandhu.netlify.app/p/pratical-project-1-user-authentication-interface/</link>
         <pubDate>Sun, 27 Apr 2025 17:20:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/pratical-project-1-user-authentication-interface/</guid>
         <description>&lt;h2 id=&#34;用户身份验证界面&#34;&gt;用户身份验证界面
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的用户身份验证界面，包含用户注册、登录、登出和注销功能，并且通过图形用户界面（GUI）生成一个窗口供用户进行交互&lt;/p&gt;
@@ -15069,10 +15069,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>事件监听器</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</link>
+        <link>https://ferdinandhu.netlify.app/p/event-listener/</link>
         <pubDate>Thu, 24 Apr 2025 09:32:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/event-listener/</guid>
         <description>&lt;h2 id=&#34;事件监听器&#34;&gt;事件监听器
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理&#34;&gt;原理
@@ -15612,10 +15612,10 @@ T(n) = θ(nlgn) 底数为2&lt;/p&gt;
         </item>
         <item>
         <title>窗口基础设置</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://ferdinandhu.netlify.app/p/basic-window-settings/</link>
         <pubDate>Wed, 23 Apr 2025 16:00:03 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/basic-window-settings/</guid>
         <description>&lt;h2 id=&#34;窗口基础设置&#34;&gt;窗口基础设置
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理-&#34;&gt;原理 ：

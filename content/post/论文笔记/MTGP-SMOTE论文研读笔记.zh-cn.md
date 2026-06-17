@@ -3,6 +3,7 @@ date: 2025-09-13T19:15:55+08:00
 draft : false
 title : 'MTGP-SMOTE论文研读笔记'
 title_en: 'A Critical Reading of MTGP-SMOTE: Concepts, Analysis, and Observations'
+slug: 'a-critical-reading-of-mtgp-smote-concepts-analysis-and-observations'
 categories : 
 
 ---

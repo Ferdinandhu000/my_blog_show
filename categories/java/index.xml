@@ -9,10 +9,10 @@
         <copyright>Ferdinand Hu</copyright>
         <lastBuildDate>Wed, 17 Dec 2025 16:28:22 +0800</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/categories/java/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>算法笔记3——二叉树、二叉搜索树、BFS与DFS</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-iii-graph-and-tree-traversal-binary-search-trees-bfs-and-dfs/</link>
         <pubDate>Wed, 17 Dec 2025 16:28:22 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B03%E4%BA%8C%E5%8F%89%E6%A0%91%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91bfs%E4%B8%8Edfs/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-iii-graph-and-tree-traversal-binary-search-trees-bfs-and-dfs/</guid>
         <description>&lt;h2 id=&#34;二叉树&#34;&gt;二叉树
 &lt;/h2&gt;&lt;h3 id=&#34;遍历二叉树&#34;&gt;遍历二叉树
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20251210141033.png&#34;
@@ -518,10 +518,10 @@
         </item>
         <item>
         <title>算法笔记2——栈、队列与链表</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B02%E6%A0%88%E9%98%9F%E5%88%97%E4%B8%8E%E9%93%BE%E8%A1%A8/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-ii-fundamental-data-structures-stacks-queues-and-linked-lists/</link>
         <pubDate>Wed, 17 Dec 2025 16:26:22 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B02%E6%A0%88%E9%98%9F%E5%88%97%E4%B8%8E%E9%93%BE%E8%A1%A8/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-ii-fundamental-data-structures-stacks-queues-and-linked-lists/</guid>
         <description>&lt;h2 id=&#34;栈-stack&#34;&gt;栈 (Stack)
 &lt;/h2&gt;&lt;h3 id=&#34;数组模拟栈&#34;&gt;数组模拟栈
 &lt;/h3&gt;&lt;ul&gt;
@@ -1555,10 +1555,10 @@
         </item>
         <item>
         <title>算法笔记1——各类排序算法</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B01%E5%90%84%E7%B1%BB%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
+        <link>https://ferdinandhu.netlify.app/p/algorithm-notes-i-comparative-analysis-of-core-sorting-algorithms/</link>
         <pubDate>Wed, 17 Dec 2025 16:25:58 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B01%E5%90%84%E7%B1%BB%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/algorithm-notes-i-comparative-analysis-of-core-sorting-algorithms/</guid>
         <description>&lt;h2 id=&#34;各类排序算法&#34;&gt;各类排序算法
 &lt;/h2&gt;&lt;h3 id=&#34;冒泡排序-bubble-sort&#34;&gt;冒泡排序 (Bubble Sort)
 &lt;/h3&gt;&lt;h4 id=&#34;思路&#34;&gt;思路
@@ -2144,10 +2144,10 @@
         </item>
         <item>
         <title>Java多线程学习笔记</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <link>https://ferdinandhu.netlify.app/p/comprehensive-notes-on-multi-threaded-programming-in-java/</link>
         <pubDate>Sun, 20 Jul 2025 18:44:52 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/comprehensive-notes-on-multi-threaded-programming-in-java/</guid>
         <description>&lt;h1 id=&#34;java多线程基础&#34;&gt;Java多线程基础
 &lt;/h1&gt;&lt;h2 id=&#34;1-基本概念&#34;&gt;1. 基本概念
 &lt;/h2&gt;&lt;hr&gt;
@@ -2928,10 +2928,10 @@
         </item>
         <item>
         <title>文件资源管理器界面 v2.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v2.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v2-0/</link>
         <pubDate>Wed, 16 Jul 2025 14:33:35 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v2.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v2-0/</guid>
         <description>&lt;h2 id=&#34;文件资源管理器界面-v20&#34;&gt;文件资源管理器界面 v2.0
 &lt;/h2&gt;&lt;h2 id=&#34;项目介绍&#34;&gt;项目介绍
 &lt;/h2&gt;&lt;p&gt;本项目是基于Java Swing开发的文件资源管理器,在v1.0版本的基础上进行了多项功能增强和优化。新版本增加了文件属性显示、文件搜索、右键菜单等功能,并优化了界面布局和用户交互体验。&lt;/p&gt;
@@ -4838,10 +4838,10 @@
         </item>
         <item>
         <title>文件资源管理器界面 v1.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v1.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v1-0/</link>
         <pubDate>Sat, 12 Jul 2025 22:22:14 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E7%95%8C%E9%9D%A2-v1.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/design-and-development-of-a-file-explorer-user-interface-v1-0/</guid>
         <description>&lt;h2 id=&#34;文件资源管理器界面-v10&#34;&gt;文件资源管理器界面 v1.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h2 id=&#34;项目介绍&#34;&gt;项目介绍
@@ -6278,10 +6278,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>Java面向对象编程</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</link>
+        <link>https://ferdinandhu.netlify.app/p/java-object-oriented-programming/</link>
         <pubDate>Sat, 17 May 2025 14:16:29 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/java-object-oriented-programming/</guid>
         <description>&lt;h1 id=&#34;java-面向对象编程-oop&#34;&gt;Java 面向对象编程 (OOP)
 &lt;/h1&gt;&lt;h2 id=&#34;目录&#34;&gt;目录
 &lt;/h2&gt;&lt;ul&gt;
@@ -6804,10 +6804,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>Java接口</title>
-        <link>https://ferdinandhu.netlify.app/p/java%E6%8E%A5%E5%8F%A3/</link>
+        <link>https://ferdinandhu.netlify.app/p/interface-of-java/</link>
         <pubDate>Sat, 17 May 2025 14:15:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/java%E6%8E%A5%E5%8F%A3/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interface-of-java/</guid>
         <description>&lt;h2 id=&#34;接口-interface&#34;&gt;接口 Interface
 &lt;/h2&gt;&lt;h3 id=&#34;概念&#34;&gt;概念：
 &lt;/h3&gt;&lt;ul&gt;
@@ -6915,10 +6915,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v3.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v3-0/</link>
         <pubDate>Sun, 11 May 2025 10:31:36 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v3.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v3-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v30&#34;&gt;交互式画板 v3.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用Java实现一个功能丰富的交互式画图板&lt;br&gt;
@@ -8178,10 +8178,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v2.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2-0/</link>
         <pubDate>Thu, 08 May 2025 20:26:36 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v2.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v2-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v20&#34;&gt;交互式画板 v2.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的可交互式画图板&lt;br&gt;
@@ -9026,10 +9026,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>交互式画板 v1.0</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v1.0/</link>
+        <link>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v1-0/</link>
         <pubDate>Sat, 03 May 2025 19:51:27 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%94%BB%E6%9D%BF-v1.0/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/interactive-drawing-board-v1-0/</guid>
         <description>&lt;h2 id=&#34;交互式画板-v10&#34;&gt;交互式画板 v1.0
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的可交互式画图板&lt;/p&gt;
@@ -9744,10 +9744,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>实战项目1——用户认证界面</title>
-        <link>https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/</link>
+        <link>https://ferdinandhu.netlify.app/p/pratical-project-1-user-authentication-interface/</link>
         <pubDate>Sun, 27 Apr 2025 17:20:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE1%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E7%95%8C%E9%9D%A2/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/pratical-project-1-user-authentication-interface/</guid>
         <description>&lt;h2 id=&#34;用户身份验证界面&#34;&gt;用户身份验证界面
 &lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;用java实现一个简单的用户身份验证界面，包含用户注册、登录、登出和注销功能，并且通过图形用户界面（GUI）生成一个窗口供用户进行交互&lt;/p&gt;
@@ -10469,10 +10469,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>事件监听器</title>
-        <link>https://ferdinandhu.netlify.app/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</link>
+        <link>https://ferdinandhu.netlify.app/p/event-listener/</link>
         <pubDate>Thu, 24 Apr 2025 09:32:40 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/event-listener/</guid>
         <description>&lt;h2 id=&#34;事件监听器&#34;&gt;事件监听器
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理&#34;&gt;原理
@@ -11012,10 +11012,10 @@ int &amp;gt; 0, if this &amp;gt; other&lt;/p&gt;
         </item>
         <item>
         <title>窗口基础设置</title>
-        <link>https://ferdinandhu.netlify.app/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://ferdinandhu.netlify.app/p/basic-window-settings/</link>
         <pubDate>Wed, 23 Apr 2025 16:00:03 +0800</pubDate>
         
-        <guid>https://ferdinandhu.netlify.app/p/%E7%AA%97%E5%8F%A3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</guid>
+        <guid>https://ferdinandhu.netlify.app/p/basic-window-settings/</guid>
         <description>&lt;h2 id=&#34;窗口基础设置&#34;&gt;窗口基础设置
 &lt;/h2&gt;&lt;hr&gt;
 &lt;h3 id=&#34;原理-&#34;&gt;原理 ：
