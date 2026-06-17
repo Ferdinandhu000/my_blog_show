@@ -214,7 +214,7 @@ async function main() {
     console.log('Starting daily blog statistics collection (site-only)...');
 
     // 1. Load history stats
-    let history = { site: { pv: 0, uv: 0 } };
+    let history = { site: { pv: 0, uv: 0 }, accumulated_script_runs: 0 };
     if (fs.existsSync(HISTORY_FILE)) {
         try {
             history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf-8'));
@@ -231,8 +231,13 @@ async function main() {
         console.error('Error: Failed to fetch global site views from Busuanzi.');
         process.exit(1);
     }
-    const currentSitePv = siteData.site_pv || 0;
-    const currentSiteUv = siteData.site_uv || 0;
+
+    // Increment script runs count
+    const nextScriptRuns = (history.accumulated_script_runs || 0) + 1;
+
+    // Calculate true values (subtracting current and past script runs to avoid +1 self-boosting)
+    const currentSitePv = Math.max(0, (siteData.site_pv || 0) - nextScriptRuns);
+    const currentSiteUv = Math.max(0, (siteData.site_uv || 0) - nextScriptRuns);
 
     const deltaSitePv = history.site?.pv ? (currentSitePv - history.site.pv) : 0;
     const deltaSiteUv = history.site?.uv ? (currentSiteUv - history.site.uv) : 0;
@@ -339,7 +344,8 @@ async function main() {
         site: {
             pv: currentSitePv,
             uv: currentSiteUv
-        }
+        },
+        accumulated_script_runs: nextScriptRuns
     };
 
     fs.writeFileSync(HISTORY_FILE, JSON.stringify(newHistory, null, 2), 'utf-8');

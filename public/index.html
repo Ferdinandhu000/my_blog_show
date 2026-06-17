@@ -136,6 +136,7 @@ const S = {
   title:      "FerdinandHu",
   author:     "Ferdinand Hu",
   blogURL:    "/post/",
+  homeURL:    "/home/",
   aboutURL:   "/about/",
   archiveURL: "/archives/",
   searchURL:  "/search/",
@@ -225,6 +226,7 @@ function cmdHelp() {
   ln('└──────────────────────────────────────────────────────────┘', 'dim');
   lnBlank();
   [
+    ['/home    ', 'Show link to the default home page'],
     ['/blog    ', 'Show link to the blog post list'],
     ['/about   ', 'Show link to the About Me page'],
     ['/archive ', 'Show link to the post archive'],
@@ -239,6 +241,13 @@ function cmdHelp() {
   ].forEach(([cmd, desc]) => {
     ln(`  <span class="ln-amber">${cmd}</span>  <span class="ln-info">${desc}</span>`);
   });
+  lnBlank();
+}
+
+function cmdHome() {
+  ln('Default home page:', 'ok');
+  lnBlank();
+  ln(`  <a class="tl" href="${S.homeURL}">→  ${esc(S.homeURL)}</a>  <span class="ln-dim"># Standard layout</span>`);
   lnBlank();
 }
 
@@ -281,6 +290,7 @@ function cmdGithub() {
 function cmdLs() {
   lnBlank();
   [
+    ['home/',    S.homeURL,    'Default home page'],
     ['blog/',    S.blogURL,    'Post list'],
     ['about/',   S.aboutURL,   'About me'],
     ['archive/', S.archiveURL, 'Archives'],
@@ -320,6 +330,7 @@ function cmdClear() { clearScreen(); }
  
 const DISPATCH = {
   '/help':cmdHelp,     '/?':cmdHelp,
+  '/home':cmdHome,
   '/blog':cmdBlog,
   '/about':cmdAbout,
   '/archive':cmdArchive, '/archives':cmdArchive,
@@ -334,7 +345,7 @@ const DISPATCH = {
 
  
 const CMD_LIST = [...new Set(
-  ['/help','/?','/blog','/about','/archive','/search',
+  ['/help','/?','/home','/blog','/about','/archive','/search',
    '/github','/ls','/whoami','/date','/echo','/clear']
 )].sort();
 

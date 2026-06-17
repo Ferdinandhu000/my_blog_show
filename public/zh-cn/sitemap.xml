@@ -231,6 +231,18 @@
                 href="https://ferdinandhu.netlify.app/en/links/"
                 />
   </url><url>
+    <loc>https://ferdinandhu.netlify.app/home/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/home/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/home/"
+                />
+  </url><url>
     <loc>https://ferdinandhu.netlify.app/search/</loc>
     <xhtml:link
                 rel="alternate"

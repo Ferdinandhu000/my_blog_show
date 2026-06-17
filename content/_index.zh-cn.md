@@ -1,8 +1,8 @@
 ---
 menu:
     main:
-        name: 主页
-        weight: -100
+        name: 终端
+        weight: -110
         params:
-            icon: home
+            icon: terminal
 ---

@@ -78,6 +78,18 @@
                 href="https://ferdinandhu.netlify.app/en/categories/"
                 />
   </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/home/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/home/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/home/"
+                />
+  </url><url>
     <loc>https://ferdinandhu.netlify.app/en/categories/interface-development/</loc>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/categories/java/</loc>
