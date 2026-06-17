@@ -92,7 +92,15 @@
                                     {{ end }}
                                 {{ end }}
                                 {{ if not $translation }}
-                                    {{ $translation = .RelPermalink }}
+                                    {{ if eq $currentPage.Section "post" }}
+                                        {{ if eq $lang "zh-cn" }}
+                                            {{ $translation = "/post/" }}
+                                        {{ else }}
+                                            {{ $translation = (printf "/%s/post/" $lang) }}
+                                        {{ end }}
+                                    {{ else }}
+                                        {{ $translation = .RelPermalink }}
+                                    {{ end }}
                                 {{ end }}
                                 <option value="{{ $translation }}" {{ if eq $lang $currentLang }}selected{{ end }}>{{ .Language.LanguageName }}</option>
                             {{ end }}
