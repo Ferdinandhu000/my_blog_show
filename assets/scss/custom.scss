@@ -460,6 +460,18 @@ body {
     color: var(--card-text-color-tertiary);
     border-top: 1px solid var(--card-separator-color);
     padding-top: 20px;
+
+    .site-pv-uv {
+        margin-top: 8px;
+        font-size: 1.2rem;
+        opacity: 0.85;
+
+        #busuanzi_value_site_pv,
+        #busuanzi_value_site_uv {
+            font-variant-numeric: tabular-nums;
+            font-weight: 500;
+        }
+    }
 }
 
 /* ----------------------------------------------------------
