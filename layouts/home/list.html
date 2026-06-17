@@ -1,11 +1,19 @@
 {{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
-    {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+    {{- $notHidden := where .Site.RegularPages "Params.hidden" "!=" true -}}
+    {{- $filtered := ($pages | intersect $notHidden) -}}
+
+    {{- if and (eq (len $filtered) 0) (eq .Lang "en") -}}
+        {{- $defaultSite := site.Sites.Default -}}
+        {{- $pagesDefault := where $defaultSite.RegularPages "Type" "in" .Site.Params.mainSections -}}
+        {{- $notHiddenDefault := where $defaultSite.RegularPages "Params.hidden" "!=" true -}}
+        {{- $filtered = ($pagesDefault | intersect $notHiddenDefault) -}}
+    {{- end -}}
+
+    {{- $pag := .Paginate ($filtered) -}}
 
     <section class="article-list">
-        {{ range $index, $element := $pag.Pages }}
+        {{ range $pag.Pages }}
             {{ partial "article-list/default" . }}
         {{ end }}
     </section>
