@@ -4,7 +4,7 @@ draft: false
 title: "15元如何白嫖原价一年1600元的 Google One AI Pro Plan"
 slug: 'gemini-pixel-certificate'
 categories: 
-  - 教程
+  - Tutorials
 
 math: true
 ---

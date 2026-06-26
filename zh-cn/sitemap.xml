@@ -54,8 +54,18 @@
                 href="https://ferdinandhu.netlify.app/en/post/"
                 />
   </url><url>
-    <loc>https://ferdinandhu.netlify.app/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://ferdinandhu.netlify.app/categories/tutorials/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/categories/tutorials/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/categories/tutorials/"
+                />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/categories/java/</loc>
     <lastmod>2025-12-17T16:28:22+08:00</lastmod>

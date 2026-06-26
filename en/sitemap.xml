@@ -56,6 +56,16 @@
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/categories/tutorials/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/categories/tutorials/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/categories/tutorials/"
+                />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>

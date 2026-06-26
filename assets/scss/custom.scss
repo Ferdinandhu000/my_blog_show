@@ -937,3 +937,38 @@ body {
 [data-scheme="dark"] .article-list article:hover {
     box-shadow: 0 10px 24px rgba(123, 167, 212, 0.06);
 }
+
+/* ==========================================================
+   25. Custom styles for 'tutorial' / 'tutorials' tag & category
+   ========================================================== */
+.article-category a[href*="tutorial"],
+.article-tags a[href*="tutorial"],
+.tagCloud-tags a[href*="tutorial"] {
+    background-color: rgba(16, 185, 129, 0.1) !important; /* Soft Emerald Green */
+    color: #059669 !important; /* Emerald 600 */
+    border: 1px solid rgba(16, 185, 129, 0.2) !important;
+    transition: all 0.2s ease !important;
+
+    &:hover {
+        background-color: #10b981 !important; /* Emerald 500 */
+        color: #ffffff !important;
+        border-color: #10b981 !important;
+    }
+}
+
+[data-scheme="dark"] {
+    .article-category a[href*="tutorial"],
+    .article-tags a[href*="tutorial"],
+    .tagCloud-tags a[href*="tutorial"] {
+        background-color: rgba(52, 211, 153, 0.15) !important; /* Soft Mint Green */
+        color: #34d399 !important; /* Mint 400 */
+        border: 1px solid rgba(52, 211, 153, 0.3) !important;
+
+        &:hover {
+            background-color: #34d399 !important;
+            color: #0d1117 !important;
+            border-color: #34d399 !important;
+        }
+    }
+}
+
