@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferdinandhu.netlify.app/en/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -14,6 +14,48 @@
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/en/"
                 />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/post/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/post/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/categories/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/categories/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/p/gemini-pixel-certificate/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://ferdinandhu.netlify.app/p/gemini-pixel-certificate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ferdinandhu.netlify.app/en/p/gemini-pixel-certificate/"
+                />
+  </url><url>
+    <loc>https://ferdinandhu.netlify.app/en/categories/tutorials/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -52,30 +94,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ferdinandhu.netlify.app/en/about/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/en/post/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://ferdinandhu.netlify.app/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/post/"
-                />
-  </url><url>
-    <loc>https://ferdinandhu.netlify.app/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://ferdinandhu.netlify.app/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ferdinandhu.netlify.app/en/categories/"
                 />
   </url><url>
     <loc>https://ferdinandhu.netlify.app/en/home/</loc>

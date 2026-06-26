@@ -7,7 +7,363 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ferdinand Hu</copyright>
-        <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ferdinandhu.netlify.app/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to Get the Google One AI Pro Plan (Original Price 1600 RMB/Year) for Free with Just 15 RMB</title>
+        <link>https://ferdinandhu.netlify.app/en/p/gemini-pixel-certificate/</link>
+        <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ferdinandhu.netlify.app/en/p/gemini-pixel-certificate/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;With the gradual tightening of Google&amp;rsquo;s student verification, the verification entry point is no longer visible on the official Google &lt;a class=&#34;link&#34; href=&#34;https://gemini.google/students/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;student verification&lt;/a&gt; page as of April 2026. &lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626102734.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;The official page no longer shows the verification entry point&#34;
+	
+	
+&gt; Therefore, to help &amp;quot;students&amp;quot; make better use of Google AI and its supporting services, this article combines Google&amp;rsquo;s latest policies regarding Pixel devices to propose a new method to try the Google One plan for one year. The benefits included are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PRO-level Gemini usage quota, with access to pro models and features like Deep Research.&lt;/li&gt;
+&lt;li&gt;Advanced NotebookLM usage, including various overviews, quizzes, and other features.&lt;/li&gt;
+&lt;li&gt;5TB of Google Drive cloud storage.&lt;/li&gt;
+&lt;li&gt;Use of Google&amp;rsquo;s version of Codex—Antigravity desktop agent tool, including Antigravity 2.0, Antigravity CLI, and Antigravity IDE.&lt;/li&gt;
+&lt;li&gt;Higher-level usage of Google Flow, the AI video creation platform.&lt;/li&gt;
+&lt;li&gt;Use of the latest large models and image generation models in Google AI Studio, the Google developer lab.&lt;/li&gt;
+&lt;li&gt;And many other benefits; please see the &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/aclk?sa=L&amp;amp;ai=DChsSEwjWnNynvKSVAxXzIEQIHbowNWYYACICCAEQABoCZHo&amp;amp;ae=2&amp;amp;co=1&amp;amp;ase=2&amp;amp;gclid=Cj0KCQjwxvjRBhC2ARIsAI7KJa0TRF3BV4_IbfrS6sTH3w5F355O8E9t7JssxD6X6PTgdr7Ej0zPvdgaAt7wEALw_wcB&amp;amp;cid=CAAS0gHkaOJrW_bRfY-RVJG1UC4Ph-9MQEFefQNec8_wUC750xyLWxt95CI3L5uKcbaK8riUKSpQ-qSAlCzkDqvmqxYoP2tqnjrL_jFtPgfWKM-kO9O95EDrhaZsh5E-WhZWzFvZoC7ozvqX21FUxtvw-o50IaIdavb5RZeSh6hdJMZBBr9Tpd9N7E_TwXSXypz-swnx7cAiTqbgBtSBvsOlVszX_ydqjTovZAYZElopgASphryeU67qFUbWHjotU99S122skx_H_Tb2i3UfgmAi_KbFIJA&amp;amp;cce=2&amp;amp;category=acrcp_v1_71&amp;amp;sig=AOD64_2y0Tj2aTin7EnRK1fYkpXakyKVgA&amp;amp;q&amp;amp;nis=4&amp;amp;adurl&amp;amp;ved=2ahUKEwjbvtSnvKSVAxV1JUQIHWUEHncQ0Qx6BAgWEAE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;official website&lt;/a&gt; for details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;A reliable VPN/proxy tool, preferably with a relatively stable and clean US node.&lt;/li&gt;
+&lt;li&gt;A usable domestic or foreign credit card (if you don&amp;rsquo;t have one, you can jump to the Appendix section &lt;a class=&#34;link&#34; href=&#34;#visa-card&#34; &gt;Q1: How can college students get their first Visa credit card?&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;A Google account (Gmail) whose region belongs to one of the following (we will introduce how to view and change your account region later; if you don&amp;rsquo;t have a Google account, you can jump to the Appendix section &lt;a class=&#34;link&#34; href=&#34;#gmail&#34; &gt;Q2: How to register for a Google account?&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;strong&gt;Devices&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;strong&gt;Country or Region&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;Offer&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Pixel 10 Pro, Pixel 10 Pro XL, and  &lt;br&gt;Pixel 10 Pro Fold&lt;/td&gt;
+					&lt;td&gt;- Australia&lt;br&gt;- Austria&lt;br&gt;- Belgium&lt;br&gt;- Canada&lt;br&gt;- Czech Republic&lt;br&gt;- Denmark&lt;br&gt;- Estonia&lt;br&gt;- Finland&lt;br&gt;- France&lt;br&gt;- Germany&lt;br&gt;- Hungary&lt;br&gt;- India&lt;br&gt;- Ireland&lt;br&gt;- Italy&lt;br&gt;- Latvia&lt;br&gt;- Lithuania&lt;br&gt;- Malaysia&lt;br&gt;- Mexico&lt;br&gt;- Netherlands&lt;br&gt;- Norway&lt;br&gt;- Poland&lt;br&gt;- Portugal&lt;br&gt;- Romania&lt;br&gt;- Singapore&lt;br&gt;- Slovakia&lt;br&gt;- Slovenia&lt;br&gt;- Spain&lt;br&gt;- Sweden&lt;br&gt;- Switzerland&lt;br&gt;- Taiwan&lt;br&gt;- United Kingdom&lt;br&gt;- United States&lt;/td&gt;
+					&lt;td&gt;Google AI Pro plan (12-month trial)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Pixel 10 Pro, Pixel 10 Pro XL, and  &lt;br&gt;Pixel 10 Pro Fold&lt;/td&gt;
+					&lt;td&gt;Japan only&lt;/td&gt;
+					&lt;td&gt;Google AI Pro plan (6-month trial)&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;If all three conditions above are met, you can proceed with the following steps.&lt;/p&gt;
+&lt;h2 id=&#34;introduction-to-the-pixel-verification-promotion&#34;&gt;Introduction to the Pixel Verification Promotion
+&lt;/h2&gt;&lt;p&gt;Pixel is Google&amp;rsquo;s self-developed smartphone. Since August 2024, Google has decided to offer its highest-tier AI subscription as a benefit for purchasing the phone. The current promotion is for the Pixel 10 Pro series, which was released in August 2025, and the deadline for claiming the AI offer is October 31, 2026. &lt;a class=&#34;link&#34; href=&#34;https://support.google.com/pixelphone/answer/13529884?hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Official Promotion Website&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tutorial&#34;&gt;Tutorial
+&lt;/h2&gt;&lt;h3 id=&#34;check-the-region-of-your-google-account&#34;&gt;&lt;strong&gt;Check the Region of Your Google Account&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;This promotion has requirements regarding the region of the account. Most Google accounts registered in mainland China are associated with China, which currently cannot enjoy the offer. Therefore, we need to change the region of the account.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, use Google Chrome to log into your account, click the avatar in the top right corner, and click &amp;ldquo;Terms of Service&amp;rdquo; below.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626115458.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;Then you should be able to see the country and region currently associated with this Google account.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/Pasted%20image%2020260626115630.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Example of checking region&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can compare it with the table above. If the country your account belongs to is included in the list of countries for the 12-month plan, you are good to go and can skip to the next section. If not, it&amp;rsquo;s fine. You can click on &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Country/Region version&lt;/a&gt; and then click on &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Learn more and contact us&lt;/a&gt; in the sidebar that pops up on the right.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626115904.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Scroll down to find &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Change associated country/region&lt;/a&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626120026.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Configure the settings as shown below and submit. For the state, you can choose a region that matches your VPN IP or choose a tax-free state (such as Oregon). Personally, I chose Oregon.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626120914.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+After submitting, if everything goes well, you will receive an email notification of the successful region change within 1 hour.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626164650.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Successful region change notification&#34;
+	
+	
+&gt;
+Then go back to the privacy terms page of your personal account to check the region again. Once you confirm the region has been successfully modified, you can proceed to the next step.&lt;/p&gt;
+&lt;h3 id=&#34;enable-2-step-verification&#34;&gt;&lt;strong&gt;Enable 2-Step Verification&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Go back to the browser homepage, click the avatar in the top right corner, and click &amp;ldquo;Manage your Google Account&amp;rdquo;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122018.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+After jumping, click &amp;ldquo;Security&amp;rdquo; on the left, and then click &amp;ldquo;2-Step Verification&amp;rdquo;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122111.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Once inside, if you haven&amp;rsquo;t set up 2-step verification, you can add some verification methods to increase account security first. Here, we need to set up the Authenticator.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122454.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+After clicking to enter, theoretically, we could use the authenticator app on our phone to add the authenticator. However, since we need an external service to register the Pixel device for us, we first click &amp;ldquo;Add authenticator&amp;rdquo; here.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122702.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Then a QR code will pop up. We select &amp;ldquo;Can&amp;rsquo;t scan it&amp;rdquo; below.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122713.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Then copy the 32-character key (2FA code) in the text section and paste it into a notepad; we will need it later.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122740.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Subsequently, use the browser to open the following &lt;a class=&#34;link&#34; href=&#34;https://2fa.kennygmail.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2-Step Verification Code Receiver Platform&lt;/a&gt;:&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://2fa.kennygmail.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://2fa.kennygmail.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Paste the 32-character key you just got and click to enable verification.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626123615.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626123625.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+You will get a 6-digit verification code. Next, go back to the page showing the 32-character 2FA code, click Next, paste it, and click &amp;ldquo;Verify&amp;rdquo;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626123925.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Upon success, you should see the following page. If it fails, it&amp;rsquo;s fine; since this 6-digit verification code changes in real-time every 30 seconds, you can repeat the steps above. &lt;strong&gt;But remember to save the 32-character 2FA code&lt;/strong&gt;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626124055.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Now, we have successfully set up the authenticator and 2-step verification.&lt;/p&gt;
+&lt;h3 id=&#34;purchase-a-pixel-verification-token&#34;&gt;&lt;strong&gt;Purchase a Pixel Verification Token&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Click the &lt;a class=&#34;link&#34; href=&#34;https://www.pksto.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;link&lt;/a&gt; below:&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.pksto.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.pksto.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After registering and logging in, scroll down to find &lt;strong&gt;One.IDKey points (Pixel, GPT Plus/Pro)&lt;/strong&gt; and enter.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626124940.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Purchase according to the prompts, find the order information in your personal orders, and click to view.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626125412.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Copy the token (key) and click below to jump to the redemption page.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626125530.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Scroll down and enter your email account and password as prompted (yes, you need to enter your password here, so there is some risk. If your email currently has payment methods like credit cards bound, it is recommended to unbind them first. In addition, after successfully getting the trial, remember &lt;strong&gt;you must change your password, delete the current authenticator, and add a new authenticator along with other 2-step verification methods!!!&lt;/strong&gt; The risk of account theft cannot be ruled out!!!).
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626125724.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+The 2FA key at the bottom is the 32-character key you just saved in notepad. Paste it here and click to start verification. A prompt for successful verification will pop up within 5 minutes, and the verification link will appear in the execution log on the right. We can copy it into the browser.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626131203.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+You will get the following page:
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626131304.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Please do not rush to click &amp;ldquo;Start trial&amp;rdquo; at this point, because we just provided the account and password, and starting the trial now carries high risk. Therefore, remember to first return to the Google Chrome page, click your avatar, click &amp;ldquo;Manage your Google Account&amp;rdquo;, click &amp;ldquo;Security&amp;rdquo; on the left menu, change your password and verification methods, and also remember to update the authenticator—delete the old authenticator and download an authenticator app on your phone to scan the QR code to add a new one.&lt;/p&gt;
+&lt;h3 id=&#34;add-payment-information&#34;&gt;&lt;strong&gt;Add Payment Information&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Theoretically, we can click &amp;ldquo;Start trial&amp;rdquo; now, but a safer method is to first add a payment method to this Google account, which means binding a credit card. Click &amp;ldquo;Payments &amp;amp; subscriptions&amp;rdquo; on the left, click &amp;ldquo;Manage payment methods&amp;rdquo;, and then click &amp;ldquo;Add payment method&amp;rdquo;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626132116.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+On the page shown below, enter your card number and other details. Note that the country and region must be selected as the United States. You can choose a tax-free state (such as Oregon). The street address, zip code, and other details can be generated using a &lt;a class=&#34;link&#34; href=&#34;https://www.meiguodizhi.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;US Address Generator&lt;/a&gt; for the selected state.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626132528.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+After filling out the information, click Save. Then we can go back to the &amp;ldquo;Start trial&amp;rdquo; interface.&lt;/p&gt;
+&lt;h3 id=&#34;start-trial-and-cancel-subscription&#34;&gt;&lt;strong&gt;Start Trial and Cancel Subscription&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;After completing the steps above, we can safely click &amp;ldquo;Start trial&amp;rdquo;. Once clicked, a window prompt confirming the successful activation of the trial will pop up.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626133317.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+Now we can also return to the &amp;ldquo;Manage your Google Account&amp;rdquo; interface and click &amp;ldquo;Payments &amp;amp; subscriptions&amp;rdquo; on the left. Here, you can find that we have activated the Google One plan, but we are not finished yet. To avoid automatic charges after the trial expires, we need to manually cancel the subscription. In the screenshot, my subscription is already cancelled. Click &amp;ldquo;Manage subscription&amp;rdquo; under Google One.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/Pasted%20image%2020260626133523.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Manage subscription page&#34;
+	
+	
+&gt;
+Click &amp;ldquo;Google One&amp;rdquo;.
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/Pasted%20image%2020260626133844.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google One Page&#34;
+	
+	
+&gt;
+On the page that opens, click Cancel subscription. Once successfully cancelled, a prompt showing &amp;ldquo;Cancelled&amp;rdquo; will appear as follows:
+&lt;img src=&#34;https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626133954.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; At this point, all operations are complete! Congratulations to everyone on becoming a Google One AI Pro member. You can log into your account to experience the various services (remember to pass the age verification in your personal info, otherwise tools like Antigravity might not be allowed).&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts
+&lt;/h2&gt;&lt;p&gt;Starting in 2026, Google DeepMind&amp;rsquo;s competitiveness has declined increasingly compared to OpenAI and Anthropic. The previously released 3.5 Flash is indeed an improvement over 3.1 Flash, but it is roughly on par with 3.1 Pro. However, looking at horizontal comparisons, 3.5 Flash is already a month-old model, showing a significant gap compared to Anthropic&amp;rsquo;s iteration cycle of half a month or even ten days. The 3.5 Pro, originally expected to be released in June, might be delayed until July. The Google CEO has also publicly admitted that their models lag behind the other two AI giants in coding, and more and more senior executives from DeepMind are being poached by the other two companies.&lt;/p&gt;
+&lt;p&gt;In the process of using it, especially before the Antigravity 2.0 update, the first thing clearly felt was the highly noticeable rate limit for Pro users. Secondly, in conversations, Gemini is prone to sudden drops in intelligence, and hallucinations begin to scale exponentially as the context builds up.&lt;/p&gt;
+&lt;p&gt;However, it must be admitted that Google is one of the few companies that has provided student verification discounts and other promotions, and the discount intensity is very large. From October 2025 to April 2026, getting AI Pro through student certification was incredibly smooth. Even after the channel closed, there were other ways to enjoy the Pro discounts. From the user&amp;rsquo;s perspective, this is definitely something to celebrate. Furthermore, what attracts me the most is the entire Google ecosystem. Google Mail, Drive, Calendar, Knowledge Base (NotebookLM), and the world&amp;rsquo;s largest video website YouTube, when integrated with Gemini&amp;rsquo;s high context window, can connect and communicate very well, providing great help for study and work. From this point of view, this is Google&amp;rsquo;s unique advantage compared to the other two giants.&lt;/p&gt;
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix
+&lt;/h2&gt;&lt;p&gt;&lt;a id=&#34;visa-card&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;q1-how-can-college-students-get-their-first-visa-credit-card&#34;&gt;&lt;strong&gt;Q1: How can college students get their first Visa credit card?&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Actually, many banks nowadays can issue Visa or MasterCard credit cards for college students. I use the Industrial and Commercial Bank of China (ICBC) Campus Edition Constellation Card. The application process is very simple; you just need to apply on the mobile banking app and then go to a physical branch to activate it. Alternatively, if your family members have credit cards, you can choose to apply for a supplementary card, which can also be used normally, though the credit limit is restricted.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;gmail&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;q2-how-to-register-for-a-google-account&#34;&gt;&lt;strong&gt;Q2: How to register for a Google account?&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;Google accounts (Gmail) are becoming increasingly difficult to register nowadays. You can look up tutorials on Bilibili, or if you want to save trouble, you can buy an account directly.&lt;/p&gt;
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer
+&lt;/h2&gt;&lt;p&gt;This article is only for documenting personal practice and information consolidation, and does not constitute any purchase advice, investment advice, or account security commitment. The region modifications, verification methods, payment information, and subscription operations involved in the text may be affected by platform rules, local laws, and account status. Please verify the risks yourself and be responsible for the results before execution. If relevant service policies change, please refer to the official latest description.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Welcome everyone to leave comments and discuss in the comment section below!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Archives</title>
         <link>https://ferdinandhu.netlify.app/en/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
