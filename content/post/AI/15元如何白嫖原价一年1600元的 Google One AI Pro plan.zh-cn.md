@@ -38,7 +38,7 @@ Pixel 是谷歌自研的智能手机，自2024 年 8 月以来，谷歌决定将
 ## 教程
 
 ### **查看谷歌邮箱所属地**
-此次活动对账号的所属地有要求。国内大部分谷歌邮箱账号在注册时大概率都是所属于中国大陆，而大陆目前是无法享受优惠的，因此我们需要更好账号的所属地。
+此次活动对账号的所属地有要求。国内大部分谷歌邮箱账号在注册时大概率都是所属于中国大陆，而大陆目前是无法享受优惠的，因此我们需要更换账号的所属地。
 1. 首先使用谷歌浏览器登录邮箱账号，点击右上角头像，点击下方“服务条款”
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626115458.png)
 2. 然后应该就可以看到目前这个邮箱账号的所属国家和地区了
@@ -61,7 +61,7 @@ Pixel 是谷歌自研的智能手机，自2024 年 8 月以来，谷歌决定将
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122111.png)
 进入后大家如果还没有设置过两步验证可以先添加一些验证方式增加账号的安全性。在这里我们需要设置一下身份验证器Authenticator
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122454.png)
-点击进入后理论上我们是可以用手机里的身份验证器app添加验证器的，但是由于我们需要外部来为我操作添加Pixel设备，所以这里我们先点击“添加身份验证器”
+点击进入后理论上我们是可以用手机里的身份验证器app添加验证器的，但是由于我们需要外部来为账号操作添加Pixel设备，所以这里我们先点击“添加身份验证器”
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122702.png)
 然后会跳出来一个二维码，我们选择下方的“无法扫描”
 ![](https://raw.githubusercontent.com/Ferdinandhu000/my_blog_img/master/20260626122713.png)
